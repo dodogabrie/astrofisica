@@ -1,0 +1,51 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {chapter}{\numberline {1}Introduzione e Trasporto Radiativo}{2}{chapter.2}% 
+\contentsline {section}{\numberline {1.1}Lezione 1}{2}{section.3}% 
+\contentsline {subsubsection}{Introduzione}{2}{section*.4}% 
+\contentsline {paragraph}{Libro di testo}{2}{section*.5}% 
+\contentsline {paragraph}{Argomenti del corso}{2}{section*.6}% 
+\contentsline {subsection}{\numberline {1.1.1}Osservazione del cielo}{2}{subsection.7}% 
+\contentsline {paragraph}{Astrofisica}{2}{section*.8}% 
+\contentsline {paragraph}{Osservazione della radiazione elettromagnetica}{2}{section*.9}% 
+\contentsline {paragraph}{Lotta contro l'oscurit\IeC {\`a}}{2}{section*.10}% 
+\contentsline {subsection}{\numberline {1.1.2}Diffrazione e Seeing}{3}{subsection.11}% 
+\contentsline {paragraph}{Telescopi sempre pi\IeC {\`u} grandi}{3}{section*.12}% 
+\contentsline {paragraph}{Diffrazione}{3}{section*.13}% 
+\contentsline {paragraph}{Seeing}{4}{section*.16}% 
+\contentsline {paragraph}{Lunghezza d'onda per cui oggi si ha la massima risoluzione angolare}{4}{section*.18}% 
+\contentsline {subsection}{\numberline {1.1.3}Massa del sole}{5}{subsection.20}% 
+\contentsline {subsection}{\numberline {1.1.4}Distanze e metodo della parallasse}{5}{subsection.22}% 
+\contentsline {paragraph}{Metodo della parallasse}{5}{section*.23}% 
+\contentsline {subsection}{\numberline {1.1.5}Scale temporali dell'universo}{6}{subsection.28}% 
+\contentsline {subsection}{\numberline {1.1.6}Luminosit\IeC {\`a} intrinseca, Candele campioni ed introduzione al trasporto radiativo}{7}{subsection.29}% 
+\contentsline {section}{\numberline {1.2}Lezione 2}{8}{section.33}% 
+\contentsline {subsection}{\numberline {1.2.1}Momenti dell'intensit\IeC {\`a} $I_{\nu }$}{8}{subsection.36}% 
+\contentsline {paragraph}{Flusso}{8}{section*.37}% 
+\contentsline {paragraph}{Densit\IeC {\`a} di energia irraggiata}{9}{section*.39}% 
+\contentsline {paragraph}{Pressione}{9}{section*.40}% 
+\contentsline {paragraph}{Intensit\IeC {\`a} specifica media sull'angolo.}{10}{section*.42}% 
+\contentsline {paragraph}{Momenti dell'intensit\IeC {\`a}}{10}{section*.43}% 
+\contentsline {subsection}{\numberline {1.2.2}Propagazione di un fascio nel vuoto.}{10}{subsection.45}% 
+\contentsline {paragraph}{Esempio classico}{11}{section*.48}% 
+\contentsline {subsection}{\numberline {1.2.3}Propagazione della radiazione in un mezzo}{12}{subsection.51}% 
+\contentsline {paragraph}{Esempi di processi di emissione o di assotbimento}{13}{section*.53}% 
+\contentsline {paragraph}{Distinzione tra processi di emissione e di assorbimento}{13}{section*.56}% 
+\contentsline {subsection}{\numberline {1.2.4}Equazione del trasporto: processi di interazione radiazione materia}{13}{subsection.58}% 
+\contentsline {paragraph}{Emissione}{13}{section*.59}% 
+\contentsline {paragraph}{Assorbimento}{14}{section*.61}% 
+\contentsline {paragraph}{Scattering}{14}{section*.63}% 
+\contentsline {paragraph}{Equazione finale con tutti i termini}{15}{section*.64}% 
+\contentsline {section}{\numberline {1.3}Lezione 3}{15}{section.65}% 
+\contentsline {paragraph}{Esempio: Mezzo in grado di emettere ma non di assorbire}{16}{section*.67}% 
+\contentsline {paragraph}{Esempio: Mezzo in grado di assorbire ma non di emettere}{16}{section*.68}% 
+\contentsline {subsection}{\numberline {1.3.1}Serie dell'atomo di idrogeno}{17}{subsection.69}% 
+\contentsline {subsection}{\numberline {1.3.2}Radiazione attraverso una nube interstellare}{18}{subsection.71}% 
+\contentsline {paragraph}{Stima del numero di atomi nell'universo}{19}{section*.73}% 
+\contentsline {subsection}{\numberline {1.3.3}Soluzione analitica all'equazione del trasporto stazionaria.}{19}{subsection.75}% 
+\contentsline {paragraph}{Esempio: mezzo omogeneo.}{20}{section*.79}% 
+\contentsline {paragraph}{Esempio: Mezzo omogeneo senza retroilluminazione}{21}{section*.82}% 
+\contentsline {subparagraph}{Mezzo otticamente sottile}{21}{section*.83}% 
+\contentsline {subparagraph}{Mezzo otticamente spesso}{22}{section*.85}% 
+\contentsline {section}{\numberline {1.4}Lezione 4}{22}{section.86}% 
+\contentsline {subsection}{\numberline {1.4.1}Scoperta delle righe}{22}{subsection.87}% 

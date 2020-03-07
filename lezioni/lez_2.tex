@@ -1,0 +1,286 @@
+\lez{2}{24-02-2020}{}
+Riprendiamo la teoria del trasporto radiativo.
+\[
+	dE = I_{\nu}\left( \bs{r}, t,\bs{k} \right) \hat{k}\hat{n} dAdtd\Omega d\nu
+.\] 
+Conoscere il campo di radiazione in una determinata regione significa conoscere l'intensità specifica del campo di radiazione: $I_{\nu}\left( \bs{r}, t,\bs{k} \right)$.\\ 
+Tale quantità ricordiamo essere un flusso per unità di angolo solido. Presa una superficie infinitesima dA come nella lezione precedente:
+\begin{figure}[H]
+    \centering
+    \incfig{figura-per-introdurre-lintensit-specifica}
+    \caption{Figura per introdurre l'intensità specifica}
+    \label{fig:figura-per-introdurre-lintensit-specifica}
+\end{figure}
+\noindent
+L'energia trasportata dalla radiazione elettromagnetica tra la frequenza $\nu$ e $\nu + d\nu$ che attraversa la superficie $dA$ è data dalla relazione con cui abbiamo introdotto questa lezione.\\
+Questa $I_{\nu}\left( \bs{r}, t, \bs{k} \right)$ non descrive completamente il campo di radiazione: lo descrive nei confini dell'ottica geometrica. No tiene di conto infatti di fenomeni come interferenza e diffrazione. Anticipiamo che nella maggior parte delle situazioni di interesse la quantità $I_{\nu}\left( \bs{r}, t,\bs{k} \right)$ non dipende dal tempo perchè il campo di radiazione ed il mezzo stesso sono in genere stazionari \footnote{Ci sono anche casi in cui questo non è vero, nei casi che affrontiamo noi invece lo daremo per scontato.}. \\
+\subsection{Momenti dell'intensità $I_{\nu}$}%
+Spesso inoltre non serve conoscere direttamente  $I_{\nu}\left( \bs{r}, t,\bs{k} \right)$, bastano altre quantità con meno informazioni. Facciamo in questa sezione alcuni esempi.
+\paragraph{Flusso}%
+Immaginiamo di volere il flusso  $F_{\mu}$ monocromatico (tra la frequenza $\nu$ e $\nu + d\nu$) attraverso la superficie $dA$ nell'unità di tempo, calcoliamo dapprima la radiazione che si propaga nella direzione $\bs{k}$ che chiamiamo $\phi$:
+\begin{align*}
+	\phi = \frac{\mbox{d} E}{\mbox{d} A \text{d}t} = \frac{I_{\nu}\cos\theta}{dA dt} dA dt d\Omega d\nu = I_{\nu} \cos\theta d\Omega d\nu
+.\end{align*}
+Per ottenere il flusso basterà integrare in tutto l'angolo solido ottenendo:
+\[
+	F_{\nu} = \int_{\Omega} I_{\nu}\cos\theta d\Omega \ \left[ \text{erg} \right]  \left[ \text{cm} \right]^{-2} \left[ s \right]^{-1} \left[ \text{Hz} \right]^{-1} 
+.\] 
+Se vogliamo il flusso totale sarà necessario integrare nelle frequenze:
+\[
+	F = \int F_{\nu} d\nu
+.\] 
+Chiaramente nel flusso cè meno informazione che nella intensità specifica perchè abbiamo perso informazioni sull'angolo e quindi sulla direzione di propagazione.\\
+Notiamo che nei casi in cui la radiazione è isotropa il flusso sarà nullo: la quantità di radiazione che va verso l'alto è la stessa di quella verso il basso \footnote{Infatti l'integrale fa proprio zero, poichè tutto esce dall'integrale in $\Omega$ tranne il coseno, mentre l'elemento infinitesimo di angolo solido è proporzionale a $\sin\theta d\theta$}.\\
+Un esempio di radiazione isotropa è quella di corpo nero. Per tale oggetto, inserendo in rilevatore all'interno della famosa cavità rileviamo appunto un flusso nulla.\\
+In natura una ottima approssimazione di corpo nero sarà l'interno delle stelle.\\
+\paragraph{Densità di energia irraggiata}%
+Un'altra quantità che si può ricavare quando è noto $I_{\nu}$ è la densità di energia $u_{\nu}$:
+consideriamo l'elementino di volume composto dalla quantità di radiazione che attraversa l'area $dA$ nel tempo $dt$ facendo sempre riferimento alla \hyperref[fig:figura-per-introdurre-lintensit-specifica]{Figura 10}:
+\[
+	dV = dA \cos\theta c dt 
+.\] 
+si ha che, ragionevolmente, la densità di energia sarà parente della quantità:
+\[
+	\frac{\mbox{d} E}{\mbox{d} V} = \frac{I_{\nu}\left( \bs{r}, t, \bs{k} \right)  \hat{k} \cdot \hat{n} dA dt d\Omega d\nu}{dA \cos\theta c dt} = \frac{I_{\nu}}{c}d\Omega d\nu
+.\] 
+Dove abbiamo usato il fatto che $\hat{k}\cdot \hat{n} =\cos\theta$.\\
+Basta adesso integrare sull'angolo solido per ottenere $u_{\nu}$:
+\[
+	u_{\nu} = \int \frac{I_{\nu}}{c}d\Omega \quad \left[ \text{erg} \right] \left[ \text{cm} \right]^{-3} \left[ \text{Hz} \right]
+.\] 
+Se la radiazione è isotropa $I_{\nu} /c$ può uscire dall'integrale:
+\[
+	u_{\nu} = \frac{I_{\nu}}{c} \int d\Omega = \frac{4\pi}{c} I_{\nu} 
+.\]
+Nel caso del corpo nero abbiamo, dalla legge di radiazione di Plank che:
+\[
+	u_{\nu} = \frac{8\pi\hbar}{c^3} \frac{\nu^3}{e^{\frac{\hbar \nu}{kT}}-1}= \frac{4\pi}{c} B_{\nu}
+.\] 
+Dove abbiamo introdotto la quantità:
+\[
+	B_{\nu}= \frac{2 \hbar}{c^2} \frac{\nu^3}{e^{\frac{\hbar \nu}{kT}}-1}
+.\] 
+\paragraph{Pressione}%
+Possiamo trovare la pressione della radiazione calcolando il flusso della componente ortogonale della quantità di moto alla superficie attraversata $dA$:
+\[
+	\bs{p}_{\bot} \cdot \hat{n}=\frac{dE}{c}\hat{k}\cdot \hat{n}= \frac{I_{\nu} \cos^2\theta}{c} \frac{dA dt}{dA dt} d\Omega d\nu = \frac{I_{\nu}}{c}\cos^2\theta d\Omega d\nu
+.\] 
+Dove abbiamo sfruttato che i fotoni sono particelle senza massa per relazionare l'energia alla quantità di moto.
+Quindi abbiamo che, integrando nell'angolo solido come sopra si ottiene la pressione per unità di frequenza: 
+\[
+	P_{\nu} = \int \frac{I_{\nu}}{c} \cos^2\theta d\Omega 
+.\] 
+E integrando ancora nella prequenza si ottiene la pressione:
+\[
+	P = \int P_{\nu}d\nu 
+.\] 
+Notiam adesso che se il campo è isotropo il risultato che otteniamo è il seguente:
+\[
+	 P = \frac{4\pi}{3}\frac{I_{\nu}}{c} = \frac{u_{\nu}}{3}
+.\] 
+Nel caso degli interni stellari \footnote{che sono la cosa che approssima meglio il corpo nero dopo l'universo stesso.} avviciniandoci verso il centro delle stelle non si ha esattamente un irraggiamento isotropo per il semplice motivo che questo richiederebbe un equilibrio termodinamico esatto. Ci sarà invece un gradiente di temperatura andando verso il centro della stella, quindi ci aspettiamo anche in questa situazione una anisotropia nella radiazione.\\
+Tale anisotropia sarà così piccola che per la maggior parte delle applicazioni che vedremo può essere trascurata, tuttavia globalmente non può essere trascurata perchè proprio quella lieve luce che noi vediamo guardando il cielo notturno.
+
+\paragraph{Intensità specifica media sull'angolo.}%
+\[
+	J_{\nu} = \frac{\int I_{\nu}d\Omega}{4\pi}
+.\] 
+Nel caso del campo isotropo si ha: $J_{\nu} = I_{\nu}$.\\
+È possibile esprimere la densità di energia in termini di $J_{\nu}$ :
+\[
+	u_{\nu} = \frac{4\pi}{c}J_{\nu}
+.\] 
+\paragraph{Momenti dell'intensità}%
+Tutti gli oggetti ricavati sono stati estrapolati con la forma:
+\[
+	\int I_{\nu} \cos^{n}\theta d\Omega
+.\] 
+Questi sono detti i momenti di ordine (0,1,2) dell'intensità specifica $I_{\nu}$, riguardando quanto fatto sopra possiamo notare che i tre esempi che abbiamo fatto sono:
+\begin{itemize}
+	\item $u_{\nu}$ : momento di ordine 0 di $I_{\nu}$.
+	\item $F_{\nu}$ : momento di ordine 1 di $I_{\nu}$.
+	\item $P_{\nu}$ : momento di ordine 2 di $I_{\nu}$.
+\end{itemize}
+Quindi data la forma funzionale della intensità specifica \footnote{vedremo che basta l'equazione per quest'ultima, che si chiamerà equazione del trasporto.} possiamo possiamo ricavare tutti i momenti della quantità stessa. L'utilità di questi momenti è che possono isolare e rendere applicabili informazioni utili sul sistema.\\
+
+\subsection{Propagazione di un fascio nel vuoto.}%
+Vogliamo vedere che cosa succede all'intensità specifica di un fascio che si propaga nel vuoto.\\
+Abbiamo visto che il flusso di un fascio che si propaga nel vuoto scala come $R^{-2}$, quindi il flusso della sorgente è sempre più debole mano a mano che la sorgente si allontana.\\ 
+Per l'intensità specifica invece si ha che visivamente resta costante: mentre l'auto si allontana ci sembra che il suo brillare non cambi. Vediamo se si può dimostrare questo fatto, consideriamo il seguente caso:
+\begin{figure}[H]
+    \centering
+    \incfig{brillanza-costante}
+    \caption{\scriptsize Sistema in cui osservo la radiazione da una sorgente.}
+    \label{fig:brillanza-costante}
+\end{figure}
+\noindent
+Il fascio si propaga nella direzione $\bs{k}$ e noi vogliamo sapere come cambia $I_{\nu}$ lungo questa direzione, per questo prendiamo due punti lungo $\bs{k}$ che in figura chiamiamo $\bs{r}$ e $\bs{r}'$ e valutiamo la brillanza in tali pundi: cerchiamo la quantità di radiazione che attraversa le aree infinitesime associate ai due punti $dA$ e $dA'$.
+Ipotizziamo infatti che la sorgente si nella parte destra della figura, allora la luce proveniente da $dA$ che arriva alla posizione $\bs{r}'$ è quella sottesa all'angolo solido $d\Omega'$, d'altra parte la luce che arriva a $\bs{r}$ e che passa poi dall'area $dA'$ è senza dubbio quella sottesa all'angolo solido $d\Omega$.
+Per farlo sfruttiamo gli angoli solidi costruiti in Figura \ref{fig:brillanza-costante}. Gli angoli solidi costruiti in figura possono essere scritti come:
+\[
+	d\Omega = dA' \frac{\hat{n}'\cdot \hat{k}}{s^2}
+.\] 
+\[
+	d\Omega' = dA \frac{\hat{n}\cdot \hat{k}}{s^2}
+.\] 
+E l'energia trasportata dalla radiazione elettromagnetica nei due casi è, per definizione:
+\begin{align*}
+	&dE' = I_{\nu}\left( \hat{k}', t', \bs{r}' \right) \hat{k}'\cdot \hat{n}' dt d\Omega d\nu dA'\\
+	&dE = I_{\nu}\left( \hat{k}, t, \bs{r}\right) \hat{k}\cdot \hat{n} dt d\Omega' d\nu dA
+.\end{align*}
+Se la radiazione si propaga nel vuoto allora l'energia si deve conservare, quindi $dE = dE'$. Quindi inserendo anche gli angoli solidi ricavati sopra si ottiene un risultato importante:
+\[
+	I_{\nu}\left( \bs{r}, t, \hat{k} \right) =I_{\nu}\left( \bs{r}', t, \hat{k}' \right)
+.\] 
+La conservazione della brillanza. Possiamo allora scrivere la legge di conservazione per questa quantità nel vuoto:
+\[
+	\frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \frac{\partial I_{\nu}}{\partial s}  = 0
+.\] 
+in cordinate cartesiane la legge si scrive:
+\[
+	\frac{\partial I_{\nu}}{\partial s} =
+	\frac{\partial x}{\partial s} \frac{\partial I_{\nu}}{\partial x} + 
+	\frac{\partial y}{\partial s} \frac{\partial I_{\nu}}{\partial y} +
+	\frac{\partial z}{\partial s} \frac{\partial I_{\nu}}{\partial z}= 
+	k_{x} \frac{\partial I_{\nu}}{\partial x} + 
+	k_{y}\frac{\partial I_{\nu}}{\partial y} + 
+	k_{z}\frac{\partial I_{\nu}}{\partial z}  
+.\] 
+Questo entra in conflitto con il fatto che il flusso scala come $R^{-2}$? No, perchè l'intensità specifica è un flusso per unità di angolo solido. \\
+Prendiamo una sorgente luminosa che siamo in grado di risolvere (vedo la forma geometrica), ipotizzaimo che la sorgente si allontana da noi, la sorgente risulterà sempre più piccola \footnote{Ipotizziamo che non ci sia nebbia, in modo da avvicinarci il più possibile ad una situazione di vuoto}.\\
+Tuttavia, finche riusciamo a risolverlo il faro risulterà brillante allo stesso modo. Questo perchè è vero che il flusso diminuisce come $R^{-2}$ ma è anche vero che  l'angolo solido si riduce della stessa quantità $R^{-2}$, quindi resta invariatà la quantità $I_{\nu}$. Possiamo quindi affermare che la brillanza si conserva lungo il raggio.\\
+Se vogliamo, questa è la controparte macroscopica di un fatto microscopico: se un fotone viaggia nel vuoto la probabilità che decada è nulla.\\
+Esempio astronomico: una sorgente che possiamo risolvere sono le galassie. Tuttavia non riusciamo a risolvere per le stelle perchè per noi sono oggetti puntiformi.\\
+Quindi quando vediamo una luce proveniente da una stella noi vediamo la sua diffrazione, non la vera forma. Quindi l'estensione andolare dipende dalla legge di diffrazione.\\
+Quindi non possiamo applicare il ragionamento che abbiamo fatto in precedenza se non siamo in grado di risolvere la sorgente.\\
+\paragraph{Esempio classico}%
+Supponiamo di avere una sorgente sferica uniformemente brillante: ogni raggio uscente ha la stessa intensità specifica $I$:
+ \[
+	I = \begin{cases}
+		&B  \ \text{ Se il raggio interseca la superficie}\\
+		&0 \ \text{ Altrimenti}
+	\end{cases}
+.\] 
+\begin{figure}[H]
+    \centering
+    \incfig{esempio-su-conservazione-della-brillanza}
+    \caption{Esempio sulla conservazione della brillanza}
+    \label{fig:esempio-su-conservazione-della-brillanza}
+\end{figure}
+\noindent
+Calcoliamo il flusso al punto P \footnote{Ovvero il flusso sotteso all'angolo solido costruito a partire da $P$ verso la sorgente}:
+\begin{align*}
+	F =& \int I\cos\theta d\Omega=\\
+	  =&\int_{0}^{2\pi}d\varphi \int_{0}^{\theta_{c}}B \cos\theta\sin\theta d\theta =\\
+	  =&2\pi B\frac{1-\cos^2\theta_{c}}{2}=\\
+	  =&\pi B \sin^2\theta_{c}=\\
+	  =&\pi B \left( \frac{R}{r} \right) ^2
+.\end{align*}
+Se abbiamo una sorgente uniformemente brillante e isotropa il flusso che esce alla superficie è dato da:
+\[
+	F = \pi B
+.\] 
+Non è zero perchè questo è il flusso uscente, non sull'angolo solido come invece abbiamo visto prima.\\
+\subsection{Propagazione della radiazione in un mezzo}%
+Vogliamo vedere come cambia interagendo con la materia $I_{\nu}$, sicuramente non rimarrà costante perchè la radiazione interagisce con la materia: una parte dei fotoni verranno sottratti al fascio ed altri fotoni verranno immessi nel fascio. \\
+Il nostro obbiettivo è quantificare il bilancio tra i primi fenomeni detti Pozzi ed i secondi dette Sorgenti.\\
+\texttt{L'equazione del trasporto} sarà della forma:
+\[
+	\frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \hat{k} \nabla I_{\nu} = + \left\{ \text{processi di sorgenti} \right\} - \left\{ \text{Processi di pozzi} \right\} 
+.\] 
+È quindi indispendabile conoscere i meccanismi di interazione tra la radiazione e la materia, la distanza percorsa dal fascio all'interno del mezzo e le condizioni del mezzo stesso.\\
+Non dobbiamo sottovalutare il fatto che i fotoni stessi modificano lo stato del mezzo, quindi i fotoni ed il mezzo possono influenzarsi a vicenda. Per questo l'equazione del trasporto diventa con grande facilità non lineare. \\
+Prendiamo quindi il seguente schema come riferimento:
+\begin{figure}[H]
+    \centering
+    \incfig{radiazione-in-un-mezzo}
+    \caption{Radiazione in un mezzo}
+    \label{fig:radiazione-in-un-mezzo}
+\end{figure}
+\noindent
+Al momento dell'ingresso (alla coordinata $s_0$) la brillanza vale: $I_{\nu}\left( s_0 \right)$  e sarà uguale a quella della sorgente in tal punto.
+\paragraph{Esempi di processi di emissione o di assotbimento}%
+Potremmo considerare lo scattering tra questi meccanismi, anche se vedremo che questi sono fastidiosi: aggiungono un elemento di non località alla nostra indagine sulla radiazione.\\ 
+Quest'ultima affermazione può essere giustificata con un esempio: supponiamo di voler visualizzare lo spettro che proviene dalla faccia di una persona all'aperto sotto la luce del sole \footnote{Di fatto significa prendere la luce riflessa sulla faccia della persona}. \\
+Dall'analisi troverei il doppietto del sodio. Tuttavia è difficile che le condizioni fisiche sulla faccia di una persona sono tali da vedere il doppietto del sodio. Ci si chiede allora come sia possibile vederlo nel volto della persona. La risposta sta nel fatto che la luce che viene dalla faccia è nata sulla superficie del sole, le righe del doppietto del sodio arrivano proprio dalla atmosfera del sole.\\
+Quindi le righe che visualizziamo sono state create in situazioni completamente diverse rispetto alle condizioni fisiche del sistema dalla quale preleviamo la luce (il volto). Questo quindi perchè le proprietà del fotone scatterato contiene informazioni che nella maggior parte dei casi non ci sono utili a studiare il sistema locale che in questo caso è un volto.\\
+Un'altro effetto che produce fotoni è l'emissione da eccitazione, tra poco distingueremo tra i tipi di emissione \footnote{Che a seconda della situazione possono comportarsi da pozzi o da sorgenti}. \\
+Un processo di assorbimento è invece la  fotoionizzazione: il passaggio da un livello energetico ad un livello del continuo.\\
+\paragraph{Distinzione tra processi di emissione e di assorbimento}%
+Se abbiamo un fotone che incide su un atomo e sparisce senza dare luogo ad un fotone la cui direzione è correlata a quella del fotone incidente allora si dice che è avvenuto un fenomeno di assorbimento.\\
+Se il fotone sparito eccita un atomo può succedere che questo, ad un certo punto, si disecciti. Se l'atomo quando perde l'eccitazione ha perso memoria di quanto gli era successo in precedenza allora avviene una emissione scorrelata, se invece l'atomo si diseccita prima di perdere memoria della eccitazione \footnote{Quindi prima di urtare altri atomi, ad esempio.} allora si parla di emissione correlata.\\
+Nei casi di nostro interesse gli urti saranno talmente tanti che possiamo considerare i fotoni generati tutti scorrelati.\\
+Potremmo anche distinguere tra assorbimenti in scattering ed assorbimenti termici, dove i primi gli abbiamo discussi sopra, i secondi invece sono quelli in cui i fotoni vanno ad eccitare il materiale aumentandone la temperatura. Nel caso di assorbimenti termici il nostro raggio va a trasferire energia al mezzo, cambiandone le condizioni fisiche.\\
+\subsection{Equazione del trasporto: processi di interazione radiazione materia}%
+\paragraph{Emissione}%
+Consideriamo adesso i processi di emissione e prendiamo un elementino di volume $dV$ contenuto nel mezzo: 
+\begin{figure}[H]
+    \centering
+    \incfig{elemento-di-volume-del-mezzo}
+    \caption{Elemento di volume del mezzo}
+    \label{fig:elemento-di-volume-del-mezzo}
+\end{figure}
+\noindent
+Secondo la notazione in figura si ha che: $dV = ds\cdot dA$.\\
+Definiamo il coefficiente di emissione monocromatico $j _{\nu}$ tale che la quantità di energia che viene messa dal mezzo di volume $dV$ nell'intervallo di tempo dt e nell'angolo solido $d\Omega$ è data da:
+\[
+	dE = j _{\nu} dV dt d\Omega d\nu
+.\] 
+Questi sono coefficienti macroscopici, per calcolarli dovremmo fare il conto di tutti i processi microscopici ed inserirli nel conto. Quindi dal punto di vista della fisica è un termine pesantissimo da trovare.\\
+Le unità di questo oggetto sono: $\left[ j _{\nu} \right] = \left[ \text{erg} \right] \cdot \left[ \text{cm} \right]^3 \cdot \left[ \text{s} \right]^{-1} \cdot \left[ \text{sterad} \right]^{-1} \cdot \left[ \text{Hz}^{-1} \right]$.
+Vediamo come viene modificato il mezzo dall'emissione dovuta a questo termine, ovvero dall'emissione del mezzo. Facciamo riferimento alla Figura \ref{fig:elemento-di-volume-del-mezzo}.\\
+Possiamo scrivere la quantità di energia che esce dal volumetto $dV$ :
+\[
+	dE_{\text{out}} = I_{\nu}\left( s+ds, t+dt, \hat{k} \right) dA dt d\Omega d\nu
+.\] 
+mentre nel punto di ingresso avremo
+\[
+	dE_{\text{in}} = I_{\nu}\left( s, t, \hat{k} \right) dA dt d\Omega d\nu
+.\] 
+La differenza tra le due sarà l'energia prodotta nei processi di emissione per la conservazione di energia.
+\begin{align*}
+	dE_{\text{out}}- dE_{\text{in}} =& \left( I_{\nu}\left(s+ds,t+dt,\hat{k}\right)-I_{\nu}\left(s,t,\hat{k}\right)\right)dt\cdot dA\cdot d\Omega\cdot  d\nu = \\
+	=& \left[ \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \frac{\partial I_{\nu}}{\partial s}  \right] ds\cdot dA\cdot dt\cdot d\Omega\cdot  d\nu  \\
+.\end{align*}
+In cui abbiamo sostituito la variazione quadridimensionale di $I_{\nu}$ nell'ultimo passaggio, adesso ricordando che questa differenza di energia deve essete uguale alla energia emessa possiamo imporre l'uguaglianza:
+\[
+	\left[ \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \frac{\partial I_{\nu}}{\partial s}  \right] ds\cdot dA\cdot dt\cdot d\Omega\cdot  d\nu  = 
+	j _{\nu} dA \cdot ds\cdot  dt\cdot  d\Omega\cdot  d\nu
+.\] 
+Quindi se il mezzo è stazionario allora si ha che $\frac{\partial I_{\nu}}{\partial t} = 0$, quindi abbiamo che:
+\[
+	j _{\nu}= \frac{\partial I_{\nu}}{\partial s} 
+.\] 
+Il termine trovato ci dice come cambia l'intensità specifica nel mezzo. Quindi se c'è soltanto emissione ci aspettiamo che l'intensità specifica aumenti perchè in tal caso $j_{\nu}$ è positivo.
+\paragraph{Assorbimento}%
+Possiamo definire l'assorbimento in modo analogo al caso precedente, per quest'ultimo però è necessario inserire l'intensità specifica in ingresso.\\
+Infatti l'emissione può esistere in presenza o in assenza del campo di radiazione, l'assorbimento no.\\
+Il coefficiente di assorbimento vero $\alpha_{\nu}$ è definito a partire dalla quantità di energia sottratta per assorbimento:
+\[
+	dE = \alpha_{\nu} I_{\nu} dA \cdot ds\cdot dt\cdot d\Omega\cdot d\nu
+.\] 
+Questo coefficiente ha le dimensioni $\left[ m \right]^{-1}$, l'inverso di questa quantità è il cammino libero medio monocromatico nel mezzo per la radiazione.
+\\Quindi facendo i conti come in precedenza di arriva a:
+\[
+	\left[ \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \frac{\partial I_{\nu}}{\partial s}  \right] = -\alpha_{\nu} I_{\nu}
+.\] 
+Il segno è dovuto al fatto che adesso l'energia che entra è maggiore dell'energia che esce, quindi abbiamo inserito un segno negativo.\\
+Quindi la convenzione è che $\alpha_{\nu}$ è positivo \footnote{Siccome esistono anche i processi di emissione stimolata essi verranno considerati nel termine di assorbimento come correzioni di ordine maggiore di segno negativo, per questo puntualizziamo la convenzione sul segno.}. Quindi se c'è solo assorbimento vero il raggio si affievolisce nel passaggio attraverso il mezzo, come ci si potrebbe aspettare.
+\paragraph{Scattering}%
+Per quanto riguarda i pozzi si ha lo scattering per cui i fotoni uscenti sono incoerenti con la radiazione entrante, come spiegato sopra. Per questo fenomeno si introfuce un coefficiente $-\alpha_{\nu}^{\text{scatt}}$ moltiplicato per $I_{\nu}$.\\
+Per i pozzi invece abbiamo da considerare il fatto che il fotone uscente dallo scattering potrebbe essere emesso in tutte le direzioni, sarà necessario introdurre l'integrale di tutti i fotoni che si stanno muovendo lungo una qualunque direzione ($\hat{k}'$) e che vengono scatterati nella direzione del fascio $\hat{k}$ integrando su tutto l'angolo solido:
+ \[
+	 \alpha_{\nu}^{\text{scatt}}\int\phi\left( \hat{k},\hat{k}' \right) I_{\nu}\left( \hat{k}' \right) d\Omega
+.\] 
+Dove $\phi\left( \hat{k}.\hat{k}' \right)$ è la densità di probabilità che un fotone venga emesso nella direzione $\hat{k}$.
+\paragraph{Equazione finale con tutti i termini}%
+\[
+	\left[ \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \frac{\partial I_{\nu}}{\partial s}  \right] =
+	j _{\nu} 
+	- \alpha_{\nu}I_{\nu} 
+	- \alpha_{\nu}^{\text{scatt}}I_{\nu} 
+	+ \alpha_{\nu}^{\text{scatt}} \int\phi\left( \hat{k},\hat{k}' \right) I_{\nu}\left( \hat{k}' \right) d\Omega
+.\] 
+Abbiamo quindi una equazione integro differenziale molto complicata da risolvere. L'incognita da calcolare è l'intensità specifica.\\
+In realtà la faccenda è ancora più  complessa: i coefficienti di solito nemmeno si conoscono! Per tutte le specie atomiche e per tutti i livelli di ciascuna bisognerebbe calcolare le probabilità dei singoli processi.
+
