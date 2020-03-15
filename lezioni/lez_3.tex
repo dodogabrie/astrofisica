@@ -128,40 +128,40 @@ Facciamo una piccola digressione sui livelli energetici dell'idrogeno prima di c
 I livelli dell'atomo di idrogeno prendono la forma della Figura \ref{fig:-figures-serie_idrogeno-png}, possiamo notare diverse serie di energie che descrivono i livelli, ognuna avente il suo nome caratteristico.\\
 Se mettiamo per comodità lo zero dell'energia sullo stato fondamentale abbiamo che i livelli energetici seguono la serie scritta in Figura \ref{fig:-figures-serie_idrogeno-png}.\\
 Immaginiamo di voler far avvenire una transizione energetica dell'elettrone nell'idrogeno, a seconda del livello di partenza l'energia necessaria seguirà una determinata serie:
-\begin{align*}
+\begin{align}
 	n=1 \ \to \ m \ge 2 \ &\implies \ \text{ Assorbimento da Lyman}\\
 	n=2 \ \to m\ge 3 \ &\implies \ \text{ Assorbimento da Balmer} \\
 			   &\ldots
-.\end{align*}
+.\end{align}
 Il passaggio invece "dall'alto al basso" sarà l'emissione nelle varie serie.\\ 
 Per la Lyman $\alpha $ ad esempio si ha che, se si emette o si assorbe un fotone dal primo stato eccitato al fondamentale (o viceversa) si ha che:
-\begin{align*}
+\begin{align}
 	&\ce{n = 1 <-> n = 2 }  & E_{L_{\gamma \alpha }} = 10.2 \text{ eV}& &\lambda = 1216 \text{\AA}
-.\end{align*}
+.\end{align}
 Mentre per la Lymann $\beta $:
-\begin{align*}
+\begin{align}
 	&\ce{n = 1 <-> n = 3 }  & E_{L_{\gamma \beta  }} = 12.1 \text{ eV}& &\lambda = 1020 \text{\AA}
-.\end{align*}
+.\end{align}
 E così via fino al salto di Lymann
-\begin{align*}
+\begin{align}
 	&\ce{n = 1 <-> n = \infty }  & E_{L_{\infty}} = 13.6 \text{ eV}& &\lambda = 912 \text{\AA}
-.\end{align*}
+.\end{align}
 Vediamo che questa serie è tutta nell'ultravioletto, questo è importante e dobbiamo tenerlo a mente.\\
 Un'altra serie importante è la Balmer:
-\begin{align*}
+\begin{align}
 	&\ce{n = 2 <-> n = 3 }  & E_{H_{\alpha }} = 1.9 \text{ eV}& &\lambda = 6563 \text{\AA}
-.\end{align*}
+.\end{align}
 E così via fino al salto di Balmer:
-\begin{align*}
+\begin{align}
 	&\ce{n = 2 <-> n = \infty }  & E_{H_{\infty }} = 3.5 \text{ eV}& &\lambda = 3646 \text{\AA}
-.\end{align*}
+.\end{align}
 È utile notare che la serie di Balmer parte dal rosso e arriva all'ultravioletto con il salto, quindi gran parte della serie sta nel visibile, quindi quelle di Balmer sono le righe che possiamo vedere tecnicamente anche ad occhio nudo.
 \subsection{Radiazione attraverso una nube interstellare}%
 Ipotizziamo che il mezzo sia una nube di mezzo interstellare composta da idrogeno. La temperatura della nube è quella tipica di queste nubi: $T \approx 100$ K. Spariamo sulla nube due fasci aventi energie diverse:
-\begin{align*}
+\begin{align}
 	&L_{\gamma,\alpha} \\
 	&H_{\alpha}
-.\end{align*}
+.\end{align}
 Ci chiediamo adesso se la nube sarà trasparente oppure opaca ai fasci inviati.\\
 Se l'atomo di idrogeno si trova nello stato fondamentale allora il fotone dell'$H_{\alpha}$ non può essere assorbito, non ha l'energia per fare il salto, quindi tutti gli atomi di idrogeno sono invisibili per un fotone della $H_{\alpha}$. \\
 Il fotone della $L_{\gamma,\alpha}$ invece ha l'esatta energia per effettuare il salto, quindi viene assorbito. \\
@@ -259,7 +259,7 @@ Anche se abbiamo la soluzione generale resta il fatto che $s_{\nu} $ è incognit
 Se il mezzo è omogeneo per tutta la sua estensione si mantengono costanti le sue proprietà fisiche. Di conseguenza avremo che $\alpha _{\nu} $ e $j _{\nu} $ saranno uguali ovunque e la funzione sorgente sarà anch'essa una costante:
 \[
 	I_{\nu}\left( \tau_{\nu} \right) = I_{\nu}\left( 0 \right) e^{-\tau_{\nu}} + s_{\nu} e^{-\tau_{\nu}}\int_0^{\tau_{\nu}} e^{\tau_{\nu}'}d \tau_{\nu}' =
-	I_{\nu}\left( 0 \right) e^{-\tau_{\nu}} + s_{\nu}\left( 1-e^{-\tau_{\nu}} \right) 
+	I_{\nu}\left( 0 \right) e^{-\tau_{\nu}} + s_{\nu}\left( 1-e^{-\tau_{\nu}} \right) \label{eq:soluzione-mezzo-omogeneo}
 .\] 
 Possiamo iniziare ad intuire il significato fisico della funzione sorgente:
 se il nostro fascio attraversa un mezzo otticamente profondo ($\tau_{\nu}\rightarrow \infty$) allora abbiamo che $I_{\nu}\left( \tau_{\nu} \right) \rightarrow s_{\nu}$. Allora la funzione sorgente è la grandezza fisica a cui tende l'intensità della radiazione se questa attraversa una regione otticamente spessa. Quindi ciò che succede al fascio in questo caso è una totale sostituzione dei fotoni provenienti dalla sorgente con i fotoni emessi all'interno del mezzo come in Figura \ref{fig:soluzione-all-equazione-del-trasporto-per-mezzo-otticamente-spesso}

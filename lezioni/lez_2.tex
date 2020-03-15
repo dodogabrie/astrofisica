@@ -18,9 +18,9 @@ Questa $I_{\nu}\left( \bs{r}, t, \bs{k} \right)$ non descrive completamente il c
 Spesso inoltre non serve conoscere direttamente  $I_{\nu}\left( \bs{r}, t,\bs{k} \right)$, bastano altre quantità con meno informazioni. Facciamo in questa sezione alcuni esempi.
 \paragraph{Flusso}%
 Immaginiamo di volere il flusso  $F_{\mu}$ monocromatico (tra la frequenza $\nu$ e $\nu + d\nu$) attraverso la superficie $dA$ nell'unità di tempo, calcoliamo dapprima la radiazione che si propaga nella direzione $\bs{k}$ che chiamiamo $\phi$:
-\begin{align*}
+\begin{align}
 	\phi = \frac{\mbox{d} E}{\mbox{d} A \text{d}t} = \frac{I_{\nu}\cos\theta}{dA dt} dA dt d\Omega d\nu = I_{\nu} \cos\theta d\Omega d\nu
-.\end{align*}
+.\end{align}
 Per ottenere il flusso basterà integrare in tutto l'angolo solido ottenendo:
 \[
 	F_{\nu} = \int_{\Omega} I_{\nu}\cos\theta d\Omega \ \left[ \text{erg} \right]  \left[ \text{cm} \right]^{-2} \left[ s \right]^{-1} \left[ \text{Hz} \right]^{-1} 
@@ -124,10 +124,10 @@ Per farlo sfruttiamo gli angoli solidi costruiti in Figura \ref{fig:brillanza-co
 	d\Omega' = dA \frac{\hat{n}\cdot \hat{k}}{s^2}
 .\] 
 E l'energia trasportata dalla radiazione elettromagnetica nei due casi è, per definizione:
-\begin{align*}
+\begin{align}
 	&dE' = I_{\nu}\left( \hat{k}', t', \bs{r}' \right) \hat{k}'\cdot \hat{n}' dt d\Omega d\nu dA'\\
 	&dE = I_{\nu}\left( \hat{k}, t, \bs{r}\right) \hat{k}\cdot \hat{n} dt d\Omega' d\nu dA
-.\end{align*}
+.\end{align}
 Se la radiazione si propaga nel vuoto allora l'energia si deve conservare, quindi $dE = dE'$. Quindi inserendo anche gli angoli solidi ricavati sopra si ottiene un risultato importante:
 \[
 	I_{\nu}\left( \bs{r}, t, \hat{k} \right) =I_{\nu}\left( \bs{r}', t, \hat{k}' \right)
@@ -169,13 +169,13 @@ Supponiamo di avere una sorgente sferica uniformemente brillante: ogni raggio us
 \end{figure}
 \noindent
 Calcoliamo il flusso al punto P \footnote{Ovvero il flusso sotteso all'angolo solido costruito a partire da $P$ verso la sorgente}:
-\begin{align*}
+\begin{align}
 	F =& \int I\cos\theta d\Omega=\\
 	  =&\int_{0}^{2\pi}d\varphi \int_{0}^{\theta_{c}}B \cos\theta\sin\theta d\theta =\\
 	  =&2\pi B\frac{1-\cos^2\theta_{c}}{2}=\\
 	  =&\pi B \sin^2\theta_{c}=\\
 	  =&\pi B \left( \frac{R}{r} \right) ^2
-.\end{align*}
+.\end{align}
 Se abbiamo una sorgente uniformemente brillante e isotropa il flusso che esce alla superficie è dato da:
 \[
 	F = \pi B
@@ -238,10 +238,10 @@ mentre nel punto di ingresso avremo
 	dE_{\text{in}} = I_{\nu}\left( s, t, \hat{k} \right) dA dt d\Omega d\nu
 .\] 
 La differenza tra le due sarà l'energia prodotta nei processi di emissione per la conservazione di energia.
-\begin{align*}
+\begin{align}
 	dE_{\text{out}}- dE_{\text{in}} =& \left( I_{\nu}\left(s+ds,t+dt,\hat{k}\right)-I_{\nu}\left(s,t,\hat{k}\right)\right)dt\cdot dA\cdot d\Omega\cdot  d\nu = \\
 	=& \left[ \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \frac{\partial I_{\nu}}{\partial s}  \right] ds\cdot dA\cdot dt\cdot d\Omega\cdot  d\nu  \\
-.\end{align*}
+.\end{align}
 In cui abbiamo sostituito la variazione quadridimensionale di $I_{\nu}$ nell'ultimo passaggio, adesso ricordando che questa differenza di energia deve essete uguale alla energia emessa possiamo imporre l'uguaglianza:
 \[
 	\left[ \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \frac{\partial I_{\nu}}{\partial s}  \right] ds\cdot dA\cdot dt\cdot d\Omega\cdot  d\nu  = 

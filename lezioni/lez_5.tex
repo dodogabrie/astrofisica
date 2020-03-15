@@ -1,0 +1,186 @@
+\lez{5}{09-03-2020}{}
+\subsection{Atmosfera a piani paralleli.}%
+In oggetti come le stelle è spesso comodo studiare la struttura "strato per strato", il modello di atmosfere a piani paralleli consiste nel considerare una atmosfera
+\begin{itemize}
+	\item divisa a strati paralleli l'uno tra l'altro
+	\item ambienti privi di curvatura
+\end{itemize}
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{amtosfera-a-piani-paralleli}
+    \caption{\scriptsize Amtosfera a piani paralleli}
+    \label{fig:amtosfera-a-piani-paralleli}
+\end{figure}
+\noindent
+Per poter fare tale approssimazione è necessario che se chiamiamo la distanza tra uno strato e l'altro $d$ ed il raggio della stella $R$:
+\[
+	d\ll R
+.\] 
+Il vantaggio di questo modello è dovuto all'invarianza sotto rotazioni attorno a $z$, questo ci permette di semplificare moltissimo la scrittura di $I_{\nu}( \bs{r}, t, \bs{k}) $. Infatti questo dipenderà soltanto da $z$ per le coordinate spaziali, per il vettore d'onda invece avremo soltanto la dipendenza da $\theta$:
+\begin{figure}[H]
+    %This is a custom LaTeX template!
+    \centering
+    \incfig{dipendenza-da-theta-per-l-intensit-specifica}
+    \caption{\scriptsize Dipendenza da theta per l'intensità specifica}
+\end{figure}
+\noindent 
+Notiamo che con questo modello anche le quantità come Pressione, Temperatura, Densità saranno soltanto funzione di $z$.\\
+Di consequenza otterremo che $I_{\nu} = I_{\nu} ( z, \theta )$ \footnote{Assumendo implicitamente le condizioni stazionarie.}. Vedremo che sarà molto utile adottare la convenzione:
+\[
+	\cos\theta = \mu  
+.\] 
+Ipotizziamo che $s$ sia il versore relativo alla direzione di propagazione del fascio, possiamo scrivere l'equazione del trasporto come:
+\[
+	\frac{\mbox{d} I}{\mbox{d} s} = j_{\nu} - \alpha _{\nu} I_{\nu} 
+.\] 
+Tuttavia nel modello delle atmosfere a piani paralleli conviene studiare questa equazione per la propagazione lungo $z$ anzichè lungo $s$, cambiamo quindi variabile:
+\[
+	dz = ds\cos\theta 
+.\] 
+\[
+	\mu \frac{\partial I_{\nu} }{\partial z} = j _{\nu} -\alpha _{\nu} I_{\nu} 
+.\] 
+Prendiamo adesso per convenzione il centro della stella nella direzione opposta a quella indicata dall'asse $z$ e ridefiniamo la profondità ottica assumendola crescente andando verso l'interno (quindi di verso opposto a $z$).
+A questo scopo quindi definiamo $\tau _{\nu} $ come:
+\[
+	d\tau _{\nu} = -\alpha _{\nu} dz
+.\] 
+Riscriviamo allora l'equazione del trasporto come:
+\[
+	\mu \frac{\partial I_{\nu} }{\partial \tau _{\nu} } = -s_{\nu} + I_{\nu} 
+.\] 
+Visto che $s_{\nu} = j_{\nu} /\alpha _{\nu} $.\\
+Il nostro obbiettivo è adesso quello di risolvere questa equazione del trasporto nella variabile $\mu $. Moltiplichiamo a destra e sinistra per $\exp\left( -\tau _{\nu} /\mu  \right) $ e portiamo a sinistra i termini contenenti $I_{\nu}$:
+\[
+	\left( \mu \frac{\partial I_{\nu} }{\partial \tau _{\nu} } - I_{\nu}  \right) e^{-\frac{\tau_{\nu}}{\mu }} = -s_{\nu} e^{-\frac{\tau _{\nu} }{\mu }}
+.\] 
+Notiamo che il termine a sinistra è proprio una derivata:
+\[
+	\mu \frac{\mbox{d} }{\mbox{d} \tau _{\nu} } \left( I_{\nu} e^{- \frac{\tau _{\nu} }{\mu } } \right) = -s_{\nu} e^{- \frac{\tau _{\nu} }{\mu }}
+.\] 
+Integriamo da una profondità ottica $\tau _{\nu, 0}$ di partenza fino a $\tau _{\nu} $ a destra e sinistra:
+\[
+	\int_{\tau _{\nu ,0}}^{\tau _{\nu} } \mu \frac{\mbox{d} }{\mbox{d} \tau' _{\nu} } \left( I_{\nu} e^{- \frac{\tau' _{\nu} }{\mu } } \right)d\tau '_{\nu} =
+	-\int_{\tau _{\nu , 0}}^{\tau _{\nu} } s_{\nu} e^{-\frac{\tau' _{\nu} }{\mu }}d\tau _{\nu} ' 
+.\] 
+Quindi risolvendo il primo integrale:
+\[
+	\left.\mu I_{\nu} ( \tau _{\nu} ', \mu ) e^{-\frac{\tau _{\nu} '}{\mu }}\right|_{\tau _{\nu, 0}}^{\tau _{\nu} } =
+	-\int_{\tau _{\nu , 0}}^{\tau _{\nu} } s_{\nu} e^{-\frac{\tau' _{\nu} }{\mu }}d\tau _{\nu} ' \label{eq:I-APP}
+.\] 
+Possiamo adesso ditinguere due distinte situazioni che decreteranno i diversi valori di $\tau_{\nu, 0}$: 
+\begin{enumerate}
+	\item Raggi entranti nell'atmosfera dall'esterno.
+	\item Fasci uscenti dall'atmosfera dall'esterno.
+\end{enumerate}
+\paragraph{Raggi uscenti dall'atmosfera}
+Partiamo dal primo caso, questo corrisponde a 
+\[
+	0< \theta <\frac{\pi}{2} \implies 0 < \mu < 1
+.\] 
+Quindi siamo in una condizione in cui si passa da una zona otticamente spessa (il centro della stella) ad una zona otticamente sottile, per questo nel caso corrente avremo $\tau _{\nu ,0}= \infty$. Questo semplifica molto la soluzione all'equazione del trasporto, infatti resta:
+\[
+	I_{\nu} ( \tau _{\nu} ,\mu ) = - \int_{\infty}^{\tau _{\nu} } \frac{s_{\nu} ( \tau _{\nu} ') }{\mu } e^{- \frac{\tau _{\nu} ' - \tau _{\nu} }{\mu }}d\tau _{\nu} '
+.\] 
+\paragraph{Raggi entranti.}
+Per considerare i raggi entranti in atmosfera adottiamo la convenzione per cui $\tau _{\nu} = 0$ sul "bordo esterno" di quest'ultima, con la consapevolezza che non c'è effettivamente un bordo esterno.\\
+Secondo la nostra notazione siamo nell'intevallo:
+\[
+	\frac{\pi}{2}< \theta < \pi \implies -1 < \mu < 0 
+.\] 
+Notiamo che se esternamente niente irraggia allora per i raggi entranti avremo che $I_{\nu} ( \tau _{\nu} = 0) = 0$, questo è il caso ad esempio di una stella solitaria.\\
+
+Possiamo adesso fare l'assunzione di essere in una atmosfera in LTE, in questo modo pur non conoscendo il profilo di temperatura della stella $T( \tau _{\nu} ) $ siamo in grado di ricavare molte utili informazioni su quest'ultima.\\
+Inanzitutto con l'equilibrio termodinamico locale abbiamo per la legge di Kirchhoff
+\[
+	s_{\nu} ( \tau _{\nu} ) = B_{\nu} ( \tau _{\nu} ) 
+.\] 
+Quindi possiamo cercare di ricavare $I_{\nu} ( \tau _{\nu}, \mu  ) $ risolvendo l'integrale della \ref{eq:I-APP} nelle varie situazioni.\\
+All'interno di tale formula abbiamo un integrale della funzione $s( \tau _{\nu} ') $, con  $\tau _{\nu} '$ che può variare in un intervallo tale da farci venire dei dubbi sulla corretta applicabilità della LTE. Per correggere questo fatto possiamo considerare la correzione al primo ordine per $s( \tau _{\nu} ) $:
+\[
+	s( \tau _{\nu}' ) \approx B_{\nu} ( \tau _{\nu} ) + ( \tau _{\nu} ' - \tau _{\nu} ) \frac{\mbox{d} B_{\nu} }{\mbox{d} \tau _{\nu} } + \ldots
+.\] 
+Ipotizziamo quindi adesso che sia sufficiente la prima correzione e vediamo cosa succede nel caso di \texttt{Raggi uscenti}.
+\begin{align}
+	I_{\nu} ( \tau _{\nu} , \mu ) =&  \int_{\infty}^{\tau _{\nu} } \left[ B_{\nu} ( \tau _{\nu} ) + \left( \tau _{\nu} ' - \tau _{\nu}   \right) \frac{\mbox{d} B_{\nu} }{\mbox{d} \tau _{\nu} } \right] e^{-\frac{\tau _{\nu} ' -\tau _{\nu} }{\mu }} d\tau _{\nu} ' = \\
+	= & B_{\nu} ( \tau _{\nu} ) \int_{\infty}^{\tau _{\nu} } e^{-\frac{\tau _{\nu} ' -\tau _{\nu} }{\mu }} \frac{d\tau _{\nu} '}{\mu } -
+	\frac{\mbox{d} B_{\nu} }{\mbox{d} \tau _{\nu} } \int_{\infty}^{\tau _{\nu} }  \left( \tau _{\nu} ' - \tau _{\nu}  \right) e^{-\frac{\tau _{\nu} ' -\tau _{\nu} }{\mu }} \frac{d\tau _{\nu} '}{\mu }
+.\end{align}
+Risolvendo i due integrali si ottiene:
+\[
+	I_{\nu} ( \tau _{\nu} , \mu ) = B_{\nu} ( \tau _{\nu} ) + \mu \frac{\mbox{d} B_{\nu} }{\mbox{d} \tau _{\nu} } 
+.\] 
+Otteniamo così una brillanza che è frutto di due contributi: il primo che è quello di corpo nero a noi già noto, il secondo è una correzione anisotropa che dipende dalla direzione di propagazione.
+Questo risultato ci dice che nel caso in cui vi è un gradiente di temperatura vi sarà anche una variazione di $B_{\nu} ( \tau _{\nu} ) $.
+\[
+	\frac{\mbox{d} B_{\nu} }{\mbox{d} \tau _{\nu} } \neq 0 \leftrightarrow \nabla T \neq 0
+.\] 
+Vediamo adesso se le grandezze introdotte (alcune delle quali erano momenti di vario ordine) sono utili alla soluzione della nostra atmosfera. Ricordiamo che:
+\[
+	u_{\nu} = \int \frac{I_{\nu} }{c}d\Omega  = \frac{2p}{c}\int_{-1}^{1} I_{\nu} d\mu  
+.\] 
+\[
+	F_{\nu} = 2\pi \int_{-1}^{1} I_{\nu} \mu d\mu  
+.\] 
+\[
+	P_{\nu} = \int \frac{I_{\nu} }{c}\cos^2\theta d\Omega = \frac{2\pi}{c}\int_{-1}^{1} I_{\nu} \mu ^2d\mu  
+.\] 
+\[
+	J_{\nu} = \int \frac{I_{\nu} }{4\pi}d\Omega = \frac{1}{2}\int_{-1}^{1} I_{\nu} d\mu  \implies u_{\nu} = \frac{4\pi}{c}J_{\nu} 
+.\] 
+Cercheremo di sfruttare  queste quantità per trarne informazioni sul sistema. Partiamo dalla densità di energia:
+\begin{align}
+	u_{\nu} =& \frac{2\pi}{c}\int_{-1}^{1} I_{\nu} d_{\nu} =\\
+	=& \frac{2\pi}{c}\int_{-1}^{1}B_{\nu} ( \tau _{\nu} )d\mu  + \int_{-1}^{1}\mu \frac{\mbox{d} B_{\nu} }{\mbox{d} \tau _{\nu} } d\mu =\\
+	=& \frac{2\pi}{c}\left[ B_{\nu} ( \tau _{\nu} ) \int_{-1}^{1} d\mu + \frac{\mbox{d} B_{\nu} }{\mbox{d} \tau _{\nu} } \int_{-1}^{1} \mu d\mu   \right] =\\
+	=& \frac{4\pi}{c}B_{\nu} ( \tau _{\nu} ) 
+\end{align}
+Si scopre così che la densità di energia rimane la stessa del caso di corpo nero nonostante la correzione.\\
+Proviamo ad effettuare il conto anche per il flusso:
+\[
+	F_{\nu} = 2\pi \int_{-1}^{1} I_{\nu} \mu d\mu = \ldots = \frac{4\pi}{3}\frac{\mbox{d} B_{\nu} }{\mbox{d} \tau _{\nu} } 
+.\] 
+Si scopre quindi che il flusso non è nullo come nel caso di corpo nero, bensì l'anisotropia permette di avere un flusso uscente proporzionale alla variazione di $B_{\nu} $ assente nel caso isotropo.
+\[
+	F \neq 0 \leftrightarrow \nabla T \neq 0
+.\]
+Facendo il calcolo anche per $P_{\nu} $ si ottiene:
+\[
+	P_{\nu} = \frac{4\pi}{3c}B_{\nu} ( \tau _{\nu} ) 
+.\] 
+Coerente con la nota formula: $P_{\nu} = u_{\nu} /3$.
+\subsection{Valutazione della anisotropia.}%
+Possiamo valutare l'anisotropia della nostra sorgente nel seguente modo:
+\[
+	\frac{\frac{\mbox{d} B_{\nu} }{\mbox{d} \tau _{\nu} } }{B_{\nu} ( \tau _{\nu} ) } = \frac{\frac{3F_{\nu} }{4\pi}}{\frac{cu_{\nu} }{4\pi}}= \frac{3}{c}\frac{F_{\nu} }{u_{\nu} }
+.\] 
+Visto che vogliamo soltanto una stima qualitativa anzichè valutare le quantità monocromatiche valutiamo quelle integrate sulla frequenza:
+\[
+	\frac{\frac{\mbox{d} B_{\nu} }{\mbox{d} \tau _{\nu} } }{B_{\nu} ( \tau _{\nu} ) } \approx \frac{3F}{c u} = \frac{3}{c} \frac{\sigma T_{\text{eff}}^{4}}{aT^{4}} = \frac{3}{4}\left( \frac{T_{\text{eff}}}{T} \right) ^{4}
+.\] 
+Quindi se andando verso l'interno la temperatura $T$ aumenta mi aspetto che il contributo anisotropo sia sempre minore. Di conseguenza il nostro sviluppo di $s_{\nu} $ perde di significato se andiamo in strati atmosferici tali che $T_{\text{eff}} > T$.
+\subsection{Atmosfera grigia}%
+Anche se stiamo facendo passi avanti non abbiamo ancora trovato il profilo di temperatura, in genere questa è una operazione molto complicata, ci sono corsi appositi. \\
+Il caso che affrontiamo noi è quello semplificato di Atmosfera Grigia:
+\begin{defn}[Atmosfera grigia]{def:Atmosfera grigia}
+	Ambiente avente $\alpha _{\nu} $ costante per ogni frequenza.
+\end{defn}
+In questo modo $\tau _{\nu} $ non dipende anch'esso dalla frequenza. Possiamo allora integrare tutte le quantità studiate nella frequenza senza problemi.\\
+L'equazione del trasporto diventa:
+\[
+	\mu \frac{\mbox{d} I}{\mbox{d} \tau } = - s + I \label{eq:trasport-parallel-plane}
+.\] 
+Possiamo adesso trovare i momenti dell'equazione del trasporto. Moltiplichiamo a destra e sinistra per $\frac{1}{2}$ e integriamo in $\mu $ per l'ordine zero:
+\[
+	\frac{1}{2}\int_{-1}^{1} \mu \frac{\partial I}{\partial \tau } d\mu  = \frac{1}{2} \int_{-1}^{1} sd\mu + \frac{1}{2}\int_{-1}^{1} I d\mu  
+.\] 
+Portando fuori la derivata dal primo integrale, ricordando la definizione di $J$ e considerando che $s$ non dipende dall'angolo di emissione si ottiene:
+\[
+	\frac{1}{4\pi} \frac{\mbox{d} F}{\mbox{d} \tau }  = - s + J \label{eq:flux_0}
+.\] 
+Se ripetiamo l'operazione con il momento di ordine 1, moltiplicando ambo i membri per $\frac{2\pi}{c} \mu $ si ottiene:
+\[
+	\frac{\mbox{d} P}{\mbox{d} \tau } = \frac{F}{c}
+.\] 
+Anche questo è un risultato utile, infatti il flusso è non nullo soltanto se vi è una variazione della pressione radiativa.
