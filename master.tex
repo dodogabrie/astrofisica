@@ -24,6 +24,10 @@
 }
 \newcommand{\angstrom}{\mbox{\normalfont\AA}}
 \newcommand{\bs}{\boldsymbol}
+\renewcommand{\[}{\begin{equation}}
+\renewcommand{\]}{\end{equation}}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\counterwithin*{equation}{section}
 
 % title setup
 \usepackage{xifthen}
@@ -55,4 +59,7 @@
 \input{lezioni/lez_2.tex}
 \input{lezioni/lez_3.tex}
 \input{lezioni/lez_4.tex}
+\input{lezioni/lez_5.tex}
+\input{lezioni/lez_6.tex}
+\input{lezioni/lez_7.tex}
 \end{document}
