@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.3.13)  16 MAR 2020 15:49
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.14)  13 MAR 2020 23:01
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -976,12 +980,21 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
+<<<<<<< HEAD
 LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+=======
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
@@ -1004,13 +1017,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [2
 
 ] (./figures/diffrazione-da-una-fenditura.pdf_tex
+<<<<<<< HEAD
 <./figures/diffrazione-da-una-fenditura.pdf, id=198, page=1, 682.86612pt x 227.62204pt>
+=======
+<./figures/diffrazione-da-una-fenditura.pdf, id=188, page=1, 682.86612pt x 227.62204pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: ./figures/diffrazione-da-una-fenditura.pdf Graphic file (type pdf)
 <use ./figures/diffrazione-da-una-fenditura.pdf, page 1>
 Package pdftex.def Info: ./figures/diffrazione-da-una-fenditura.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 161.23419pt.
 )
+<<<<<<< HEAD
 <figures/diffraction.png, id=199, 220.825pt x 338.26375pt>
+=======
+<figures/diffraction.png, id=189, 220.825pt x 338.26375pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: figures/diffraction.png Graphic file (type png)
 <use figures/diffraction.png>
 Package pdftex.def Info: figures/diffraction.png  used on input line 52.
@@ -1021,17 +1042,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--65
  []
 
 [3 <./figures/diffrazione-da-una-fenditura.pdf> <./figures/diffraction.png>]
+<<<<<<< HEAD
 <figures/seeing.png, id=215, 803.0pt x 690.58pt>
+=======
+<figures/seeing.png, id=205, 803.0pt x 690.58pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: figures/seeing.png Graphic file (type png)
 <use figures/seeing.png>
 Package pdftex.def Info: figures/seeing.png  used on input line 71.
 (pdftex.def)             Requested size: 145.11053pt x 124.79428pt.
+<<<<<<< HEAD
 <figures/seeing-effect.png, id=217, 298.86656pt x 302.63063pt>
+=======
+<figures/seeing-effect.png, id=207, 298.86656pt x 302.63063pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: figures/seeing-effect.png Graphic file (type png)
 <use figures/seeing-effect.png>
 Package pdftex.def Info: figures/seeing-effect.png  used on input line 72.
 (pdftex.def)             Requested size: 96.73788pt x 97.95665pt.
+<<<<<<< HEAD
 <figures/buconeroimmagine.jpg, id=218, 2055.68pt x 1541.76pt>
+=======
+<figures/buconeroimmagine.jpg, id=208, 2055.68pt x 1541.76pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: figures/buconeroimmagine.jpg Graphic file (type jpg)
 <use figures/buconeroimmagine.jpg>
 Package pdftex.def Info: figures/buconeroimmagine.jpg  used on input line 90.
@@ -1042,13 +1075,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
  []
 
 [4 <./figures/seeing.png> <./figures/seeing-effect.png (PNG copy)> <./figures/buconeroimmagine.jpg>] (./figures/metodo-della-parallasse.pdf_tex
+<<<<<<< HEAD
 <./figures/metodo-della-parallasse.pdf, id=230, page=1, 682.86612pt x 227.62204pt>
+=======
+<./figures/metodo-della-parallasse.pdf, id=220, page=1, 682.86612pt x 227.62204pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: ./figures/metodo-della-parallasse.pdf Graphic file (type pdf)
 <use ./figures/metodo-della-parallasse.pdf, page 1>
 Package pdftex.def Info: ./figures/metodo-della-parallasse.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 161.23419pt.
 )
+<<<<<<< HEAD
 <figures/vialattea.jpeg, id=232, 567.11874pt x 533.995pt>
+=======
+<figures/vialattea.jpeg, id=222, 567.11874pt x 533.995pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: figures/vialattea.jpeg Graphic file (type jpg)
 <use figures/vialattea.jpeg>
 Package pdftex.def Info: figures/vialattea.jpeg  used on input line 135.
@@ -1059,7 +1100,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--138
  []
 
 [5 <./figures/metodo-della-parallasse.pdf>] (./figures/scale-dell'universo.pdf_tex
+<<<<<<< HEAD
 <./figures/scale-dell'universo.pdf, id=248, page=1, 711.31892pt x 256.0748pt>
+=======
+<./figures/scale-dell'universo.pdf, id=238, page=1, 711.31892pt x 256.0748pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: ./figures/scale-dell'universo.pdf Graphic file (type pdf)
 <use ./figures/scale-dell'universo.pdf, page 1>
 Package pdftex.def Info: ./figures/scale-dell'universo.pdf , page1 used on input line 56.
@@ -1070,13 +1115,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--151
  []
 
 (./figures/propagazione-della-radiazione.pdf_tex
+<<<<<<< HEAD
 <./figures/propagazione-della-radiazione.pdf, id=249, page=1, 682.86612pt x 199.1693pt>
+=======
+<./figures/propagazione-della-radiazione.pdf, id=239, page=1, 682.86612pt x 199.1693pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: ./figures/propagazione-della-radiazione.pdf Graphic file (type pdf)
 <use ./figures/propagazione-della-radiazione.pdf, page 1>
 Package pdftex.def Info: ./figures/propagazione-della-radiazione.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 141.07991pt.
 ) [6 <./figures/vialattea.jpeg> <./figures/scale-dell'universo.pdf>] (./figures/figura-per-introdurre-lintensit-specifica.pdf_tex
+<<<<<<< HEAD
 <./figures/figura-per-introdurre-lintensit-specifica.pdf, id=269, page=1, 682.86612pt x 128.0374pt>
+=======
+<./figures/figura-per-introdurre-lintensit-specifica.pdf, id=259, page=1, 682.86612pt x 128.0374pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: ./figures/figura-per-introdurre-lintensit-specifica.pdf Graphic file (type pdf)
 <use ./figures/figura-per-introdurre-lintensit-specifica.pdf, page 1>
 Package pdftex.def Info: ./figures/figura-per-introdurre-lintensit-specifica.pdf , page1 used on input line 56.
@@ -1131,7 +1184,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--105
  []
 
 (./figures/brillanza-costante.pdf_tex
+<<<<<<< HEAD
 <./figures/brillanza-costante.pdf, id=341, page=1, 664.65875pt x 114.26334pt>
+=======
+<./figures/brillanza-costante.pdf, id=331, page=1, 664.65875pt x 114.26334pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: ./figures/brillanza-costante.pdf Graphic file (type pdf)
 <use ./figures/brillanza-costante.pdf, page 1>
 Package pdftex.def Info: ./figures/brillanza-costante.pdf , page1 used on input line 56.
@@ -1142,7 +1199,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--156
  []
 
 (./figures/esempio-su-conservazione-della-brillanza.pdf_tex
+<<<<<<< HEAD
 <./figures/esempio-su-conservazione-della-brillanza.pdf, id=371, page=1, 682.86612pt x 113.81102pt>
+=======
+<./figures/esempio-su-conservazione-della-brillanza.pdf, id=361, page=1, 682.86612pt x 113.81102pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: ./figures/esempio-su-conservazione-della-brillanza.pdf Graphic file (type pdf)
 <use ./figures/esempio-su-conservazione-della-brillanza.pdf, page 1>
 Package pdftex.def Info: ./figures/esempio-su-conservazione-della-brillanza.pdf , page1 used on input line 56.
@@ -1153,12 +1214,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--184
  []
 
 (./figures/radiazione-in-un-mezzo.pdf_tex
+<<<<<<< HEAD
 <./figures/radiazione-in-un-mezzo.pdf, id=387, page=1, 686.6738pt x 111.61682pt>
+=======
+<./figures/radiazione-in-un-mezzo.pdf, id=377, page=1, 686.6738pt x 111.61682pt>
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
 File: ./figures/radiazione-in-un-mezzo.pdf Graphic file (type pdf)
 <use ./figures/radiazione-in-un-mezzo.pdf, page 1>
 Package pdftex.def Info: ./figures/radiazione-in-un-mezzo.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 78.62514pt.
 )
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 203--209
 
  []
@@ -1403,3 +1469,6 @@ PDF statistics:
  416 named destinations out of 1000 (max. 500000)
  399 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+=======
+Underfull \hbox (badness 10000) in paragraph at li
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6

@@ -400,6 +400,7 @@ INPUT ./figures/dimostrazione-sigma-nu.pdf
 INPUT figures/serie_idrogeno.png
 INPUT ./figures/serie_idrogeno.png
 INPUT ./figures/serie_idrogeno.png
+<<<<<<< HEAD
 INPUT figures/veil-nebula.png
 INPUT ./figures/veil-nebula.png
 INPUT ./figures/veil-nebula.png
@@ -479,3 +480,5 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
+=======
+>>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
