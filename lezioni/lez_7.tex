@@ -1,178 +1,320 @@
 \lez{7}{16-03-2020}{}
-Osservare una riga ad una determinata lunghezza d'onda ci permette di identificare l'elemento che emette a quella lunghezza d'onda e inoltre ci da una informazione sullo stato di ionizzazione dell'atomo: atomi dello stesso elemento in stati diversi di ionizzazione emette a diverse lunghezze d'onda. \\
-Il popolamento dei livelli energetici associati a quella transizione dipenerà dalla temperatura e vedremo anche dalla densità.\\
-Ovviamente parliamo delle condizioni fisiche della fotosfera, le altre zone non di vedono. \\
-UN'altra cosa importante è la larghezza della riga:\\
-fig\\
-Vediamo che fuori dalla riga c'è il continuo. Dobbiamo trovare un parametro che ci dia la quantità di energia sottratta dalla riga al continuo adiacente.
+\subsection{Studio delle righe di assorbimento}
+\label{subsec:Studio delle righe di assorbimento}
+\subsubsection{Informazioni che ci arrivano dalle righe.}
+\label{subsubsec:Informazioni che ci arrivano dalle righe.}
+L'identificazione delle righe negli spettri stellari è molto importante, infatti dalla conoscenza della lunghezza d'onda centrale della riga possiamo conoscere:
+\begin{itemize}
+	\item L'atomo che le ha causate assorbendo fotoni.
+	\item Lo stato energetico dell'atomo (perchè una data lunghezza d'onda corrisponde ad una determinata transizione energetica).
+	\item Lo stato di ionizzazione dell'atomo: atomi dello stesso elemento chimico ma in stati di ionizzazione differenti hanno livelli energetici differenti e quindi tranzizioni differenti.
+	\item La temperatura dell'atmosfera di quell'elemento: il popolamento dei livelli energetici associati alla transizione incriminata dipenderà dalla temperatura.
+	\item La densità di quell'elemento nella atmosfera.
+\end{itemize}
+Naturalmente le ultime due informazioni citate, che riguardano la condizione fisica della atmosfera in cui l'atomo è immerso, riguardano esclusivamente la fotosfera della stella se facciamo osservazione nel visibile.\\
+Un'altro parametro che può darci molte informazioni è la larghezza della riga, vediamo un esempio di riga nello spettro per avere un pò di nomenclatura di riferimento:
+\begin{figure}[H]
+    \centering
+    \incfig{riga-di-assorbimento-generica-nello-spettro}
+    \caption{Riga di assorbimento generica nello spettro.}
+    \label{fig:riga-di-assorbimento-generica-nello-spettro}
+\end{figure}
+\noindent
+\subsubsection{Allargamento di una riga.}
+\label{subsubsec:Allargamento di una riga.}
+Dobbiamo trovare un indicatore che misuri l'intensità della riga rispetto al continuo adiacente. La quantità di energia che viene sottratta al continuo in questo caso è l'area della conca in Figura \ref{fig:riga-di-assorbimento-generica-nello-spettro}. Questa area è chiamata area equivalente:
+\begin{defn}[Area equivalente di una riga $A( \lambda ) $]{def:Area equivalente di una riga}
+	Data una riga come in Figura \ref{fig:riga-di-assorbimento-generica-nello-spettro} l'area equivalente della riga è definita come:
 \[
-	A( \lambda_0) + \int_{\lambda_1}^{\lambda_2} \left( I_{c}-I_{\lambda } \right) d\lambda  
-.\] 
-Se la riga è troppo sottile ci aspettiamo che sia possibile che non si possa risolvere con lo strumento, analogamente se abbiamo righe troppo larghe è possibile che non sia possibile distinguerle dal ccontinuo.\\
-Larghezzza equivalente:
-\[
+	A( \lambda_0) = \int_{\lambda_1}^{\lambda_2} \left( I_{c}-I_{\lambda} \right) d\lambda  
+.\]
+\end{defn}
+Questo parametro è molto importante, infatti decide se saremo in grado di studiare tale riga oppure no: se la riga è troppo sottile può succedere che non si possa risolvere con lo strumento utilizzato per la misura, analogamente se abbiamo righe troppo larghe potremmo non essere in grado di distinguerle dal continuo.\\
+Possiamo allora mettere in evidenza quest'ultima affermazione definendo il parametro di larghezza equivalente come:
+\begin{defn}[Larghezza equivalente $W( \lambda ) $]{def:Larghezza equivalente}
+	La larghezza equivalente è l'Area equivalente normalizzata sull'intensità del continuo:
+	\[
 	W( \lambda_0) = \frac{A( \lambda_0) }{I_{c}}= 
-	\int_{\lambda_1}^{\lambda_2} \left( 1 - \frac{I\lambda }{I_{c}}\right)d\lambda 
+	\int_{\lambda_1}^{\lambda_2} \left( 1 - \frac{I_{\lambda} }{I_{c}}\right)d\lambda 
 .\] 
-È equivalente alla larghezza che avrebbe una riga di profilo rettangolare di profondità unitaria e larghezza equivalente alla nostra.\\
-In una atmosfera normale avremo che gli atomi avranno una distribuzione di velocità dovuta alla temperatura: effetto doppler
+\end{defn}
+\subsubsection{Spessore minimmo di una riga}
+\label{subsubsec:Spessore minimmo di una riga}
 Il minimo spessore che una riga può avere è quella naturale, quella dovuta al decadimento spontaneo.\\
-Sappiamo che la prob. che un atomo del livello due di disecccitarsi per andare al primolivello è data dal ccoeff. di eninstein
+Prendiamo un atomo a due livelli, la probabilità che l'atomo si disecciti dal secondo livello al primo spontaneamente è proporzionale al coefficiente di Einstein A$_{2,1}$. Quindi la vita media sarà:
 \[
-	\Delta t = \frac{1}{A_{21}} 
+	\Delta t = \frac{1}{A_{2,1}} 
 .\] 
+Ma dal principio di indeterminazione sappiamo che:
 \[
 	\Delta E\Delta t \ge \hbar
 .\] 
+Essendo $\Delta t$ finito ci dobbiamo aspettare un allargamento della riga che possiamo quantificare come:
 \[
 	\Delta \nu = \frac{\gamma _{\text{rad}}}{2\pi}
 .\] 
-con $\gamma _{\text{rad}}= \frac{1}{\Delta t}$. Inoltre si ha che:
+con $\gamma _{\text{rad}}= 1 /\Delta t$, è chiamato Radiative Dumping Costant (RCT).\\
+Nello specifico abbiamo che il profilo della emissione spontanea è dato da una Lorentziana:
 \[
 	\phi ( \mu ) = \frac{\gamma _{\text{rad}}}{2\pi}\frac{1}{\left( \mu -\mu_0 \right) ^2 + \left( \frac{\gamma _{\text{rad}}}{4\pi} \right) ^2}
 .\] 
+Per atomi con più livelli di eccitazione il parametro RCT si generalizza nel seguente modo:
 \[
 	\gamma _{\text{rad}} = \sum_{l}^{\infty} A_{kl} \quad k > l
 .\] 
-Tipicamente parliamo di grandezze dell'ordine del millesimo dell' \AA , per gli spettri di origine astronomica è tipicamente trascurabile perché nelle stelle abbiamo altri processi aventi un importanza molto maggiore nell'allargamento delle righe. \\
-Abbiamo infatti un effetto collisionale: l'atomo che produce lel transizioni colliderà con gli atomi che gli stanno attorno, in tale collisione i livelli energetici dell'atomo verranno perturbati modificando anche la frequenza di emissione. I diversi atomi che producono la riga verranno perturbati in modo diverso gli uni dagli altri: allargamento per pressione.\\
-Questo sarà tanto più importante quanto più sarà grande la pressione della stella. \\
-Poi se sono presenti campi elettrici e magnetici anche questi produrranno degli allargamenti. Questo è il caso in cui la stella ruota su se stessa abbiamo un allargamento rotazionale (legato sempre al dopple).\\
-Vediamo adesso quello dovuto all'agit. termica.\\
-Gli atomi nell'atmosfera avranno quindi una distribuzione della velocità, a noi interessa com'è distribuita la componente di velocità lungo la linea di vista, principalmente ci concentriamo su quella radiale. Questa sarà distribuita nel seguente modo:
+Le larghezze naturale delle righe tipicamente è dell'ordine di del millesimo dell' \AA. Tuttavia quando si guarda uno spettro la larghezza che otteniamo è in genere molto maggiore, di fatto la larghezza naturale è trascurabile.\\
+Il motivo è che nelle atmosfere delle stelle ci sono altri processi di allargamento della riga aventi un contributo decisamente più importante dell'allargamento naturale.
+\subsection{Processi di allargamento delle righe}
+\label{subsubsec:Processi di allargamento delle righe}
+I principali processi di allargamento dello spettro delle righe sono:
+\begin{itemize}
+	\item Allargamento termico.
+	\item Allargamento collisionale (detto allargamento per pressione), questo cresce con l'aumento della densità dell'atmosfera.
+	\item Allargamento per via di campi elettrici o magnetici.
+	\item Allargamento rotazionale, questo per via del fatto che non risolviamo la stella e vi è comunque un effetto Doppler. 
+\end{itemize}
+\subsubsection{Allargamento termico.}
+\label{subsubsec:Allargamento termico.}
+Concentriamoci solo sulla velocità radiale degli atomi $v_r$: quella che sta sulla linea  della direzione di vista. La distribuzione di questa all'equilibrio termodinamico locale sarà:
 \[
-	dn( v_{r}) = n\sqrt{\frac{m}{2\pikT}} \exp\left( -\frac{m v_{r}^2}{2kT} \right) dv_r
+	dn( v_{r}) = n\sqrt{\frac{m}{2\pi kT}} 
+	\exp\left( -\frac{m v_{r}^2}{2kT} \right) dv_r
 .\] 
-con $n$ è il numero di atomi per unità di volume dell'elemento interessato, $m$ la sua massa. L'effetto D è dato da:
+con $n$ è il numero di atomi per unità di volume dell'elemento interessato, $m$ la sua massa. Applichiamo adesso l'effetto Doppler alla frequenza:
 \[
-	\nu = \nu_0\left( 1 = \frac{v_r}{c} \right) 
+	\nu = \nu_0\left( 1 + \frac{v_r}{c} \right) 
 .\] 
-È quella non relativistica, perché con temperature dell'ordine di 10000 K si ha, ad esempio per l'idrogeno, una velocità di circa 
+Abbiamo adottato la formula non relativistica dell'effetto Doppler, questo perchè alle temperature stellari gli atomi non si muovono abbastanza veloce da esser considerati relativistici. 
+Facciamo un esempio: per l'idrogeno a $10000$ K la velocità termica abbiamo:
 \[
-	v_{\text{th}}= \sqrt{\frac{2kT}{m}} \sim 13 \text{km}/\text{s}
+	v_{\text{th}}
+	=
+	\sqrt{\frac{2kT}{m}} 
+	\sim  \sqrt{\frac{ 2 \text{ eV}}{1 \text{ GeV/}c^2}} 
+	\sim \sqrt{20}\cdot 10^{-4}c 
+	\sim  13 \text{km}/\text{s}
 .\] 
-Per come l'abbiamo scritta si ha un blue shift quando $v_r > 0$. 
+Osserviamo che per come abbiamo scritto la legge dell'effetto Doppler si ha un blue shift quando $v_r > 0$. Lo shift sarà dato da:
 \[
-	\Delta \nu = v_0 \frac{v_r}{c}
+	\Delta \nu 
+	=
+	\nu_0 \frac{v_r}{c}
 .\] 
-A questa corrisponderà una distrib in frequenza:
+Utilizziamo quest'ultima per ricavarci la distribuzione in frequenza. Procediamo con il cambio di variabile:
 \[
-	v_r - \frac{c}{\nu_0}\left( \nu - \nu_0  \right) \implies
+	v_r = \frac{c}{\nu_0}\left( \nu - \nu_0  \right) 
+	\implies
 	dv_r = \frac{c}{\nu_0}d\nu 
 .\] 
-quidni:
+Sostituendo quindi per la distribuzione in frequenza:
 \[
 	dn(\nu ) = n \sqrt{\frac{m}{2\pi kT}} \exp\left( - \frac{mc^2}{2\nu_0^2kT}\left( \nu -\nu_0 \right) ^2 \right) \frac{c}{\nu_0}d\nu 
 .\] 
-Alora il profilo:
+Quindi il profilo di riga diventerà, a causa della agitazione termica:
 \[
-	\phi ( \nu ) = \frac{1}{\Delta \nu_D\sqrt{\pi} }\exp\left( -\frac{\left( \nu -\nu_0 \right) ^2}{\Delta \nu_D} \right) 
+	\phi ( \nu ) = \frac{1}{\Delta \nu_D\sqrt{\pi} }\exp\left( -\frac{\left( \nu -\nu_0 \right) ^2}{\Delta \nu_D^2} \right) 
 .\] 
 Con 
 \[
-	\nu_D = \frac{\nu_0}{c}\sqrt{\frac{2kT}{m}} 
+	\Delta \nu_D = \frac{\nu_0}{c}\sqrt{\frac{2kT}{m}} 
 .\] 
-Osserviamo anche che se abbiamo una atmosfera con dei moti convettivi oltre alla agitazione termica gli atomi si sposteranno anche a causa della turbolenza, avremo un efffetto D anche per questo. Anche questo produce un allargamento dipendente dalla velocità turbolenta anziché dalla temperatura.\\
-Si definisce quindi un allargamento effettivo ccome:
+Questo è un profilo di tipo Gaussiano con $\Delta \nu _D$ che è detto allargamento Doppler. Questa larghezza cresce al crescere di $T$ e decresce al crescere di $m$.\\
+A causa dei moti convettivi abbiamo anche un allargamento di riga per turbolenza, anche questo tipo di allargamento avrà un profilo Gaussiano, soltanto che non sarà dipendente dalla temperatura bensì dalla velocità di turbolenza.\\
+Per tenerne di conto si definisce la seguente quantità 
 \[
-	\Delta \nu_D = \frac{\nu_0}{c}\sqrt{\frac{2kT}{m} = v_\text{turb.}^2} 
+	\Delta \nu_D = \frac{\nu_0}{c}\sqrt{\frac{2kT}{m} + v_\text{turb.}^2} 
 .\] 
+Il profilo della riga viene spesso espresso in termini di lunghezza d'oonda, possiamo farlo effettuando il canbio di variabile, basta notare che:
 \[
 	\frac{\lambda - \lambda_0}{\lambda_0} \approx - \frac{\nu - \nu_0}{\nu_0}
 .\] 
-allora 
+allora si ottiene facilmente che:
 \[
-	\phi = \sqrt{\frac{mc^2}{2\pi kT\lambda_0^2}} \exp\left( - \frac{mc^2\left( \lambda -\lambda_0 \right) }{2kT \lambda_0^2} \right) 
+	\phi 
+	=
+	\sqrt{\frac{mc^2}{2\pi kT\lambda_0^2}} 
+	\exp\left( - 
+	\frac{mc^2\left( \lambda -\lambda_0 \right)s^2 }{2kT \lambda_0^2} 
+	\right) 
 .\] 
+Possiamo definire anche le quantità più importanti di questo profilo:
 \[
-	\sigma_D = \sqrt{\frac{kT}{mc^2}} 
+	\sigma_\lambda  = \sqrt{\frac{kT}{mc^2}} \lambda_0
 .\] 
 \[
 	FWHM = \sqrt{\frac{8kT \ln 2}{mc^2}} \lambda_0 
 .\] 
-Nel caso della collisioni si ha che l'allargamento dipende dalla frequenza delle collisioni
+\subsubsection{Allargamento per collisioni.}
+\label{subsubsec:Allargamento per collisioni.}
+In questo caso l'allargamento dipende dalla frequenza con cui avvengono le collisioni:
 \[
 	\nu _{\text{coll}} = n \sigma _{\text{coll}} v_{\text{coll}}
 .\] 
-Il profilo prodotto è Lorentziano, si introduce una larghezza effettiva $\Gamma = \gamma _{\text{rad}} + 2 \nu _{\text{coll}}$, quindi:
+Il profilo che si ottiene dalle collisioni è di tipo Lorentziano (come per l'emissione spontanea), si introduce quindi una una larghezza effettiva $\Gamma = \gamma _{\text{rad}} + 2 \nu _{\text{coll}}$, quindi:
 \[
 	\phi ( \nu ) = \frac{\Gamma }{4\pi^2}\frac{1}{\left( \nu -\nu_0 \right) + \left( \frac{\Gamma }{4\pi} \right) ^2}
 .\] 
-Di solito questi effetti si sorvappongono (gaussiano e lorentziano), comunamentre la zona centrale è dominata dall'effetto doppler, nelle code invece prevale la Lorentziana. \\
-Ci dobbiamo aspettare che nelle atmosfere rarefatte l'allargamento collisionale sia piccolo, e viceversa nelle atmosfere dense. Con questo modo si distinguono le stelle giganti dalle stelle nane!\\
-Il processo dovuto ai campi magnetici in atmosfera invece è dominato dal fatto che tali campio non sono mai ordinati, quindi producon oanche essi un allargamento.\\
+Nelle atmosfere stellari sono presenti tutti gli effetti citati sopra. Comunamente la zona centrale è dominata dall'allargamento Doppler, nelle code prevale l'effetto della Lorentziana.\\
+Ci dobbiamo aspettare che nelle atmosfere rarefatte l'allargamento collisionale sia piccolo, e viceversa nelle atmosfere dense sarà importante. In questo modo si distinguono le stelle giganti da quelle nane.
 \subsection{Magnitudine}%
-Guardando un oggetto celeste noi possiamo raccogliere il flussio di energia proveniente dall'oggetto sotto forma di radiazione elettromagnetica. Di solito questa quantità non è rappresentativo della luminosità intrinseca perchè non conosciamo la distanza e non sappiamo se tra noi e l'oggetto esiste un mezzo che ha modificato la radiazione\\
-Possiamo allora misurare la luminosità apparente, storicamente si misura la Magnitutine, questa ha una origine storica, introdotta nel secondo secolo avanti cristo da Ipparco. \\
-Egli catalogo tantissime stelle e le classifico in 6 classi di luminosità apparente o magnitudine. I criteri che lui utilizzò sono ancora uasti oggi. questa è in ordine decrescente: la prima è la più luminosa, la sesta è la meno luminosa (tutte le classi ad occhio nudo).
-Il secondo criterio era di considerare costante la variazione di luminosità apparente tra una classe e la successiva (la stessa per tutte le classi).\\
-Questa stala è stata matematicizzata nel 1856 da Pogson, ottenendo una definizione basata su due assunzioni:
+La magnitudine è una misura della luminosità apparente di una stella, nata da Ipparco nel 2$^o$ secolo AC. La catalogazione di Ipparco in 6 classi di magnitudine è ancora usata oggi, con l'aggiunta di un pò di matematica moderna.\\
+Le caratteristiche della catalogazione di Ipparco erano:
+\begin{enumerate}
+	\item Ordine decrescente di luminosità.
+	\item Variazione di luminosità costante tra le 6 classi di luminosità.
+\end{enumerate}
+A rendere matematica questa classificazione è stato Pogston, egli utilizzò le seguenti considerazioni:
 \begin{itemize}
 	\item La sensibilita dell occhio è logaritmica
 	\item Le stelle appartenenti alla sesta classe sono 100 volte meno luminose di quelle di classe uno.
 \end{itemize}
-Questa è la visione moderna delle regole di Ipparco.\\
+Supponiamo di avere due stelle di luminosità apparenti $l_1$ e $l_2$, siano $m_1$ e $m_2$ le magnitudini apparenti di tali stelle. Per quanto assunto sopra avremo che:
 \[
-	\log \left( \frac{l_1}{l_2} \right) = -\frac{2}{5}\left( m_1-m_2 \right) 
+	\frac{l_1}{l_2}
+	=
+	\left( \frac{1}{100} \right) ^{\left( m_1-m_2 \right)/5}
+	=
+	10^{-2 /5 \left( m_1-m_2 \right) }
 .\] 
-Quindi 
+Passando ai logaritmi:
 \[
-	m_1-m_2 = -2,5 \log \frac{l_1}{l_2}
+	\log \left( \frac{l_1}{l_2} \right) 
+	=
+	-\frac{2}{5}\left( m_1-m_2 \right) 
 .\] 
+La definizione moderna di magnitudine è quindi la seguente:
+\begin{defn}[Magnitudine]{def:Magnitudine}
+	Si definisce mangitudine $m_1$ di una stella relativa alla magnitudine di un'altra stella di riferimento $m_2$:
+	\[
+	m_1-m_2 = -2.5 \log \frac{l_1}{l_2}
+	.\] 
+	Dove $l_1$ e $l_2$ sono le luminosità apparenti relative alle due stelle.
+\end{defn}
 
-Quando si usano le magnitudini si fanno misure relative di intensità. Servirà una stella di riferimento per poter classificare tutte le altre (l'esempio tipico è Vega).
+\subsubsection{Stelle di riferimento: misure relative di intensità}
+Il modo utile di utilizzare la magnitudine è quello di scegliere una stella come riferimento con magnitudine $m_0$ per poter catalogare in maniera relativa tutte le altre stelle.\\
+Se vogliamo ad esempio osservare la magnitudine della stella $m_*$ allora abbiamo:
 \[
-	m_{\text{oss}}- m_0 = -2.5 \log \left( \frac{l_{\text{oss}}}{l_0} \right) 
+	m_{*}- m_0 = -2.5 \log \left( \frac{l_{*}}{l_0} \right) 
 .\] 
-Hubble come riferimento usa sia Vega che uno spettro artificiale di riferimento.\\
-Dobbiamo anche tener di conto che qualunque strumento moderno o meno che utilizziamo non verrà mai misurato l'intero spettro elettromagnetico della sorgente ma soltanto una parte. Inoltre anche all'interno dello spettro osservato aavremo comuneuq una certa sensibilità.
-Quindi non misureremo mai il flusso $f( \lambda ) $ per unità di tempo e superficie che arriva prima di entrare in atmosfera, otterremo una cosa del tipo :
+Molti sistemi fotometrici usano come riferimento Vega, tra i quali anche il telescopio spaziale Hubble \footnote{Che usa come supporto anche uno spettro articificiale settabile a piacimento.}. Andiamo nel dettaglio sui sistemi di osservazione.
+\subsubsection{Parametri di correzione per sistemi fotometrici.}
+\label{subsubsec:Parametri di correzione per sistemi fotometrici.}
+I limiti di osservazione di un sistema fotometrico sono:
+\begin{enumerate}
+	\item Non è mai possibile osservare l'intero spettro di emissione della sorgente.
+	\item La sensibilità dello strumento nell'intervallo di frequenze che è possibile misurare non è costante.
+\end{enumerate}
+Per ovviare al fatto che non siamo in grado di conoscere il flusso di energia per unità di tempo e superficie $f( \lambda ) $ possiamo introdurre dei parametri di correzione che tengono di conto dei limiti della strumentazione e delle modifiche che il mezzo apporta alla sorgente.\\
+Immaginiamo di poter osservare in un range di lunghezze d'onda da $\lambda_1$ a $\lambda_2$, immaginiamo inoltre che $f( \lambda ) $ sia il flusso della sorgente prima di entrare in atmosfera, la luminosità che si riesce ad osservare sarà data da:
 \[
-	\int_{\lambda_1}^{\lambda_2} f( \lambda ) T(\lambda) d\lambda   
+	l = \int_{\lambda_1}^{\lambda_2} f( \lambda ) T(\lambda) d\lambda   
 .\] 
-con
+Il termine correttivo $T( \lambda ) $ tiene di conto di diversi effetti:
 \[
 	T( \lambda ) = R( \lambda ) K( \lambda ) Q( \lambda ) A( \lambda ) 
 .\] 
-R tiene di conto della ottica montata, K serve per il filtro selettore (in frequenze) che abbiamo sulla lente , Q sarà l'efficienza quantica del sensore (non si rivelano tutti i fotoni), i nuovi sensori arrivano ad avere quasi 1 per questo parametro, le 
-A invece tiene conto dell'atmosfera. In conclusione si ha:
+Andiamo a vedere qual'è il ruolo di ciascuno di questi:
+\begin{enumerate}
+	\item $R( \lambda ) $: Riflettività. Questa è legata alle ottiche dello strumento.
+	\item $K( \lambda ) $: Correzione alla risposta cromatica del filtro.
+	\item $Q( \lambda ) $: Efficienza quantica del rilevatore. 
+		Il rilevatore ha una risposta che dipende da $\lambda $.
+	\item $A( \lambda ) $: Correzione sulla trasmissione in atmosfera terrestre.
+\end{enumerate}
+In conclusione possiamo riscrivere la magnitudine tenendo di conto della forma di $l$:
 \[
-	m_{\text{oss}} = - 2.5 \log \left( \frac{\int_{\lambda_1}^{\lambda_2} f_{\text{oss}}( \lambda ) T( \lambda ) d\lambda  }{\int_{\lambda_1}^{\lambda_2}   f_0( \lambda ) T( \lambda ) d\lambda } \right) + m_0
+	m_{*} 
+	=
+	- 2.5 \log \left( 
+	\frac{
+	\int_{\lambda_1}^{\lambda_2} 
+	f_{*}( \lambda ) T( \lambda ) d\lambda }
+	{
+	\int_{\lambda_1}^{\lambda_2}  
+	f_0( \lambda ) T( \lambda ) d\lambda } 
+	\right) +
+	m_0
 .\] 
-Con Hubble abbiamo per ogni dispositivo dei filtri fatti ad Hock che tengono di conto di tutti i parametri.\\
-Se osserviamo una stella con un filtro e poi cambiamo filtor otteniamo due magnitudini dello stesso oggetto in due filtri diversi!
+È quindi chiaro che per parlare di magnitudine è necessario esplicitare il nome dei parametri fissi che si scelgono per l'osservazione: il filtro utilizzato e la stella di riferimento.\\
+Ipotiziamo di osservare una sorgente con due filtri differenti, si otterranno due magnitudini dello stesso oggetto differenti:
 \[
-	m_{*,i}= -2.5 \log \left( \frac{\int_{\lambda_1}^{\lambda_2} f_{*}( \lambda ) K_{i}( \lambda )d\lambda   }{\int_{\lambda_1}^{\lambda_0} f_0( \lambda ) K_i ( \lambda ) d\lambda   } \right) 
+	m_{*,i} 
+	=
+	- 2.5 \log \left( 
+	\frac{
+	\int_{\lambda_1}^{\lambda_2} 
+	f_{*}( \lambda ) K_i( \lambda ) d\lambda }
+	{
+	\int_{\lambda_1}^{\lambda_2}  
+	f_0( \lambda ) K_i( \lambda ) d\lambda } 
+	\right) +
+	m_{0,i}
 .\] 
 \[
-	m_{*,i}= -2.5 \log \left( \frac{\int_{\lambda_1}^{\lambda_2} f_{*}( \lambda ) K_{i}( \lambda )d\lambda   }{\int_{\lambda_1}^{\lambda_0} f_0( \lambda ) K_i ( \lambda ) d\lambda   } \right) + m_{0, j}
-.\] 
-L'indice di colore si definisce come la differenza di queste due.
- Ci da il rapporto tra i flussi in due differenti bande di frequenza, quindi ci da una indicazione sulla temperatura effettiva di una stella se la approssimiamo a corpo nero!\\
-Abbiamo anche un altra magnitudine, quando possiamo raccogliere tutto il flusso si parla di magnitudine bolometrica $m_{\text{bol}}$. Operativamente non si può, ci si può avvicinare misurando in varie bande più volte. \\
-La magnitudine bolometrica è legata a quella in una certa banda tramite la correzione bolometrica:
+	m_{*,j} 
+	=
+	- 2.5 \log \left( 
+	\frac{
+	\int_{\lambda_1}^{\lambda_2} 
+	f_{*}( \lambda ) K_j( \lambda ) d\lambda }
+	{
+	\int_{\lambda_1}^{\lambda_2}  
+	f_0( \lambda ) K_j( \lambda ) d\lambda } 
+	\right) +
+	m_{0,j}
+.\]
+Possiamo deinire la differenza di magnitudini apparenti come:
+\begin{defn}[Indice di colore]{def:Indice di colore}
+	L'indice di colore è la differenza di magnitudine apparente misurata con due filtri diversi.
+	\[
+		I = m_{*,i} - m_{*,j}
+	.\] 
+\end{defn}
+Questo indice ci da una indicazione della temperatura della stella, infatti facendo la differenza tra le magnitudini in questione otteniamo il logaritmo del rapporto tra i flussi in due bande differenti. 
+Proprio per questo tale indice ci da una indicazione della temperatura effettiva. \\
+Abbiamo visto che possiamo approssimare lo spettro di una stella come quello di corpo nero, misurare lo spettro con due diversi filtri significa esplorare varie zone dello spettro:
+\begin{figure}[H]
+    \centering
+    \incfig{significato-dell-indice-di-colore}
+    \caption{Significato dell indice di colore}
+    \label{fig:significato-dell-indice-di-colore}
+\end{figure}
+\noindent
+Il rapporto tra le due aree colorate è proprio l'indice di colore. Vediamo dal grafico che tale indice può essere usato anche per una calibrazione dello strumento nella temperaura della stella osservata, infatti è evitende che il rapporto tra le aree vari al variare della temperatura grazie alla legge di spostamento di Wien.\\
+\subsubsection{Magnitudine Bolemica.}
+\label{subsubsec:Magnitudine Bolometrica.}
+Si definisce magnitudine bolometrica la magnitudine in cui si raccoglie l'intero flusso proveniente dalla stella. Per ottenerla è necessario misurare la magnitudine in varie bande e mettere insieme i risultati.\\
+La relazione che lega la magnitudine bolometrica a quella in una certa banda è la seguente:
 \[
 	m_{\text{bol}}= m_{i}+ BC_i
 .\] 
-Abbiamo poi la magnitudine assoluta, per avere informazioni sulla luminosità intrinseca ci serve questa.
-Si definisce magnitudine assoluta $M$ la magnitudine che si avrebbe se la stella fosse distante 10 pc. Prendiamo il flusso $f$ da una stella ad una certa distanza d
+In cui abbiamo aggiunto la correzione bolometrica $BC_i$ che dipende dalla banda che stiamo utilizzando.
+\subsubsection{Magnitudine Assoluta.}
+\label{subsubsec:Magnitudine assoluta.}
+Si definisce magnitudine assoluta $M$ la magnitudine apparente che si vedrebbe se la stella fosse distante 10 pc.\\
+Prendiamo il flusso $f$ da una stella ad una certa distanza $d$ e con luminosità intrinseca $l$, il flusso sarà dato da:
 \[
 	f = \frac{l}{4\pi d^2}
 .\] 
-poi prendo quello pensando la stella a $d = 10$ pc
+Se la stella fosse a 10 pc si avrebbe:
 \[
 	f = \frac{l}{4\pi \left( 10 \text{ pc} \right) ^2}
 .\] 
-Allora
-\[
-	m-M = -2.5 \log lr \frac{f}{f_{10}}= 
-	-2.5 \log \left( \frac{10\text{ pc}}{d} \right) ^2 = 
+È quindi possibile calcolare le magnitudini associate ai due flussi:
+\[\begin{aligned}
+	m-M 
+	=&
+	-2.5 \log \frac{f}{f_{10}}=\\
+	=& 
+	-2.5 \log \left( \frac{10\text{ pc}}{d} \right) ^2 =\\
+	=& 
 	- 5 + 5  \log \left( d( \text{pc})  \right) 
-.\] 
-Se la radiazione si propaga in un mezzo anziché nel vuoto ci serve un altro termine che tenga di conto dell'assorbimento della radiazione da parte del mezzo interstellare
+.\end{aligned}\]
+L'ultima quantità a destra dell'uguale prende il nome di modulo di distanza. \\
+Abbiamo assunto che l'unica causa di diluizione del flusso sia la distanza, quindi assumiamo che la radiazione si propaghi nel vuoto. Per correggere e tener di conto dell'assorbimento della radiazione dovuta al mezzo interstellare è necessario aggiundere un fattore alla equazione:
 \[
 	m-M = -5+5\log d( \text{ pc}) + A_{V}
 .\] 
-Dobbiamo conoscere allora l'entità dell'estinzione della luce attraverso il mezzo interstellare.\\
-Si può definire anche la magnitudine bolometrica assoluta che sarà legata alla luminosità intrinseca della sorgente.\\
-L'intensità di una certa riga sarà legata ad il numero di assorbitori, quindi il numero di atomi che sono in grado di produrre quella transizione, se non osservo le righe dell'idrogeno non significa che non ci sia idrogeno, significa che in quel range osservato non ci sono transizioni.
+Non è banale ottenere la magnitudine assoluta, infatti in generale è difficile valutare sia $d$ che $A_V$.\\
+Si può definire anche la magnitudine bolometrica assoluta che sarà legata alla luminosità intrinseca della sorgente.

@@ -1,75 +1,34 @@
-<<<<<<< HEAD
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \contentsline {chapter}{\numberline {1}Introduzione e Trasporto Radiativo}{2}{chapter.2}% 
-\contentsline {section}{\numberline {1.1}Lezione 1}{2}{section.3}% 
-\contentsline {subsubsection}{Introduzione}{2}{section*.4}% 
-\contentsline {paragraph}{Libro di testo}{2}{section*.5}% 
-\contentsline {paragraph}{Argomenti del corso}{2}{section*.6}% 
-\contentsline {subsection}{\numberline {1.1.1}Osservazione del cielo}{2}{subsection.7}% 
-\contentsline {paragraph}{Astrofisica}{2}{section*.8}% 
-\contentsline {paragraph}{Osservazione della radiazione elettromagnetica}{2}{section*.9}% 
-\contentsline {paragraph}{Lotta contro l'oscurità}{2}{section*.10}% 
-\contentsline {subsection}{\numberline {1.1.2}Diffrazione e Seeing}{3}{subsection.11}% 
-\contentsline {paragraph}{Telescopi sempre più grandi}{3}{section*.12}% 
-\contentsline {paragraph}{Diffrazione}{3}{section*.13}% 
-\contentsline {paragraph}{Seeing}{4}{section*.18}% 
-\contentsline {paragraph}{Lunghezza d'onda per cui oggi si ha la massima risoluzione angolare}{4}{section*.20}% 
-\contentsline {subsection}{\numberline {1.1.3}Massa del sole}{5}{subsection.22}% 
-\contentsline {subsection}{\numberline {1.1.4}Distanze e metodo della parallasse}{5}{subsection.24}% 
-\contentsline {paragraph}{Metodo della parallasse}{5}{section*.25}% 
-\contentsline {subsection}{\numberline {1.1.5}Scale temporali dell'universo}{6}{subsection.34}% 
-\contentsline {subsection}{\numberline {1.1.6}Luminosità intrinseca, Candele campioni ed introduzione al trasporto radiativo}{7}{subsection.35}% 
-\contentsline {section}{\numberline {1.2}Lezione 2}{8}{section.43}% 
-\contentsline {subsection}{\numberline {1.2.1}Momenti dell'intensità $I_{\nu }$}{8}{subsection.47}% 
-\contentsline {paragraph}{Flusso}{8}{section*.48}% 
-\contentsline {paragraph}{Densità di energia irraggiata}{9}{section*.53}% 
-\contentsline {paragraph}{Pressione}{9}{section*.60}% 
-\contentsline {paragraph}{Intensità specifica media sull'angolo.}{10}{section*.66}% 
-\contentsline {paragraph}{Momenti dell'intensità}{10}{section*.69}% 
-\contentsline {subsection}{\numberline {1.2.2}Propagazione di un fascio nel vuoto.}{10}{subsection.72}% 
-\contentsline {paragraph}{Esempio classico}{11}{section*.82}% 
-\contentsline {subsection}{\numberline {1.2.3}Propagazione della radiazione in un mezzo}{12}{subsection.92}% 
-\contentsline {paragraph}{Esempi di processi di emissione o di assotbimento}{13}{section*.95}% 
-\contentsline {paragraph}{Distinzione tra processi di emissione e di assorbimento}{13}{section*.98}% 
-\contentsline {subsection}{\numberline {1.2.4}Equazione del trasporto: processi di interazione radiazione materia}{13}{subsection.100}% 
-\contentsline {paragraph}{Emissione}{13}{section*.101}% 
-\contentsline {paragraph}{Assorbimento}{14}{section*.111}% 
-\contentsline {paragraph}{Scattering}{14}{section*.115}% 
-\contentsline {paragraph}{Equazione finale con tutti i termini}{15}{section*.117}% 
-\contentsline {section}{\numberline {1.3}Lezione 3}{15}{section.119}% 
-\contentsline {paragraph}{Esempio: Mezzo in grado di emettere ma non di assorbire}{16}{section*.131}% 
-\contentsline {paragraph}{Esempio: Mezzo in grado di assorbire ma non di emettere}{16}{section*.134}% 
-\contentsline {subsection}{\numberline {1.3.1}Serie dell'atomo di idrogeno}{17}{subsection.143}% 
-\contentsline {subsection}{\numberline {1.3.2}Radiazione attraverso una nube interstellare}{18}{subsection.153}% 
-\contentsline {paragraph}{Stima del numero di atomi nell'universo}{19}{section*.159}% 
-\contentsline {subsection}{\numberline {1.3.3}Soluzione analitica all'equazione del trasporto stazionaria.}{19}{subsection.161}% 
-\contentsline {paragraph}{Esempio: mezzo omogeneo.}{20}{section*.177}% 
-\contentsline {paragraph}{Esempio: Mezzo omogeneo senza retroilluminazione}{21}{section*.181}% 
-\contentsline {subparagraph}{Mezzo otticamente sottile}{21}{section*.183}% 
-\contentsline {subparagraph}{Mezzo otticamente spesso}{22}{section*.188}% 
-\contentsline {section}{\numberline {1.4}Lezione 4}{22}{section.190}% 
-\contentsline {subsection}{\numberline {1.4.1}Scoperta delle righe (di assorbimento e di emissione).}{22}{subsection.191}% 
-\contentsline {paragraph}{Storia}{22}{section*.192}% 
-\contentsline {subsection}{\numberline {1.4.2}Radiazione di corpo nero: proprietà principali.}{23}{subsection.203}% 
-\contentsline {paragraph}{Legge di spostamento di Wien}{24}{section*.208}% 
-\contentsline {paragraph}{Densità di energia del corpo nero}{24}{section*.212}% 
-\contentsline {subsection}{\numberline {1.4.3}Temperatura di una stella}{24}{subsection.219}% 
-\contentsline {paragraph}{Temperatura di Brillanza.}{24}{section*.220}% 
-\contentsline {paragraph}{Temperatura di colore}{25}{section*.234}% 
-\contentsline {paragraph}{Temperatura effettiva}{26}{section*.236}% 
-\contentsline {subsection}{\numberline {1.4.4}Cammino libero medio dei fotoni}{26}{subsection.241}% 
-\contentsline {subsection}{\numberline {1.4.5}Equilibrio termodinamico locale}{27}{subsection.248}% 
-\contentsline {section}{\numberline {1.5}Lezione 5}{27}{section.249}% 
-\contentsline {subsection}{\numberline {1.5.1}Atmosfera a piani paralleli.}{27}{subsection.250}% 
-\contentsline {paragraph}{Raggi uscenti dall'atmosfera}{28}{section*.267}% 
-\contentsline {paragraph}{Raggi entranti.}{29}{section*.270}% 
-\contentsline {subsection}{\numberline {1.5.2}Valutazione della anisotropia.}{30}{subsection.289}% 
-\contentsline {subsection}{\numberline {1.5.3}Atmosfera grigia}{30}{subsection.292}% 
-\contentsline {section}{\numberline {1.6}Lezione 6}{31}{section.298}% 
-\contentsline {subsection}{\numberline {1.6.1}Limb Darkening}{32}{subsection.326}% 
-\contentsline {subsection}{\numberline {1.6.2}Righe nello spettro stellare}{34}{subsection.330}% 
-\contentsline {section}{\numberline {1.7}Lezione 7}{35}{section.340}% 
-\contentsline {subsection}{\numberline {1.7.1}Magnitudine}{37}{subsection.363}% 
-=======
->>>>>>> ae77307e2ba2eb403bcc7b1ba630d8c32e81f8f6
+\contentsline {section}{\numberline {1.1}Lezione 7}{2}{section.3}% 
+\contentsline {subsection}{\numberline {1.1.1}Studio delle righe di assorbimento}{2}{subsection.4}% 
+\contentsline {subsubsection}{Informazioni che ci arrivano dalle righe.}{2}{section*.5}% 
+\contentsline {subsubsection}{Allargamento di una riga.}{2}{section*.7}% 
+\contentsline {subsubsection}{Spessore minimmo di una riga}{3}{section*.12}% 
+\contentsline {subsection}{\numberline {1.1.2}Processi di allargamento delle righe}{3}{subsection.18}% 
+\contentsline {subsubsection}{Allargamento termico.}{4}{section*.19}% 
+\contentsline {subsubsection}{Allargamento per collisioni.}{5}{section*.33}% 
+\contentsline {subsection}{\numberline {1.1.3}Magnitudine}{5}{subsection.36}% 
+\contentsline {subsubsection}{Stelle di riferimento: misure relative di intensità}{5}{section*.43}% 
+\contentsline {subsubsection}{Parametri di correzione per sistemi fotometrici.}{6}{section*.46}% 
+\contentsline {subsubsection}{Magnitudine Bolemica.}{7}{section*.61}% 
+\contentsline {subsubsection}{Magnitudine Assoluta.}{7}{section*.63}% 
+\contentsline {section}{\numberline {1.2}Lezione 8}{8}{section.68}% 
+\contentsline {subsection}{\numberline {1.2.1}Slide su studio delle righe spettrali.}{8}{subsection.69}% 
+\contentsline {section}{\numberline {1.3}Lezione 9}{8}{section.70}% 
+\contentsline {subsection}{\numberline {1.3.1}Trasporto di energia negli interni stellari.}{8}{subsection.71}% 
+\contentsline {subsection}{\numberline {1.3.2}Cammino libero medio di Rosseland}{9}{subsection.90}% 
+\contentsline {subsection}{\numberline {1.3.3}Moto dei fotoni all'interno di una stella.}{10}{subsection.93}% 
+\contentsline {subsection}{\numberline {1.3.4}Equilibrio idrostatico della stella}{10}{subsection.99}% 
+\contentsline {section}{\numberline {1.4}Lezione 10}{12}{section.116}% 
+\contentsline {subsection}{\numberline {1.4.1}Tempi scala dell'evoluzione stellare.}{12}{subsection.117}% 
+\contentsline {subsubsection}{Tempo scala di collasso}{12}{section*.119}% 
+\contentsline {subsubsection}{Tempo scala di esplosione}{12}{section*.124}% 
+\contentsline {subsection}{\numberline {1.4.2}Teorema del viriale per corpi autogravitanti.}{13}{subsection.132}% 
+\contentsline {subsubsection}{Teorema del viriale per gas non relativistico}{14}{section*.141}% 
+\contentsline {subsubsection}{Teorema del viriale per un gas relativistico}{14}{section*.144}% 
+\contentsline {subsection}{\numberline {1.4.3}Energia e stabilità della stella}{14}{subsection.146}% 
+\contentsline {subsection}{\numberline {1.4.4}Capacità termica negativa per una stella.}{15}{subsection.155}% 
+\contentsline {subsection}{\numberline {1.4.5}Sviluppo di una stella.}{15}{subsection.158}% 
+\contentsline {subsection}{\numberline {1.4.6}Stella con gas monoatomico all'interno}{15}{subsection.159}% 

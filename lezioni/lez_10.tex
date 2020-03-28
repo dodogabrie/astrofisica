@@ -1,0 +1,249 @@
+\lez{10}{26-03-2020}{}
+\subsection{Tempi scala dell'evoluzione stellare.}
+\label{subsec:Equilibrio idrostatico stellare.}
+
+Un buon argomento che ci consente di dire che le stelle sono all'equilibrio idrostatico è il fatto che il loro raggio non diminuisce su scale temporali molto grandi (nel caso del sole tali scale raggiungono il miliardo di anni). \\
+Proviamo a stimare alcune delle scale temporali protagoniste del processo di equilibrio tra gravità e pressione termodinamica di una stella. L'equazione che vigila tale equilibrio è la legge di Newton per una Shell infinitesima della stella:
+\[
+	\rho\frac{\partial^2r}{\partial t^2} 
+	=
+	-\underbrace{\frac{\partial P}{\partial r}}_
+	{\substack{\text{Negativo}}}
+	-G \frac{m\rho}{r^2}
+.\] 
+Il termine di variazione di pressione è negativo, quindi con l'ulteriore segno (-) diventa un contributo positivo. Tale contributo viene bilanciato dalla forza gravitazionale che tende invece a far collassare tale Shell. \\
+Vediamo cosa succederebbe alla stella se, manipolando l'equazione di Newton, togliamo quei termini responsabili dell'equilibrio. In questo modo avremo una stima dei tempi scala di evoluzione stellare.
+\subsubsection{Tempo scala di collasso}
+\label{subsubsec:Tempo scala di collasso}
+Immaginando di togliere la variazione di pressione dalla equazione precedente, si ottiene:
+\[
+	\rho\frac{\partial^2r}{\partial t^2} 
+	=
+	-G \frac{m\rho}{r^2}
+.\] 
+In questo modo non c'è niente che controbilancia la gravità della stella: avremo un collasso gravitazionale.\\
+Per stimare il tempo di collasso gravitazionale $\tau_{_\text{FF}}$ possiamo approssimare l'accelerazione nella equazione precedente nel seguente modo:
+\[
+	\left| \frac{\partial ^2 r}{\partial t^2}  \right| = \frac{R}{\tau_{_\text{FF}}^2}
+.\] 
+Dove FF sta per Free Fall. Inserendo questa nella prima equazione cardinale e valutando anche la forza di gravità in termini di $M$ e $R$ si ha:
+\begin{defn}[Tempo di collasso gravitazionale]{def:Tempo di collasso gravitazionale}
+	\[
+		\tau_{_\text{FF}} = \sqrt{\frac{R^3}{GM}} \approx \frac{1}{2} \frac{1}{\sqrt{G\overline{\rho}} }
+	.\] 
+\end{defn}
+Questo tempo scala di collasso gravitazionale è inversamente proporzionale alla densità media come ci si aspetta ragionevolmente.\\
+Considerando che possiamo approssimare la densità media del sole come: $\rho_0 \approx 1.4$ g/cm$^3$ si ha un tempo scala di collasso di circa 27 minuti. Visto che il sole resta stabile per milioni di anni possiamo assumere che ci sia un buon bilanciamento tra pressione e gravità.\\
+Per altre stelle (aventi la stessa massa del sole ma raggi diversi) avremo tempi scala di caduta libera differenti:
+\begin{itemize}
+	\item Giganti rosse: $R = 100R_{\odot} \implies \tau_{_\text{FF}} \approx 1000 \tau_{_\text{FF}\odot} \sim $ 18 giorni.
+	\item Nane bianche: $\rho  \gg \rho_{\odot} \implies \tau_{_\text{FF}} \approx \tau_{_\text{FF}}/1000 \sim $ secondi.
+\end{itemize}
+\subsubsection{Tempo scala di esplosione}
+\label{subsubsec:Tempo scala di esplosione}
+Allo stesso modo, togliendo la gravità dalla equazione di Newton abbiamo che:
+\[
+	\rho  \frac{\partial ^2 r}{\partial t^2} 
+	=
+	-\frac{\partial P}{\partial r} 
+.\] 
+Quindi possiamo ragionare in modo analogo alla sezione precedente:
+\[\begin{aligned}
+	\left| \frac{\partial ^2 r}{\partial t^2}  \right| 
+	=&
+	\frac{R}{\tau_{_\text{exp}}^2} =\\
+	=&
+	\frac{1}{\rho}\frac{\partial P}{\partial r} \approx \\
+	\approx &
+	\frac{1}{\rho  }\frac{P(0)-P(R)}{R-0} =\\
+	=& 
+	\frac{P_c}{\rho R}
+.\end{aligned}\]
+\begin{defn}[Tempo scala di esplosione]{def:Tempo scala di esplosione}
+	\[
+		\tau_{_\text{exp}}= 
+		R\sqrt{\frac{\rho}{P}} \approx
+		\frac{R}{c_s}
+	.\] 
+	Dove la pressione nella espressione è quella del centro della stella, mentre $c_s$ è la velocità del suono.
+\end{defn}
+Stimiamo la pressione al centro della stella all'equilibrio idrostatico:
+\[
+	\frac{P_c}{R}\approx -G\frac{M\rho}{R^2}\implies
+	P_{c,\odot} \approx \frac{GM\rho  }{R} \approx 5 \cdot 10^{15} \text{ dyn}/cm^2 \sim 5 \cdot 10^{9}  \text{ atm}
+.\] 
+Con dei modelli numerici più avanzati possiamo dire che $P_{c,\odot} \approx 2.6 \cdot 10^{17}$ dyn/cm$^2$. 
+Dobbiamo tenere di conto del fatto che al centro della stella è presente un gas che risponderà ad una qualche legge di stato $P(\rho,T)$, questa legge di stato è alla base della comprensione della stabilità della stella poichè ci caratterizza la risposta di quest'ultima alla perdita di energia.\\
+In generale tale legge di stato dipende sia da $\rho $ che da $T$, ci sono casi in cui tale legge dipende soltanto da $\rho $, ad esempio nelle nane bianche. In tale situazione il gas di elettroni presente negli interni stellari può essere approssimato come un gas di Fermi. Tale approssimazione è stata approfondita nel corso di struttura della materia.\\
+Conosccere la legge di stato ci permette di capire il modo con cui la struttura risponde alla perdita di energia inievitabili nella evoluzione della stella. Infatti possiamo gia distinguere due casi a seconda della tipologia di equazione di stato:
+\begin{itemize}
+	\item $P(\rho ,T)$: se si ha una perdita di energia si hanno le seguenti conseguenze
+		\[\begin{aligned}
+			T \text{ Diminuisce} \implies 
+			P \text{ Diminuisce} \implies
+			\text{Prevale la gravità} \implies
+			\text{ Contrazione}
+		.\end{aligned}\]
+	\item $P(\rho )$: se si ha una perdita di energia si hanno le seguenti conseguenze
+		\[\begin{aligned}
+			T \text{ Diminuisce} \implies 
+			P \text{ Resta costante} \implies
+			\text{ Nessuna contrazione}
+		.\end{aligned}\]
+\end{itemize}
+
+\subsection{Teorema del viriale per corpi autogravitanti.}
+\label{subsec:Teorema del viriale per corpi autogravitanti.}
+Ipotizziamo una situazione all'equilibrio idrostatico
+\[
+	\frac{\partial P}{\partial r} 
+	=
+	-\frac{Gm\rho }{r^2}
+.\] 
+Moltiplichiamo a destra e sinistra per il volume della sfera di raggio $r$:
+\[
+	V(r)dr=\frac{4}{3}\pi r^3dr
+.\] 
+E ricordando l'equazione di struttura stellare:
+\[
+	\frac{\partial m}{\partial r} = 4\pi r^2 \rho 
+.\] 
+Otteiamo:
+\[
+	V(r)dP = -\frac{Gm}{3R}dm
+.\]
+Possiamo quindi integrare ambo i membri, a destra si ha
+\[
+	\int VdP = \underbrace{\left.VP\right|_{0}^R}_{\substack{V(0)=0	\\ P(R)=0 }} - \int PdV =  -\int PdV
+.\]
+A sinistra invece abbiamo l'energia potenziale gravitazionale:
+\[
+	\Omega  = - \int \frac{Gm}{r}d m
+.\] 
+In conclusione abbiamo legato l'energia potenziale gravitazionale alle variabili termodinamiche $P$ e $V$, questa è una versione del teorema del viriale:
+\begin{fact}[Teorema del Viriale]{fact:Teorema del Viriale}
+	\[
+		\Omega  = -3 \int PdV
+	.\] 
+\end{fact}
+Facciamo due esempi concreti di questo teorema per due leggi di stato:
+\subsubsection{Teorema del viriale per gas non relativistico}
+\label{subsubsec:Teorema del viriale per gas non relativistico}
+\[
+	P = \frac{2}{3}\frac{K}{V}
+.\] 
+Dove $K$ è l'enerrgia cinetica traslazionale. In questo caso il teorema si scrive come:
+\[
+	\Omega=-2K
+.\] 
+\subsubsection{Teorema del viriale per un gas relativistico}
+\label{subsubsec:Teorema del viriale per un gas relativistico}
+\[
+	P = \frac{1}{3}\frac{K}{V} \implies \Omega  = -K
+.\] 
+\subsection{Energia e stabilità della stella}
+\label{subsec:Energia e stabilità della stella}
+Assumiamo che la stella sia composta da un gas perfetto, in tal caso abbiamo dal teorema di equipartizione dell'energia che:
+\[
+	dK = \frac{3}{2}k_B TdN = \frac{3}{2}k_B T \frac{dm}{\mu m_{_H}}
+.\] 
+Dove $\mu$ è il peso molecolare medio delle particelle:
+\[
+	\mu  = \frac{\overline{m}}{m_{_H}}
+.\] 
+Mentre $m_H$ è l'umità di massa atomica. Visto che  $1g=N_Am_{_H}$ si avrà anche:
+\[\begin{aligned}
+	dK 
+	=&
+	\frac{3}{2}K_BT \frac{N_A}{\mu}dm =\\
+	=& \frac{3}{2}\frac{R}{\mu}Tdm
+.\end{aligned}\]
+Ricordando adesso le definizioni dei calori specifici a volume e pressione costante:
+\[
+	C_{P} - C_{V} = \frac{R}{\mu}= C_V \left( \gamma-1 \right) 
+.\] 
+Con $\gamma=C_P/C_V$.\\
+Introducendo anche l''energia interna: \[
+	dU = C_V Tdm
+.\] 
+Si ha che: 
+\[
+	dK = \frac{3}{2}\left( \gamma-1 \right) dU
+.\] 
+Se assumiamo $\gamma$ costante in tutta la struttura abbiamo una espressione non infinitesima per l'energia cinetica traslazionale: 
+\[
+	K = \frac{3}{2}\left( \gamma  - 1 \right) U
+.\] 
+Visto che l'energia totale della stella può essere presa come somma dell'energia interna e della energia gravitazional avremo che questa può essere espressa sia in funzione di $\Omega$ che di $U$:
+\[\begin{aligned}
+	E = \Omega+U =&
+	\frac{3\gamma-4}{3\left( \gamma-1 \right) }\Omega=\\
+	=&- \left( 3\gamma-4 \right) U
+.\end{aligned}\]
+Per avere una struttura stabile sarà necessario che questa energia sia negativa, di conseguenza il parametro $\gamma$ dovrà essere maggiore di $4/3$.
+\subsection{Capacità termica negativa per una stella.}
+\label{subsec:Capacità termica negativa per una stella.}
+Possiamo ipotizzare che la stella perda energia soltanto per irraggiamento, in tal caso si ha che:
+\[\begin{aligned}
+	L = -\frac{\mbox{d} E}{\mbox{d} t} 
+	=& 
+	-\frac{3\gamma -4}{3\left( \gamma-1 \right) }\dot{\Omega}=\\
+	=&
+	\left( 3\gamma -4 \right) \dot{U}
+.\end{aligned}\]
+Quindi abbiamo la seguente catena di disuguaglianze:
+\[
+	L>0 \implies \dot{\Omega }<0, \dot{U} >0
+.\] 
+Questo significa che quando la stella perde energia essa risponde con una contrazione ed aumenta la sua energia interna, quindi risponde con un incremento di temperatura. Quindi la stella è un sistema particolare in cui una perdita di energia comporta un surriscaldamento: la capacità termica è negativa.\\
+Esiste una eccezione a questo meccanismo: le nane bianche. Per questo tipo di stelle la perdita di energia comporta un raffreddamento poichè la legge di stato è indipendente dalla temperatura (non vi è alcuna contrazione durante il processo di irraggiamento).
+\subsection{Sviluppo di una stella.}
+\label{subsec:Sviluppo di una stella.}
+Quando una stella nasce non avrà ancora sorgenti di energia nucleare all'interno, quindi l'energia che irraggia la costringerà ad una contrazione ed un aumento della temperatura. \\
+A questo punto possono succedere due cose:
+\begin{itemize}
+	\item \texttt{Fase di Stop nucleare}: La temperatura raggiunge quella di innesco delle reazioni termonucleari. \\
+		In questo caso dobbiamo aggiungere un termine alla equazione della energia, in pratica tutta l'energia persa in irraggiamento verrà fornita dalle reazioni, fino a che non si esauriscono i reagenti. In questa fase la stella quindi non si contrae e, se riesce ad entrare in questa fase, aumenta notevolmente la durata della sua vita.
+	\item \texttt{Nana Bruna}: la densità aumenta così tanto che il gas degenera $P(\rho )$ prima che si raggiunga la temperatura di innesco delle reazioni termonucleari.\\
+		In questo caso la contrazione si interrompe e la stella inizia una evoluzione differente, perdendo energia le nane brune si raffreddano anzichè riscaldarsi.
+	\item \texttt{Fine della fase di stop nucleare e ripartenza del ciclo} Il primo elemento che viene usato come carburante nucleare è l'idrogeno, quando questo si esaurisce la stella ritorna ad essere in bilico tra la fase di Stop Nucleare e la trasformazione in nana bruna. La cosa che ad ogni bivio discrimina la scelta è la massa, le stelle più massicce ripeteranno il ciclo più e più volte fino ad arrivare a consumare il Ferro nelle reazioni, dopo questa fase si ha un inevitabile collasso gravitazionale con conseguente formazione di supernovae.
+\end{itemize}
+\subsection{Stella con gas monoatomico all'interno}
+\label{subsec:Stella con gas monoatomico all'interno}
+Nel caso di gas monoatomico si ha che $\gamma= 3/5$, quindi le relazioni dell'energia possono essere esplicite:
+\[
+	E = \frac{\Omega}{2}=-U
+.\] 
+\[
+	U=K 
+.\] 
+Quindi possiamo riscrivere la variazione di energia come:
+\[
+	L= -\frac{\dot{\Omega}}{2} = \dot{U}=\dot{K}
+.\] 
+In assenza di reazioni termonucleari che compensano tale perdita la stella utilizzerà metà della sua energia per compensare la perdita per luminosità, l'altra metà va in energia interna, quindi in energia cinetica, quinid in riscaldamento.\\
+Possiamo definire un tempo caratteristico per descrivere questa evoluzione:
+\begin{defn}[Tempo scala di Kelvin-Helmotz]{def:Tempo scala di Kelvin-Helmotz}
+	Il tempo scala con cui la struttura reagisce ad una perdita di energia è:
+	\[
+		\tau_{_\text{KH}} = \frac{\left| \Omega \right| }{2} \frac{1}{L}
+	.\] 
+\end{defn}
+Possiamo stimare tale tempo scala nel caso del sole:
+\[
+	\Omega  = - \int \frac{Gm}{r}d m  \overbrace{\implies}^{\rho \text{ cost}} \Omega  = - \frac{3}{5} \frac{GM^2}{R}
+.\] 
+Quindi si ha che:
+\[
+	\tau_{_\text{KH}} = \frac{3}{10} \frac{GM^2}{RL}
+.\] 
+\begin{itemize}
+	\item $M_{\odot} \approx 2 \cdot 10^{33} $ g.
+	\item $R_{\odot} \approx 7 \cdot 10^{10} $ cm.
+	\item $L_{\odot} \approx 3.8 \cdot 10^{33}$ erg/s. 
+\end{itemize}
+Con i valori del sole abbiamo che:
+\[
+	\tau_{_\text{KH},\odot} \approx 10^{7} \text{ anni.}
+.\] 
+Notiamo che il valore temporale di questa stima è lo stesso che abbiamo otenuto quando abbiamo stimato il tempo necessario ad un fotone ad uscire dalla stella, e non è un caso\ldots

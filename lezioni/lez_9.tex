@@ -1,0 +1,252 @@
+\lez{9}{23-03-2020}{}
+\subsection{Trasporto di energia negli interni stellari.}
+\label{subsec:Trasporto di energia negli interni stellari.}
+Vediamo il trasporto energetico da zone interne a zone esterne della stella. Andando verso l'interno della stella è sempre meglio verificata la condizione di LTE, quindi le particelle in queste regioni hanno funzioni di distribuzione (di velocità, di popolazione dei livelli, di ionizzazione) ben definite in funzione della temperatura.\\
+Ricordiamo comunque che non abbiamo l'equilibrio termodinamico globale, quindi il campo di radiazione resta diverso da quello di corpo nero:
+\[
+	I_{\nu}(\bs{r},\bs{k}) \neq B_\nu(T(\bs{r})) \label{eq:non-glob-eq}
+.\] 
+Resta comunque il fatto che la funzione sorgente è definita grazie alla relazione di Kirchhoff:
+\[
+	s_{\nu} (\bs{r})=B_{\nu} (T(\bs{r}))
+.\] 
+La relazione \ref{eq:non-glob-eq} implica che il flusso uscente dalla stella deve necessariamente essere nullo:
+\[
+	F_{\nu} \neq 0
+.\] 
+Ed abbiamo anche visto che questo comporta, per piccole deviazioni dallo spettro di corpo nero, che possiamo scrivere:
+\[
+	I_{\nu} (\bs{r},\bs{k})
+	=
+	B_{\nu} (T(\bs{r})) 
+	+ \mu \frac{\mbox{d} B_{\nu} }{\mbox{d} \tau_{\nu} } 
+.\] 
+Possiamo procedere al calcolo del flusso di energia uscente partendo dalla seguente equazione per la pressione:
+\[
+	\frac{\mbox{d} P_{\nu} }{\mbox{d} \tau_{\nu} } 
+	=
+	\frac{F_{\nu} }{c}
+.\] 
+Questa è stata dimostrata nel caso di atmosfera grigia, abbiamo visto che vale anche per ogni caso monocromatico. Invertendo tale relazione abbiamo che:
+\[
+	F_{\nu} = c \frac{\mbox{d} P_{\nu} }{\mbox{d} \tau_{\nu} } 
+.\] 
+E cambiando variabili:
+\[
+	d\tau_{\nu} = -\alpha_{\nu} dz
+.\] 
+\[
+	F_{\nu} 
+	=
+	-\frac{c}{\alpha_{\nu} }\frac{\mbox{d} P_{\nu} }{\mbox{d} z } 
+.\] 
+Vorremo calcolare tutto il flusso di energia uscente dalla stella:
+\[\begin{aligned}
+	F 
+	=&
+	\int_{0}^{\infty} F_{\nu} d\nu=\\
+	=&
+	-c \int_{0}^{\infty} 
+	\frac{1}{\alpha_{\nu} } 
+	\frac{\mbox{d} P_{\nu} }{\mbox{d} z } d\nu
+.\end{aligned}\]
+Per rimanere generali adesso riscriviamo quest'ultima in funzione di una nuova grandezza $\alpha_R$:
+\begin{defn}[Coefficiente di assorbimento di Rosseland]{def:Coefficiente di assorbimento di Rosseland}
+	Il coefficiente di assorbimento di Rosseland è la media armonica del doefficiente di assorbimento:
+	\[
+		\frac{1}{\alpha_R}
+		=
+		\frac{
+		\int \frac{1}{\alpha_R} \frac{\mbox{d} P_{\nu} }{\mbox{d} z} d\nu
+		}{
+		\int \frac{\mbox{d} P_{\nu} }{\mbox{d} z} 
+		}
+	.\] 	
+	Questo coefficiente ci garantisce che avranno un contributo principale
+	all'assorbimento soltanto con le frequenze aventi $\alpha_{\nu}$ minore, 
+	ovvero quelle per cui il mezzo è più trasparente.
+\end{defn}
+Ricordando che vale anche la relazione:
+\[
+	P_{\nu} 
+	=
+	\frac{4\pi}{3c} B_{\nu} (\tau_{\nu} )
+.\] 
+Possiamo inserire questa nella espressione per $1/\alpha_R$:
+\[\begin{aligned}
+	\frac{1}{\alpha_R}
+	=&
+	\frac{
+		\int \frac{1}{\alpha_{\nu}}\frac{4\pi}{3c}
+		\frac{\partial B_{\nu} }{\partial T} \frac{\partial T}{\partial z}d\nu
+	}{
+		\int \frac{4\pi}{3c}
+		\frac{\partial B_{\nu} }{\partial T} \frac{\partial T}{\partial z}d\nu
+	}=\\
+	=&
+	\frac{
+		\int \frac{1}{\alpha_{\nu} } 
+	\frac{\partial B_{\nu} }{\partial T} d\nu
+	}{
+	\int \frac{\partial B_{\nu} }{\partial T} d\nu
+	}
+.\end{aligned}\]
+La distribuzione $\partial  B_{\nu} /\partial T$ ha massimo per la frequenza $4kT/h$, questa avrà quindi un contributo maggiore delle altre al calcolo del flusso.\\
+Nei libri viene spessa definita una quantità equivalente alla $\alpha_R$: l'opacità radiativa di Rosseland $k_R$ (ricordiamo che vale la relazione $\alpha_{\nu} = k_{\nu} \rho$):
+\[
+	\frac{1}{k_R} 
+	=
+	\frac{
+	\int \frac{1}{k_{\nu}}\frac{\partial B_{\nu} }{\partial T} d\nu
+	}{
+	\frac{\partial B_{\nu} }{\partial T} d\nu 
+	}	
+.\] 
+Scriviamo allora il flusso totale come:
+\[
+	F =-\frac{c}{\alpha_R}\frac{\mbox{d} P}{\mbox{d} z} = 
+	-\frac{c}{k_R\rho }\frac{\mbox{d} P}{\mbox{d} z} 
+.\] 
+Visto che in LTE vale anche la relazione:
+\[
+	P = \frac{u}{3}= \frac{aT^4}{3}
+.\] 
+Allora abbiamo anche che:
+\begin{fact}[Equazione del flusso di energia radiativa dall'interno stellare]{fact:Equazione del flusso di energia radiativa dall'interno stellare}
+	\[
+	F 
+	=
+	-\frac{4ac}{3}\frac{T^3}{k_{_R}\rho} \frac{\mbox{d} T}{\mbox{d} z} 
+	.\] 
+\end{fact}
+Questo ci dice un sacco di informazioni sul flusso di energia dall'interno della stella:
+\begin{itemize}
+	\item $F \neq 0 \Longleftrightarrow \frac{\mbox{d} T}{\mbox{d} z} \neq 0$.
+	\item F è direttamente proporzionale al gradiente di temperatura verso l'esterno.
+	\item Materiali più opachi ($k_{_R}$ più grandi) hanno flussi inferiori.
+	\item L'equazione ha la stessa forma dell'equazione del calore: è quindi un trasporto diffusivo.
+\end{itemize}
+\subsection{Cammino libero medio di Rosseland}
+\label{subsec:Cammino libero medio di Rosseland}
+Con le quantità introdotte è utile definire anche un cammino libero medio:
+\[
+	\overline{l} = \frac{1}{\alpha_{_R}}=\frac{1}{k_{_R}\rho}
+.\] 
+Questo cammino libero è una quantità molto più generale di quello visto nelle scorse lezioni perchè fa una media armonica di tutte le opacità all'interno della stella. Vediamo come sfruttarlo per un esempio numerico.\\
+Abbiamo visto alcune quantità importanti per il sole:
+\begin{itemize}
+	\item $M_{\odot} = 2 \cdot 10^{33}$ g.
+	\item $R_{\odot}=7\cdot 10^{10}$ cm.
+	\item $\overline{\rho_{\odot}}=1.4$ g/cm$^2$.
+	\item (aggiungiamo adesso) $k_{_R} = 0.4$ cm$^2$/g.
+\end{itemize}
+Sulla base di queste possiamo dire che $\overline{l} \approx 2$ cm. Se confrontato con il ragggio solare abbiamo che:
+\[
+	\frac{\overline{l}}{R_{\odot}}\sim 3\cdot 10^{-12}
+.\] 
+Questo ci dice una cosa molto interessante sui fotoni prodotti all'interno della stella: ci mettono molto molto tempo ad uscire.
+\subsection{Moto dei fotoni all'interno di una stella.}
+\label{subsec:Moto dei fotoni all'interno di una stella.}
+Un fotone che nasce all'interno di una stella verrà assorbito dopo un certo tempo da un atomo all'interno di questa per poi essere riemesso in genere in modo completamente scorrelato da come era partito, la distanza che riesce a percorrere tra un assorbimento ed il successivo è in genere ben approssimata dalla quantità $ \overline{l}$.\\
+Diamo una stima numerica del tempo impiegato ad uscire dalla stella effettuando questo random walk. Sappiamo che per questo moto casuale si ha un percorso residuo medio di:
+\[
+	\sqrt{\left<L^2 \right>} 
+	=
+	\sqrt{N} \sqrt{\left<\overline{l}^2\right>} 
+.\] 
+NOi vorremmo che il nostro fotone fosse in grado di uscire, vediamo dopo quanto tempo avrà percorso una distanza dell'ordine del raggio solare:
+\[
+	R_{\odot} = \sqrt{N} \overline{l} 
+	\implies
+	N = \left( \frac{R_{\odot}}{\overline{l}} \right)^2
+.\] 
+Quindi il numero di interazioni che il fotone fa prima di essere (forse) in grado di uscire è dell'ordine di 
+\[
+	N\sim 10^{21}
+.\] 
+Considerando che i fotoni viaggiano alla velocità della luce abbiamo che:
+\[
+	\Delta t=N\frac{\overline{l}}{c} 
+.\] 
+Considerando inoltre che prima di essere riemesso dopo l'assorbimento ci voglioni in media $10^{-8}$ s allora abbiamo che:
+\[
+	\Delta t \sim 3\cdot 10^{6} \text{ anni}
+.\] 
+La luce che ci arriva dal sole è quella che è stata prodotta milioni di anni fa.
+\subsection{Equilibrio idrostatico della stella}
+\label{subsec:Equilibrio idrostatico della stella}
+\begin{defn}[Stella]{def:Stella}
+	Una stella è un sistema gassoso autogravitante.
+\end{defn}
+Le stelle sono oggetti solitari, se consideriamo che la stella più vicina al nostro sistema solare è Alpha-Centauri, che dista $ d = 1.4$ pc $= 4\cdot 10^{18}$ cm, abbiamo che il rapporto tra la distanza $d$ ed il raggio della stella è mostruosamente grande:
+\[
+	\frac{d}{R_{\odot}} \approx 0.6 \cdot 10^{8} 
+.\] 
+Quindi il volume occupato dallo spazio rispetto a quello occupato da una stella è:
+\[
+	\frac{V_d}{V_{\odot}}\approx 10^{23}
+.\] 
+La stella è quindi un oggetto destinato a perdere tutta la sua energia essendo il cosmo molto più freddo di lei.\\
+Per fortuna le scale temporali di perdita di energia di una stella sono molto più grandi della vita media di un essere umano, quindi osservando il sole dalla mattina alla sera non lo vedremo diventare più piccolo, nemmeno in milioni di anni di osservazione!\\
+Questo perchè il sole, come altre stelle, si trova ad un particolare equilibrio pressione-gravità che gli permette di avere una qualche stabilità (seppure apparente, poichè essendoci un flusso di energia comunque è destinato a perderne).\\
+Concentriamoci adesso sull'equilibrio tra pressione e gravità, per studiarlo vediamo una descrizione euleriana della stella:
+\begin{figure}[H]
+    \centering
+    \incfig{descrizione-euleriana-di-una-stella}
+    \caption{Descrizione euleriana di una stella}
+    \label{fig:descrizione-euleriana-di-una-stella}
+\end{figure}
+\noindent
+Consideriamo la massa nella shell interna come 
+\[
+	m = m(r,t)	
+.\] 
+Mentre la massa totale:
+\[
+	M = m(R,t)
+.\] 
+La variazione di massa nella shell interna sarà data da:
+\[
+	dm 
+	=
+	\frac{\partial m}{\partial r} dr +
+	\frac{\partial m}{\partial t} dt
+.\] 
+Per la simmetria del problema avremo che:
+\begin{fact}[Equazione di struttura stellare]{fact:Equazione di struttura stellare}
+	\[
+	\frac{\partial m}{\partial r} = 4\pi r^2 \rho
+.\] 
+\end{fact}
+Mentre per la variazione temporale:
+\[
+	\frac{\partial m}{\partial t} =
+	-4\pi r^2 \rho  v
+.\] 
+Con $v$ velocità di "fuga" della massa dalla stella.\\
+Sostituendo nella equazione differenziale otteniamo una equazione di continuità per simmetria sferica:
+\[
+	\frac{\partial \rho }{\partial t} +
+	\frac{1}{r^2}\frac{\partial }{\partial r} (r^2 \rho  v) 
+	=
+	0
+.\] 
+Prendiamo adesso uno strato $dr$ di stella, perchè la stella non collassi su se stessa (o esploda) è necessario che le forze su questo strato siano nulle, su questo strato avremo la forza di gravità che spinge verso l'interno, la pressione degli strati superiori che spingono anche essi per gravità e la pressione degli strati gassosi inferiori che spingono verso l'esterno. Quindi:
+\[
+	\left( P(r) - P(r+dr) \right) 4\pi r^2 - g(r)4\pi r^2 dr = 0
+.\] 
+Dove $g(r)$ è la forza gravitazionale:
+\[
+	g(r) = -G \frac{M}{r^2}
+.\] 
+La prima equazione cardinale ci da una condizione sulla derivata della pressione:
+\[
+	\frac{\partial P}{\partial r} = -g(r)\rho
+.\] 
+Abbiamo quindi una importante equazione che determina l'equilibrio idrostatico di una stella:
+\begin{fact}[Equazione per l'equilibrio idrostatico]{fact:Equazione per l'equilibrio idrostatico}
+	\[
+		\frac{\partial P}{\partial r} =
+		-G \frac{m\rho}{r^2}
+	.\] 
+\end{fact}
