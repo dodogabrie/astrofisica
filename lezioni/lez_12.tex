@@ -1,0 +1,367 @@
+\lez{12}{02-04-2020}{}
+\subsection{Moti convettivi  nelle stelle.}
+\label{subsec:Moti convettivi  nelle stelle.}
+Trattiamo la convezione come uno spostamento macroscopico di materia raggruppata in bolle.\\
+Cerchiamo di capire in quali situazioni domina la convezione rispetto agli altri meccanismi di trasporto energetico all'interno della stella. \\
+Immaginiamo una situazione come in Figura \ref{fig:bolle-di-materia-nella-stella}: una bolla di materia in seguito ad una perturbazione sale attraverso l'atmosfera stellare.
+\begin{figure}[H]
+    \centering
+    \incfig{bolle-di-materia-nella-stella}
+    \caption{Bolle di materia nella stella}
+    \label{fig:bolle-di-materia-nella-stella}
+\end{figure}
+\noindent
+In seguito a tale spostamento di materia possono avvenire due eventi:
+\begin{itemize}
+	\item Il moto della bolla viene smorzato: nessun moto convettivo.
+	\item Il moto della bolla viene amplificato: moto convettivo.
+\end{itemize}
+Assumiamo che quando la bolla è partita dalla posizione (1) si trovasse nelle stesse condizioni fisiche della atmosfera circostante, quindi:
+\[\begin{aligned}
+	&P_1= P_1^*\\
+	&\rho _1 = \rho _1^*\\
+	&T_1= T_1^*
+.\end{aligned}\]
+Quando tale bolla raggiunge la posizione (2) possiamo assumere che:
+\begin{itemize}
+	\item La variazione di pressione sia molto "più rapida" della variazione di
+		energia, quindi la bolla raggiungerà velocemente un nuovo equilibrio:
+		\[
+			P_2 = P_2^*
+		.\] 
+	\item Assumiamo uno \texttt{Spostamento adiabatico}, assumiamo che nel passaggio 
+		da (1) a (2) non ci sia scambio di energia tra bolla ed ambiente esterno,
+		per un tale spostamento sappiamo che:
+		\[
+			\rho _2^* = \rho_1^*\left( \frac{P_2^*}{P_1^*}\right)^{1/\gamma} 
+		.\] 
+		Dove $\gamma  = c_P/c_V$.
+\end{itemize}
+Abbiamo quindi che la densità della bolla nel punto (2) non sarà la stessa dell'ambiente che la circonda. A questo punto Archimede e la gravità decideranno se la bolla torna verso il centro o viene accelerata fuori:
+\begin{fact}[Condizione sulla convezione secondo il principio di Archimede.]{fact:Condizione sulla convezione secondo il principio di Archimede.}
+	\begin{itemize}
+	\item Se $\rho _2^* > \rho _2$ la bolla viene respinta indietro: smorzamento 
+		della perturbazione, nessuna convezione.
+	\item Se $\rho _2^* \le  \rho _2$ la bolla viene accelerata avanti: amplificazione
+		della perturbazione, convezione.
+	\end{itemize}
+\end{fact}
+Cerchiamo di rendere la situazione più rigorosa con delle relazioni in cui appaiono dei gradienti.\\
+Possiamo scrivere le seguenti relazioni:
+\[\begin{aligned}
+	&P_1=P_1^*=P(r)\\
+	&P_2=P_2^* = P(r+dr)=P(r)+\frac{\mbox{d} P}{\mbox{d} r} dr
+.\end{aligned}\]
+\[\begin{aligned}
+	&\rho _1=\rho (r)\\
+	&\rho _2=\rho (r+dr)=\rho(r)+\frac{\mbox{d} \rho }{\mbox{d} r} dr
+.\end{aligned}\]
+Per la approssimazione di spostamento adiabatico abbiamo che:
+\[\begin{aligned}
+	\rho _2^*=&\rho _1^*\left( \frac{P_2^*}{P_1^{*}} \right)^{1/\gamma}\\
+		  &= \rho \left( \frac{P(r+dr)}{P(r)} \right)^{1/\gamma} \\
+		  &= \rho \left( 1 + \frac{1}{P}\frac{\mbox{d} P}{\mbox{d} r} dr \right)^{1/\gamma} 
+.\end{aligned}\]
+Sviluppando nel secondo membro in parentesi (basta prendere uno spostamento sufficientemente piccolo per farlo):
+\[
+	\rho _2^* \approx 
+	\rho \left( 1+\frac{1}{P\gamma}\frac{\mbox{d} P}{\mbox{d} r} dr \right)
+.\] 
+Confrontiamo $\rho _2^*$ con $\rho _2$ per avere :
+\[
+	\rho \left(1 + \frac{1}{P\gamma}\frac{\mbox{d} P}{\mbox{d} r} dr \right) 
+	\ge \rho + \frac{\mbox{d} P}{\mbox{d} r} dr
+.\] 
+Eliminando $\rho $ si ha:
+\[
+	\frac{1}{\gamma P}\frac{\mbox{d} P}{\mbox{d} r} 
+	\ge \frac{1}{\rho }\frac{\mbox{d} \rho }{\mbox{d} r} 
+.\] 
+Se riscriviamo quest'ultima in maniera più compatta abbiamo che:
+\begin{fact}[Criterio di stabilità di Schwarschild]{fact:Criterio di stabilità di Schwarschild}
+	La condizione necessaria affinché nella stella non vi siano moti convettivi è:
+	\[
+		\frac{1}{\gamma}\frac{\mbox{d} }{\mbox{d} r} \left( \ln P \right) 
+		\ge 
+		\frac{\mbox{d} }{\mbox{d} r} \left( \ln \rho  \right) 
+	.\] 
+\end{fact}	
+Quando questo criterio è soddisfatto avremmo una stella all'equilibrio radiativo:
+\[
+	F_\text{tot} = F_\text{rad} + F_\text{cond} 
+.\] 
+Quando invece questa condizione non è soddisfatta allora la stella risentirà de moti convettivi ed il trasporto di energia per questi ultimi non sarà trascurabile:
+\[
+	F_\text{tot} = F_\text{rad} + F_\text{cond} + F_\text{conv} 
+.\] 
+Nel caso del sole abbiamo che 
+\begin{itemize}
+	\item Nel core siamo all'equilibrio radiativo.
+	\item Nella atmosfera esterna domina la convezione.
+\end{itemize}
+Nel caso di stelle più grandi possiamo avere l'esatto opposto del sole, mentre per le stelle più piccole (0.3$M_{\odot}$) possiamo anche avere interamente trasporto di energia per moti convettivi.\\
+\subsection{Gradiente radiativo e gradiente adiabatico.}
+\label{subsec:Gradiente radiativo e gradiente adiabatico.}
+Assumiamo adesso che all'interno della stella vi sia un gas perfetto: 
+ \[
+	P=nkT=\frac{\rho }{\mu m_{H}}kT
+.\] 
+Assumiamo inoltre che il peso molecolare $\mu$ sia costante in tutta la struttura, ricordiamo che questa quantità vale:
+\[
+	\mu  = \frac{\overline{m}}{m_{H}}
+.\] 
+In questo modo il differenziale della relazione di dispersione lo possiamo scrivere come \footnote{Basta fare il differenziale e moltiplicare ambo i membri per $P^{-1}$}:
+\[
+	\frac{dP}{P}=
+	\frac{d\rho }{\rho }+ \frac{dT}{T}
+.\] 
+Possiamo quindi dire che:
+\[
+	\frac{1}{\rho }\frac{\mbox{d} \rho }{\mbox{d} r} 
+	=
+	\frac{1}{P}\frac{\mbox{d} P}{\mbox{d} r} -
+	\frac{1}{T}\frac{\mbox{d} T}{\mbox{d} r} 
+.\] 
+La quantità a sinistra in quest'ultima relazione è una quantità presente nel criterio di Schwarschild, andiamo quindi a sostituire:
+\[\begin{aligned}
+	\frac{1}{\gamma P} \frac{\mbox{d} P}{\mbox{d} r} 
+	&\ge 
+	\frac{1}{\rho }\frac{\mbox{d} P}{\mbox{d} r} 
+	=\\
+	&=
+	\frac{1}{P}\frac{\mbox{d} P}{\mbox{d} r} 
+	-
+	\frac{1}{T}\frac{\mbox{d} T}{\mbox{d} r} 
+.\end{aligned}\]
+Tramite passaggi algebrici possiamo riscrivere questa come:
+\[
+	\frac{1}{T}\frac{\mbox{d} T}{\mbox{d} r} 
+	\ge 
+	\left( 1- \frac{1}{\gamma}\right) \frac{1}{P} \frac{\mbox{d} P}{\mbox{d} r} 
+.\] 
+Tramite la regola della derivazione a catena si ha anche:
+\[
+	\frac{1}{T}\frac{\mbox{d} T}{\mbox{d} P} \frac{\mbox{d} P}{\mbox{d} r} 
+	\ge 
+	\left( 1- \frac{1}{\gamma}\right) \frac{1}{P} \frac{\mbox{d} P}{\mbox{d} r} 
+.\] 
+Adesso prima di semplificare il termine $dP/dr$ non dobbiamo dimenticarci che questo è negativo, quindi il segno della disuguaglianza cambia:
+\[
+	\frac{P}{T}\frac{\mbox{d} T}{\mbox{d} r} \le 
+	1 - \frac{1}{\gamma}
+.\] 
+Guardando quest'ultima equazione possiamo definire due quantità utili:
+\begin{defn}[Nabla]{def:Gradiente radiativo}
+	\[
+		\nabla =
+		\frac{P}{T}\frac{\mbox{d} T}{\mbox{d} r} 
+		=
+		\frac{\mbox{d} \ln T}{\mbox{d} \ln P} 
+	.\] 
+\end{defn}
+\begin{defn}[Gradiente adiabatico]{def:Gradiente adiabatico}
+	\[
+		\nabla_\text{ad} =
+		1 - \frac{1}{\gamma}
+	.\] 
+\end{defn}
+Il $\nabla$ nel caso in cui siamo all'equilibrio radiativo coinciderà con il gradiente radiativo trovato nelle lezioni precedenti: $dT/dr$.
+Quindi la relazione di Schwarschild ci dice anche che il gradiente radiativo è limitato superiormente:
+\[
+	\nabla \le \nabla_\text{ad} 
+.\] 
+Quindi ricordiamo quali sono i due casi che possono presentarsi in termini di queste due nuove quantità:
+\begin{itemize}
+	\item Se $\nabla \le \nabla_\text{ad}$ allora siamo all'equilibrio radiativo.
+	\item Se $\nabla \ge \nabla_\text{ad}$ allora abbiamo una instabilità convettiva,
+		il gradiente di temperatura non sarà più quello radiativo discusso in
+		precedenza ma sarà più piccolo.
+\end{itemize}
+Abbiamo quindi detto che all'equilibrio radiativo, quindi nei punti in cui è rispettata la prima disuguaglianza dell'elenco, si ha:
+\[
+	\nabla_\text{r} = \nabla
+.\] 
+Nelle regioni del secondo punto dell'elenco abbiamo già accennato che:
+\[
+	\nabla_\text{r} \neq \nabla
+.\] 
+Nonostante questo il gradiente radiativo può ancora essere definito come il gradiente che si avrebbe se tutto il flusso fosse trasportato dalla radiazione. Tuttavia nel caso di instabilità adiabatica avremo che tale gradiente sarà più piccolo del caso di equilibrio radiativo.\\
+Come conseguenza in questa situazione avremo che (facendo sempre riferimento alla Figura \ref{fig:bolle-di-materia-nella-stella}):
+\[
+	T_2^* > T_2
+.\] 
+Per questo se la bolla si dissolve cederà calore all'ambiente circostante scaldandolo. Alla fine del processo di spostamento della bolla la temperatura $T_2$ sarà aumentata, viceversa se la bolla va nel verso opposto. \\
+Quando questi processi vanno a regime abbiamo che il gradiente ambientale sarà diverso da quello radiativo ed in particolare:
+\[
+	\nabla_\text{ad} < \nabla < \nabla_\text{r} 
+.\] 
+Nelle zone in cui il moto convettivo diventa estremamente efficiente si avrà che $\nabla \to \nabla_\text{ad}$, mentre quando il moto convettivo è pressoché nullo $\nabla \to \nabla_\text{r}$. \\
+Nei core delle stelle abbiamo che la convezione quando è attiva è così efficiente che la super adiabaticità necessaria a trasportare gran parte del flusso è talmente bassa che $\nabla \approx \nabla_\text{ad}$, anche se non possono effettivamente essere uguali. 
+\subsection{Gradiente radiativo e luminosità.}
+\label{subsec:Gradiente radiativo in funzione della luminosità.}
+Abbiamo visto che:
+\[
+	\nabla_\text{r} = \left.\frac{\mbox{d} \ln T}{\mbox{d} \ln P} \right|_{\text{r}}
+		\le \nabla_\text{ad} 
+.\] 
+Ma d'altra parte si ha che la prima parte è uguale a 
+\[
+	\left.\frac{\mbox{d} \ln T}{\mbox{d} \ln P} \right|_{\text{r}} =
+	\left.\frac{P}{T} \frac{\mbox{d} T}{\mbox{d} P} \right|_{\text{r}} =
+	\frac{P}{T}
+	\frac{\mbox{d} T}{\mbox{d} r} 
+	\frac{\mbox{d} r}{\mbox{d} P} 
+.\] 
+Inserendo i due termini noti
+\[\begin{aligned}
+	&\frac{\mbox{d} T}{\mbox{d} r} =
+	-\frac{3}{4ac}\frac{\overline{k}\rho }{T^3}\frac{L(r)}{4\pi r^2}&
+									&&
+	&\frac{\mbox{d} P}{\mbox{d} r} = - \frac{Gm\rho }{r^2}
+	\label{eq:rottura-opacita}
+.\end{aligned}\]
+Otteniamo che il criterio di Schwarschild diventa una condizione sulla luminosità:
+\[
+	L(r) \le 
+	16\pi \frac{acG}{3 \overline{k}}\left( 1-\frac{1}{\gamma} \right) \frac{T^4}{P}m
+	\label{eq:rottura-flusso}
+.\] 
+Dove $L(r)$ energia che per unità di tempo attraversa la superficie di raggio $r$. Quando è soddisfatta siamo in equilibrio radiativo, viceversa si innesca la convezione. \\
+I processi che portano ad avere convezione sono quindi principalmente due:
+\begin{itemize}
+	\item Aumento del flusso: rompo la \ref{eq:rottura-flusso}. 
+	\item Aumento della opacità: rompo la prima in \ref{eq:rottura-opacita}.
+\end{itemize}
+Nei nuclei convettivi dove abbiamo produzione di energia nucleare il meccanismo che innesca la convezione è la crescita del flusso. \\
+Negli inviluppi convettivi invece (le zone esterne della stella) tipicamente non abbiamo le reazioni termonucleari, il meccanismo che innesca la convezione è l'aumento della opacità.\\
+In particolare avremo che i moti convettivi avverranno nelle zone in cui le particelle sono ionizzate parzialmente: infatti il gradiente radiativo ha un picco nelle zone parzialmente ionizzate. Inoltre il gradiente adiabatico (sempre dove è presente parziale ionizzazione) 
+\subsection{Mixing Length (o lunghezza media percorsa dalle bolle convettive.)}
+\label{subsec:Mixing Length (o lunghezza media percorsa dalle bolle convettive.)}
+Vediamo adesso quanta energia viene trasportata dalla convezione analizzando la lunghezza media percorsa dalle bolle.\\
+Quando la  bolla arriva nella posizione (2) è più calda dell'ambiente circostante, quantifichiamo questa differenza di temperatura:
+\[
+	\delta  T =
+	T_2^* - T_2
+	=
+	\left( \left| \frac{\mbox{d} T}{\mbox{d} r}  \right| 
+		- 
+	\left| \frac{\mbox{d} T}{\mbox{d} r}  \right| _\text{ad}  \right) dr
+.\] 
+Definiamo la quantità tra le parentisi tonde come
+\begin{defn}[Super adiabaticità]{def:Super adiabaticità}
+	\[
+	\Delta\nabla T 
+	=
+	\left| \frac{\mbox{d} T}{\mbox{d} r}  \right| -
+	\left| \frac{\mbox{d} T}{\mbox{d} r}  \right| _\text{ad} 
+	.\] 
+\end{defn}
+Quindi quando la bolla di dissolve nel punto (2) ha la stessa pressione dell'ambiente circostante. La quantità di calore che questa cede sarà dato da:
+\[
+	Q_\text{ced} 
+	=
+	c_P \rho \delta T 
+	=
+	c_P\rho \Delta\nabla T dr
+.\] 
+Quindi il flusso di calore sarà dato da:
+\[
+	F = c_P \rho v \Delta\nabla T dr
+.\] 
+Nella teoria della Mixing Length il termine $dr$ è proprio la lunghezza di rimescolamento $l$.\\
+Possiamo scrivere inoltre la differenza di densità tra l'interno e l'esterno:
+\[
+	\delta\rho =
+	\rho^*_2 - \rho _2 
+	=
+	\left( \left| \frac{\mbox{d} \rho }{\mbox{d} r}  \right| 
+	-
+	\left| \frac{\mbox{d} \rho }{\mbox{d} r}  \right| _\text{ad}  \right) l
+.\] 
+Visto che stiamo trattando gas perfetti e la pressione finale è la stessa, quindi:
+\[
+	\delta\rho =
+	-\frac{\rho }{T}\delta T
+.\] 
+Sostituendo il $\delta T$:
+\[
+	\delta\rho = - \frac{\rho }{T}\Delta\nabla T l
+.\] 
+Vogliamo trovare la forza che viene esercitata dall'ambiente circostante sulla bolla $\overline{F}$ e questa dipenderà dalla densità:
+\[
+	\overline{F} 
+	=
+	\frac{1}{2}g \delta\rho 
+.\] 
+Il lavoro compiuto da tale forza in uno spostamento pari alla Mixing Length sarà pari alla variazione dell'energia cinetica, visto che la particella era inizialmente ferma:
+\[
+	\overline{F}l 
+	=
+	\frac{1}{2}\rho v^2
+.\] 
+Dalle ultime due equazioni si ricava la velocità media della bolla:
+\[
+	v =
+	l^{1/2}\sqrt{\frac{g}{\rho }\delta\rho } 
+.\] 
+Che possiamo sostituire all'interno del flusso:
+\[
+	F_\text{conv} 
+	=
+	c_P \rho \left( \frac{Gm}{Tr^2} \right) ^{1/2} \Delta\nabla T^{3/2} \frac{l^2}{2}
+	\label{eq:flusso-convettivo}
+.\] 
+Dobbiamo notare che all'interno di questa trattazione non c'è modo di conoscere il valore di $l$: è un parametro libero.\\
+Al crescere della super adiabaticità il flusso convettivo aumenta, viceversa se la voncezione è molto efficiente e trasporta un grande flusso di energia allora la richiesta di super adiabatica diminuisce. Questo lo si vede nei core convettivi, in questi l'adiabaticità è talmente sponinta che permette di considerare $\Delta\nabla T \approx 0$.\\
+La dipendenza del flusso convettivo da $\rho $ ci dice anche che la convezione sarà più efficiente nelle zone a densità maggiore, quindi quelle centrali.\\
+Nei libri troviamo spesso:
+\[
+	l = \alpha  H_p
+.\] 
+Dove $\alpha\sim 2$ è un numero mentre $H_p$ è una altezza di scala di pressione:
+\[
+	H_p = - \frac{\mbox{d} r}{\mbox{d} \ln P} 
+	=
+	\frac{k}{\mu m_H}\frac{T}{g}
+.\] 
+È quindi possibile stimare questo parametro, scegliendo una zona del sole si ha:
+\[\begin{aligned}
+	&r \approx \frac{R_{\odot}}{2}\\
+	& T(r) \sim 10^6 \text{ K}
+.\end{aligned}\]
+Con questi parametri abbiamo che: $l \sim R_{\odot}/10$. Questa Mixing Length è molto più grande del cammino libero medio di Rosseland, questo significa che dal momento in cui si attiva la convezione $F_\text{conv} \gg F_\text{rad} $.\\
+Usando la stima
+\[
+	F_\text{conv} \approx F_\text{tot} 
+.\] 
+Otteniamo che la super adiabaticità richiesta per avere questa situazione sarà:
+\[
+	\Delta\nabla T \sim 2 \cdot 10^{-10} \text{ K/cm}
+.\] 
+Confrontando quindi questa quantità con il gradiente di temperatura adiabatico (Negli interni solari $dT/dr \sim 10^{-4}$ K/cm) si ha che:
+\[
+	\frac{\Delta\nabla T}{\left| dT/dr \right| } \sim 10^{-6}
+.\] 
+Questo quantifica il fatto che nel core convettivo possiamo approssimare il gradiente di temperatura con quello adiabatico.\\
+\subsection{Core convettivi e inviluppi convettivi}
+\label{subsec:Core convettivi e inviluppi convettivi}
+Possiamo distinguere tra due tipi di stelle: quelle in cui il nucleo permette flusso convettivo e quelle in cui l'inviluppo permette flusso convettivo. In entrambi i casi abbiamo la stessa teoria, ciò che cambia è l'incertezza sulla Mixing Length $l$.
+\subsubsection{Inviluppo convettivo}
+\label{subsubsec:Inviluppo convettivo}
+Nel caso di inviluppo convettivo abbiamo che se $l$ diminuisce e $c\rho$ diminuisce dall'equazione \ref{eq:flusso-convettivo} necessariamente deve aumentare $\Delta\nabla T$ per avere flusso convettivo. Se aumenta la superadiabaticità allora si avrà un maggior gradiente di temperatura e di conseguenza diminuirà la temperatura effettiva.
+\[
+	l\swarrow ; c\rho\swarrow \implies \Delta\nabla T \nearrow \implies T_\text{eff} \swarrow
+.\] 
+Visto che la temperatura effettiva è legata alla luminosità dalla relazione:
+\[
+	L= 4 \pi  R^2 \sigma  T_\text{eff}^4
+.\] 
+Quindi a parità di luminosità se $T_\text{eff} $ diminuisce deve aumentare il raggio. Queste variazioni rendono la stella con inviluppo convettivo molto difficile  da trattare: non possiamo predire con principi primi ne la $T_\text{eff} $ ne il raggio poiché dipendono dal parametro $l$. Possiamo calibrare $l$ dalla osservazione di stelle con inviluppo convettivo.
+\subsubsection{Core convettivo}
+\label{subsubsec:Core convettivo}
+Le stelle con core convettivo abbiamo visto che hanno 
+\[
+	\nabla \sim \nabla_\text{ad} 
+.\] 
+Questo implica che tali stelle hanno una superadiabaticità molto piccola con tutte le conseguenze affrontate nella sezione precedente.\\
+Il problema che si presenta nelle stelle con inviluppo convettivo non è presente in questo caso proprio per l'equazione scritta sopra, infatti il gradiente adiabatico deriva dalla equazione di stato: è possibile allora predire sia $T_\text{eff}$ che $R$.

@@ -1,0 +1,266 @@
+\lez{13}{06-04-2020}{}	
+\subsection{Convezione e equilibrio idrostatico.}
+\label{subsec:Convezione e equilibrio idrostatico.}
+La differenza tra il flusso radiativo e quello convettivo è che il secondo, oltre che a trasportare energia, trasporta anche materia. Viene quindi da chiedersi se questo trasporto di materia non sia tale da distruggere l'equilibrio idrostatico formatosi nella stella.\\
+Per la conservazione di tale equilibrio sarà necessario che il tempo di risalita delle bolle $\tau_\text{mix}$ sia maggiore del tempo scala di caduta libera $\tau_\text{FF}$:
+\[
+	\tau_\text{FF} = \frac{1}{\sqrt{G  \overline{\rho }}} \sim 30 \text{ min}
+.\] 
+\[
+	\tau_\text{mix} = \frac{l}{v} \sim \frac{1/10R_{\odot}}{0.03 \text{km/s}} \approx 20 \text{ giorni}
+.\] 
+Abbiamo quindi che l'equilibrio non è perturbato dalla convezione. \\
+Possiamo vedere questo anche confrontando la velocità delle bolle con quella termica del plasma presente all'interno della stella. \\
+Per il plasma abbiamo velocità dell'ordine $v_\text{plasma} \approx 100 $ km/s, mentre per le bolle possiamo stimare che viaggino con $v_\text{bolle} \approx 0.03 $ km/s. Di conseguenza la pressione termica del gas e quella dovuta alle bolle avranno la seguente relazione:
+\[
+	P_\text{bolle} = 10^{-8} P_\text{plasma} 
+.\] 
+Quindi abbiamo che la pressione dovuta alle bolle che salgono è trascurabile.\\
+Il tempo di rimescolamento è anche molto più piccolo di $\tau_\text{KH}$ e del $\tau_\text{N}$, quindi dal punto di vista evolutivo della stella può essere considerato istantaneo. Nelle stelle aventi core convettivo come il sole (in cui le reazioni termonucleari trasformano nuclei leggeri in nuclei più pesanti) abbiamo che l'istantaneità del processo convettivo implica una composizione chimica omogenea nel core. 
+\begin{fact}[Composizione chimica del core]{fact:Composizione chimica del core}
+	In presenza di core convettivi si ha una composizione chimica omogenea, 
+	viceversa in un core non convettivo gli elementi più pesanti si 
+	formeranno più facilmente nel nucleo centrale più caldo con conseguente 
+	gradiente di composizione chimica.
+\end{fact}
+\subsection{Equazioni di struttura stellare.}
+\label{subsec:Equazioni di struttura stellare.}
+Possiamo adesso riscrivere le quattro equazioni di struttura stellare:
+\begin{fact}[Equazioni di struttura stellare]{fact:Equazioni di struttura stellare}
+	\[\begin{aligned}
+		&\frac{\partial P}{\partial r} = -\frac{Gm\rho }{r^2}\\
+		&\frac{\partial m}{\partial r} = 4\pi r^2 \rho \\
+		&\frac{\partial l}{\partial r} = 4\pi r^2\rho \mathcal{E}\\
+		&\frac{\partial T}{\partial r}  = 
+		\begin{cases}
+			&-\frac{3}{4ac}\frac{\overline{k}\rho }{T^3}\frac{L}{4\pi r^2} \quad \text{ Equilibrio radiativo}\\
+			& \left| \frac{\partial T}{\partial r}  \right|_\text{conv} \quad \quad \text{ Con convezione}
+		\end{cases}
+	.\end{aligned}\]
+\end{fact}
+Quindi conoscere la struttura di una stella significa conoscere:
+\begin{itemize}
+	\item $m=m(r,t)$.
+	\item $P=P(r,t)$.
+	\item $\rho = \rho (r,t)$.
+	\item $L=L(r,t)$.
+	\item $T=T(r,t)$.
+\end{itemize}
+Tuttavia non bastano queste quattro equazioni, sono incomplete perché non trattano le quantità fisiche necessarie a comprendere il comportamento della materia come la composizione chimica, sarà necessaria una estensione di qualche quantità:
+\begin{itemize}
+	\item $P=P(\rho ,T,\left\{ x_i \right\} )$.
+	\item $\mathcal{E}  = \mathcal{E}(\rho , T, \left\{ x_i \right\} )$ dove $\mathcal{E}  = \mathcal{E}_N+\mathcal{E}_g+\mathcal{E}_\nu$.
+	\item $\overline{k}=\overline{k}(\rho ,T,\left\{ x_i \right\} )$.
+\end{itemize}
+\subsection{Equazione di stato}
+\label{subsec:Equazione di stato}
+Abbiamo visto che negli interni stellari il contributo alla pressione del sistema arriva dal gas e dalla radiazione:
+\[
+	P = P_\text{gas} + P_\text{rad} 
+.\] 
+Visto che negli interni stellari si realizza spesso la condizione di LTE siamo in grado di calcolare la pressione di radiazione come:
+\[
+	P_{\nu} = \frac{u_{\nu} }{3}\implies P_\text{rad} = \frac{aT^3}{3}
+.\] 
+Per la pressione gassosa invece è utile fare la distinzione tra pressione dovuta agli elettroni e quella dovuta agli ioni:
+\[
+	P_\text{gas} = P_e + P_i
+.\] 
+Considerando un gas perfetto allora si ha che:
+\[
+	P_\text{gas} = nkT = \frac{\rho }{\mu m_H}kT
+.\] 
+Negli interni stellari tuttavia abbiamo spesso che il gas è completamente ionizzato, quindi possiamo dividere la densità $n$ come 
+\[
+	n = n_i + n_e
+.\] 
+Conviene esprimere queste densità di particelle con le rispettive abbondanze in massa:
+\[
+	n_i = \frac{\rho }{A_im_H}X_i
+.\] 
+\[
+	n_{e,i} = Z_in_i = \frac{\rho }{A_im_H}X_i Z_i
+.\] 
+Quindi per la specie i-esima abbiamo anche che:
+\[
+	n_i + n_{e,i} = \frac{\rho }{A_im_H}X_i \left( 1 + Z_i \right) 
+.\] 
+Sommando su tutte le specie otteniamo
+\[\begin{aligned}
+	\frac{\rho }{\mu m_H}=&
+	\sum_{i}^{} n_i + n_{e,i}=\\
+	=&
+	\sum_{i}^{} \frac{\rho }{A_im_H}X_i\left( 1+Z_i \right) =\\
+	=& \frac{\rho }{m_H}\sum_{i}^{} \frac{X_i}{A_i}\left( 1+Z_i \right) 
+.\end{aligned}\]
+Quindi abbiamo che
+\begin{fact}[Relazione di gas completamente ionizzato]{fact:Relazione di gas completamene ionizzarp}
+	Per un gas completamente ionizzato vale la seguente relazione:
+	\[
+		\frac{1}{\mu} = \sum_{i}^{} \frac{X_i}{A_i} \left( 1 + Z_i \right) 
+	.\] 
+\end{fact}
+Conviene introdurre una notazione sui singoli indici:
+\begin{itemize}
+	\item $i=1$: Idrogeno, indichiamo con $X$ l'abbondanza di questo elemento.
+	\item $i=2$: Elio, indichiamo con $Y$ l'abbondanza di questo elemento.
+	\item $i=3\ldots N$: Metallicità, abbondanza di tutti gli elementi più pesanti dell'elio.
+\end{itemize}
+Inserendo questa notazione nella equazione otteniamo che:
+\[
+	\frac{1}{\mu} = 2X + \frac{3}{4}Y+\frac{Z}{2}
+.\] 
+È possibile definire anche il peso molecolare medio degli elettroni come:
+\[
+	\frac{1}{\mu_e} = \sum_{i}^{} \frac{X_i}{A_i}Z_i \approx \frac{1+X}{2}
+.\] 
+Il risultato può essere ottenuto dall'esplicitare la sommatoria come sopra:
+\[
+	\frac{1}{\mu_e} = X +\frac{Y}{2}+\frac{Z}{2}
+.\] 
+E inoltre ricordare che deve sempre valere $X+Y+Z = 1$ poiché corrisponde alla totalità degli elementi nella stella.\\
+Notiamo che $\mu_e$ dipende soltanto dall'abbondanza di H nella stella, questo è dovuto al fatto che per gli elementi più abbondanti vale:
+\[
+	\frac{Z_i}{A_i} \approx \frac{1}{2}
+.\] 
+A causa dei processi di nucleosintesi nelle stelle.
+\subsection{Tre casi di perdita di approssimazione di gas perfetto}
+\label{subsec:Tre casi di perdita di approssimazione di gas perfetto}
+Può capitare che l'approssimazione di gas perfetto diventi grossolana all'interno di ambienti stellari, i tre casi in cui questo può avvenire sono:
+\begin{enumerate}
+	\item Gas quantistico: la statistica di Boltzmann fallisce.
+	\item Gas relativistico.
+	\item Gas con interazione tra le particelle.
+\end{enumerate}
+Vediamo come cambia la situazione in ciascuno di questi casi (ed anche nelle loro combinazioni).
+\subsubsection{Gas quantistico}
+\label{subsubsec:Gas quantistico}
+Se $a$ è la distanza media tra le particelle del gas si ha che non è possibile trascurare gli effetti quantistici quando 
+\[
+	a \sim  \lambda
+.\] 
+In cui $\lambda  = h/p$ è la lunghezza d'onda di De Broglie.\\
+Possiamo scrivere il raggio della particella come:
+\[
+	a = \left( \frac{4}{3}\pi n \right)^{-1/3} 
+.\] 
+è necessario quindi introdurre delle statistiche che tengano di conto di possibili degenerazioni alla Fermi Dirac. Possiamo chiederci se degenerano prima gli elettroni o prima gli ioni, per rispondere a questo valutiamo l'impulso di elettroni e protoni isoenergetici (cineticamente):
+\[
+	\frac{P_p^2}{2m_p}=\frac{P_e^2}{2m_e} \implies P_p = \sqrt{\frac{m_p}{m_e}} P_e \implies P_p \gg P_e \implies \lambda_p \ll \lambda_e
+.\] 
+Visto che la lunghezza d'onda degli elettroni è più grande si avrà che questi degenerano prima dei protoni e quindi anche di tutti gli altri ioni più pesanti.\\
+\paragraph{Centro del sole}
+Nel centro del sole abbiamo $T_c \approx 1.5 \cdot 10^{7} $ K, $\rho _c \approx 150$ g/cm$^3$. Considerando la lunghezza d'onda termica di De Broglie:
+\[
+	\Lambda  = \sqrt{\frac{2\pi\hbar ^2}{mkT}} 
+.\] 
+Possiamo dire che:
+\[
+	\frac{\Lambda_p}{a_p} \approx 0.03 \quad \quad \frac{\Lambda_e}{a_e} \approx 1.3
+.\] 
+Quindi anche nel sole gli elettroni sono parzialmente degeneri.
+\paragraph{Gigante rossa}
+Nel caso di gigante rossa abbiamo che $T_c \approx 10^9$ K, $\rho _c \approx 10^6$ g/cm$^3$, si ha facendo i conti che:
+\[
+	\frac{\Lambda_{He}}{a_{He}} \approx 0.07 \quad \quad \frac{\Lambda_e}{a_e} \approx 8
+.\] 
+Gli elettroni sono quindi molto degeneri, mentre gli atomi tendono a diventare "sempre più classici".
+\paragraph{Nana bianca}
+In questo caso abbiamo che $T_c \approx 2 \cdot 10^{6} $ K, $\rho _c \approx 3 \cdot 10^{6} $ g/cm$^3$, quindi:
+\[
+	\frac{\Lambda_e}{a_e} \sim 96
+.\] 
+In conclusione i nuclei atomici non degenerano mai (con eccezione della stella di neutroni composta da neutroni degeneri).\\
+Per gli elettroni è evidente la necessità di correggere il modello di gas perfetto classico. Inoltre nella maggior parte dei casi siamo nella condizione in cui:
+\[
+	kT\ll\mathcal{E}_F
+.\] 
+Che è l'equivalente del caso in cui si ha $T=0 $ per un sistema di fermioni. In questo caso sappiamo che le la pressione dei fermioni è data da:
+\[
+	P_e = \frac{1}{20}\left( \frac{3}{\pi} \right)^{2/3}\frac{h ^2}{m_e m_H^{5/3}}\left( \frac{\rho }{\mu_e} \right)^{5/3}
+.\] 
+La pressione non dipende più dalla temperatura ma solo dalla densità e dalla composizione chimica.
+\subsubsection{Gas relativistico}
+\label{subsubsec:Gas relativistico}
+Nel caso di gas relativistico è necessario distinguere in due casi:
+\begin{itemize}
+	\item Gas non degenere ( fino a che $kT\ll mc^2$ possiamo considerare non relativistico)
+	\item Gas degenere (Fino a che $\mathcal{E}_F\ll mc^2$ possiamo considerare non relativistico)
+\end{itemize}
+\paragraph{Caso di gas non degenere}
+Nel caso di gas non degenere abbiamo che soltanto nelle stelle molto massicce sarà necessario considerare correzioni relativistiche. \\
+Possiamo dimostrare questa affermazione notando che nel caso degli elettroni $m_ec^2\approx 0.5$ Mev, quindi servirebbero temperature dell'ordine di $T\sim 10^{9}$ K che si raggiungono appunto soltanto in stelle pesanti. Nel caso dei protoni invece sono necessarie temperature dell'ordine $T\sim 10^{13}$ K che non sono ancora mai state rilevate.
+\paragraph{Caso di gas degenere}
+In questo caso conviene definire una quantità adimensionale: $\chi_{R}$ 
+\[\begin{aligned}
+	\chi_R 
+	=&
+	\frac{P_F}{m_ec} =\\
+	=&
+	\frac{\hbar \left( 3\pi^2n_e \right)}{m_e c} =\\
+	=&
+	\frac{\hbar }{m_ec}\left( 3\pi^2N_A \right) \left( \frac{Z}{A} \right) ^{1/3}
+.\end{aligned}\]
+Dove abbiamo utilizzato il fatto che
+\[
+	n_e = \frac{\rho }{\mu_e m_H} = \frac{\rho}{m_H}\sum_{i}^{} \frac{X_i}{A_i}Z_i
+.\] 
+Considerando la stella composta da un singolo elemento per semplificare:
+\[
+	n_e = \frac{\rho }{m_H}\frac{Z}{A}
+.\] 
+Inoltre ricordiamo che per una nana bianca o gigante rossa la formula diventerebbe ancora più semplice poiché $Z/A \sim 1/2$.
+\subsubsection{Esempi numerici}
+\label{subsubsec:Esempi numerici}
+\paragraph{Gigante rossa}
+$T=10^{8}$ K, $\rho = 10^6$ g/cm$^3$ $\implies$ $\chi = 0.8$.
+\paragraph{Nana bianca}
+$T=2 \cdot 10^{6}$ K, $\rho = 3 \cdot 10^{6}$ g/cm$^3$ $\implies$ $\chi = 1.2$.\\
+Nel caso in cui $\chi \gg 1$ siamo nel limite ultra relativistico, possiamo allora considerare il gas di elettroni completamente degenere $\left( T=0 \right)$ e si ottiene una formula per la pressione dei fermioni:
+\[
+	P_e 
+	=
+	\left( \frac{3}{\pi} \right) ^{1/3} \frac{hc}{8m_H^{4/3}}\left( \frac{\rho }{\mu_e} \right) ^{4/3}
+.\] 
+Possiamo notare che nel caso relativistico il termine $\rho / \mu_e$ è elevato alla $4/3$ anziché $5/3$ come nel caso non relativistico. Questo significa che l'equazione di stato per elettroni degeneri è più soft nel caso relativistico. Questa cosa ha un importante riscontro nelle nane bianche: se si raggiunge una situazione in cui il gas di fermioni nel nucleo diventa relativistico allora l'unica configurazione di equilibrio è quella avente massa di Chandrasekhar (la massa oltre la quale la stella collassa). 
+\subsubsection{Gas perfetto (interazioni)}
+\label{subsubsec:Gas perfetto (interazioni)}
+Per valutare quando il gas diventa interagente possiamo introdurre un parametro che confronti l'interazione coulombiana con l'energia termica delle particelle:
+\[
+	\Gamma  = \frac{\left( Ze \right)^2}{akT}
+.\] 
+Per fare il calcolo consideriamo il caso in cui la materia è costituita da un'unica specie atomica (OCP: one component plasma). Abbiamo quindi i nuclei in moto in un Background di carica negativa in modo da rendere il tutto neutro.\\
+La densità di particelle può essere scritta come:
+\[
+	n = \frac{\rho }{A_i m_H}
+.\] 
+Quindi possiamo procedere al calcolo di $\Gamma_i$:
+\[
+	\Gamma_i = \frac{\left( Z_ie \right) ^2}{a_ikT} 
+	=
+	\frac{\left( Z_i e \right)^2}{kT} \left( \frac{4}{3}\pi \frac{N_A}{A_i} \right)^{1/3} \rho ^{1/3}
+.\] 
+Nel caso in cui gli elettroni sono non degeneri possiamo scrivere che:
+\[
+	\Gamma_e = \frac{e^2}{a _e kT}
+	=
+	\frac{e^2}{a_i kT}Z_i^{1/3} = \frac{\Gamma_i}{Z_i^{5/3}}
+.\] 
+In cui si sfrutta il fatto che 
+ \[
+	 a_e = \left( \frac{4}{3}\pi n_e \right)^{-1/3}
+.\] 
+E inoltre $n_e = Z_i n_i$ se consideriamo un gas completamente ionizzato. Possiamo allora notare che è sempre vera la disuguaglianza:
+ \[
+	\Gamma_e < \Gamma_i
+.\] 
+Quindi se in un gas gli elettroni sono non degeneri e gli atomi sono un gas perfetto allora gli elettroni sono un gas perfetto.\\
+Se gli elettroni sono degeneri invece possiamo scrivere che:
+\[
+	\tilde{\Gamma }_e = \frac{e^2}{a_e\mathcal{E}_F} = \ldots \propto \left( \frac{\rho }{\mu_e} \right)^{-1/3}
+.\] 
+Quindi se per un gas non degenere abbiamo che possiamo considerare tale gas tanto più perfetto tanto più è rarefatto per il gas degenere abbiamo l'esatto opposto.
+\paragraph{Sole} $\Gamma_i(H) = \Gamma_e \sim 0.07$.
+\paragraph{Gigante rossa} $\Gamma_i(He) \sim 0.58$, $\Gamma_e \sim 0.01$.
+\paragraph{Nana bianca} $\Gamma_i(O) \sim 550$, $\Gamma_e\sim 0.0008$.
+
