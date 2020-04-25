@@ -1,0 +1,167 @@
+\lez{14}{16-04-2020}{}
+\subsection{Calcolo della opacità radiativa.}%
+\label{sub:Calcolo della opacità radiativa.}
+Per calcolare l'opacità (radiativa) della materia è necessario considerare tutti i contributi di interazione radiazione materia.
+\[
+    \frac{1}{K_R}= \frac{\int \frac{1}{K_\nu }\frac{\partial B_\nu}{\partial T} d\nu}{\int\frac{\partial B_\nu}{\partial T} d\nu}
+.\] 
+I contributi citati sopra entrano nel calcolo di $K_\nu$:
+\begin{itemize}
+    \item Processi "Bound-Bound" (bb), i processi di assorbimento da uno stato legato ad un altro (transizioni di livello) .
+    \item Processi "Bound-Free" (bf), i processi di assorbimento in cui il fotone viene assorbito da un atomo liberando un elettrone che era legato (fotoionizzazione).
+    \item Processi "Free-Free" (ff), una Bremhstralhung inversa, il fotone viene assorbito da un elettrone libero (deve essere presente un atomo).
+    \item Scattering elettronico.
+\end{itemize}
+Parliamo di ff per elettroni (e non di protoni o nuclei) perché è un processo che riguarda particelle poco massose, non è inoltre possibile ottenere una Bremhstralhung di una particella nel campo di un'altra particella identica perché in tal caso il dipolo sarebbe proporzionale al centro di massa (che dovrebbe rimanere in moto rettilineo uniforme). \\
+Per i primi 3 processi dobbiamo tener conto dei processi di emissione stimolata.\\
+L'opacità deve dipendere molto sensibilmente dalla temperatura, questo perché l'opacità monocromatica nella maggior parte dei processi (escludendo lo Scattering elettronico) dipende in modo molto sensibile dalla frequenza.\\
+Facciamo un esempio considerando un bf sull'atomo di idrogeno, l'energia di ionizzazione di un idrogeno è:
+\[
+    \chi_{H,n} = \frac{13.6 \text{ eV}}{n^2}
+.\] 
+Quindi il fotone assorbito deve avere una energia maggiore o uguale di questa, abbaio allora una energia di soglia che incide su $h \nu$. Se andiamo a vedere la sezione d'urto di questo processo e ricordando che $\alpha_\nu  = k_\nu  \rho = n\sigma_\nu $ abbiamo che per un processo bf:
+\[
+\sigma_\nu  \propto \begin{cases}
+    &0 \quad h\nu < \chi\\
+    &\frac{1}{\nu^3} \quad h\nu  \ge \chi
+\end{cases}
+.\] 
+Questa discontinuità della sezione d'urto darà la forte dipendenza da $T$ a $K_R$, infatti se siamo in un punto della stella in cui la temperatura è tale da avere molti fotoni con energia pari a $\chi$, in tal caso avremo il massimo della sezione d'urto e quindi della opacità. In tale situazione nel calcolo dell'integrale il valore della opacità media sarà alto, quindi ovviamente cambierà il risultato. \\
+Spostandoci in un punto della stella in cui il numero di fotoni aventi energia $\chi$ è piccolo allora $K_\nu$ continuerà ad essere grande ma sarà minore il numero di fotoni che vengono assorbiti, di conseguenza sarà piccolo anche $K_R$.\\
+Nel caso di ff si ha invece che $\sigma  \propto \frac{1}{\overline{v}} \frac{1}{\nu^3}$. Se le particelle sono distribuite come Maxwell allora anche la velocità sarà distribuita in questo modo, questo ci servirà.\\
+Nel caso di scattering elettronico invece questa dipendenza dalla temperatura non c'è. Lo scattering Thompson ha una sezione d'urto pari a:
+\[
+\sigma_\text{Thompson} = 
+\frac{8\pi}{3}\left(\frac{e^2}{mc^2}\right)^2 \approx 6.65 \cdot 10^{-25} \text{ cm}^2
+.\] 
+Quindi in questo caso l'opacità sarà indipendente dalla temperatura, tuttavia visto che la $\sigma_\text{Th} $ è molto piccola sarà importante soltanto quando è l'unico contributo alla opacità.\\
+Nel caso di scattering elettronico nota la sezione d'urto per il calcolo della opacità si impone l'uguaglianza:
+\[
+K_e \rho  = n_e \sigma_e
+.\] 
+Dove $\sigma_e = \sigma_\text{Th}$, calcoliamo il valore di $n_e$ : 
+\[
+n_e = \frac{\rho}{\mu_e m_H}
+.\] 
+In completa ionizzazione si ha $\mu_e = 2 /(1+X) $ quindi:
+\[
+    K_e = \sigma_e \frac{1+X}{2 m_H} \sim 0.2 \left(1+X\right)
+.\] 
+Nel caso di bf consideriamo la specie atomica i-esima nel livello energetico $n$ e la relativa sezione d'urto $\sigma_{i,n}$, per trovare il coefficiente di opacità dobbiamo trovare per tale specie $K_{i,n}(\nu) \rho = n_{i,n} \sigma_{i,n}$. 
+Per sapere la corrispondente opacità di tale specie dobbiamo sommare su tutti i livelli e per quella totale (di tutti i processi bf) si deve sommare su tutte le specie atomiche. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/Opacità-profilo.png}
+    \caption{Profilo della opacità in funzione della temperatura per vari $\rho$.}
+    \label{fig:figures-Opacità-profilo-png}
+\end{figure}
+Il motivo per cui al diminuire della temperatura l'opacità cala bruscamente è l'interazione interazione materia.\\
+Nel caso di bb per l'elemento dominante (H) tra il fondamentale ed il primo eccitato ci sono 10.2 e, al diminuire della temperatura il popolamento dei livelli atomici diminuisce e se la temperatura è suffic. bassa abbiamo tutti gli atomi nel fondamentale. A questo punto soltanto i fotoni che avranno energia maggiore di 10 ev verranno assorbiti, ma al diminuire della temperatura saranno sempre meno i fotoni che riescono ad averla, il materiale diventa quindi trasparente.\\
+Nella regione in cui dopo il massimo l'opacità torna a diminuire (questa volta all'aumentare della temperatura) si ha l'espressione dovuta a Kramers:
+\[
+k \propto \rho T^{-3.5}
+.\] 
+L'andamento che si appiattisce è infine dovuto allo scattering elettronico.\\
+Nel caso dell'atmosfera del sole dovremmo essere in una situazione di opacità bassissima, invece noi sappiamo che tale atmosfera è opaca. Questo apparente controsenso è dovuto allo ione $H^{-}$: un atomo di idrogeno neutro che riesce a catturare un elettrone libero. Questo elettrone in più è debolmente legato all'atomo  ($E_\text{legame}\approx 0.75$ eV), quindi nella atmosfera solare abbiamo molti fotoni con energia sufficiente a strappare tale elettrone rendendo quindi tale atmosfera opaca.\\
+Gli elettroni che si legano agli idrogeni vengono dai metalli all'interno della stella.\\
+Notiamo ancora che il picco della opacità si ha per regioni di ionizzazione degli elementi H e He: in talli regioni il gradiente radiativo sarà molto grande.\\
+Quindi nelle regioni di parziale ionizzazione dobbiamo aspettarci che il criterio di Swarzchild cada e la stella inneschi la convezione (questo è il motivo per cui si ha convezione negli inviluppi stellari).\\
+In conclusione si ha che l'opacità sarà la somma di vari contributi:
+\[
+    k_{\nu, \text{tot}} = k_e + \left(k_{bb,\nu}+ k_{bf,\nu}+k_{ff,\nu}\right)
+    \left(1-e^{-h\nu  /kT}\right)
+.\] 
+In cui abbiamo un fattore correttivo dovuto alla emissione stimolata.\\
+Questo fattore lo si può ottene facendo uso dei coefficienti di Einstein. Prendiamo un atomo a due livelli con un $\Delta  E = h\nu_0$, per tale atomo si ha
+\begin{itemize}
+    \item $A_{21}$ che è legato alla emissione spontanea (da la probabilità di transizione per unità di tempo nella emissione spontanea). 
+    \item $B_{12}$ Legato all'assorbimento.
+    \item $B_{21}$ Transizione tra 2 e 1 per l'emissione stimolata.
+\end{itemize}
+Guardando all'assorbimento si ha che la probabilità di transizione per unità di tempo di passaggio da 1 a 2:
+\[
+B_{12}\overline{J}
+.\] 
+Dove abbiamo che 
+\[
+    \overline{J} = \int_{0}^{\infty}  J_\nu \phi (\nu) d\nu
+.\] 
+E inoltre si aveva anche che l'intensità specifica:
+\[
+J_{\nu} = \frac{I_{\nu}d\Omega}{4\pi}
+.\] 
+Mentre l'intensità $J_{\nu}$ mediata sul profilo della transizione è $\phi (\nu) $ normalizzato.
+\[
+    \int \phi(\nu) d\nu  = 1
+.\] 
+Nel caso di emissione stimolata invece:
+\[
+B_{21}\overline{J}
+.\] 
+Ci da la proprietà di transizione dal livello 2 al livello 1. Assumeremo che l'effetto di questi processi di riga sia lo stesso in un verso o nell'altro.\\
+I coefficienti di Einstein sono legati tra loro, all'equilibrio termodinamico ad esempio si ha:
+\[
+n_1 B_{12}\overline{J} = n_2 A_{21} + n_2 B_{21}\overline{J}
+.\] 
+Dove $n_i$ è il numero di atomi nel livello i. Da tale relazione ricaviamo $ \overline{J}$:
+\[
+\overline{J} = \frac{n_2A_{21}}{n_1 B_{12}-n_2 B_{21}}
+=
+\frac{A_{21} /B_{21}}{\frac{n_{1}}{n_2}\frac{B_{12}}{B_{21}} - 1}
+.\] 
+All'equilibrio termodinamico si ha che 
+ \[
+\frac{n_1}{n_2} = \frac{g_1}{g_2}e^{h\nu /kT}
+.\] 
+Inoltre abbiamo anche che $I_{\nu} = B_{\nu} = J_\nu$, e si ha anche che $ \overline{J}\approx J_\nu$ poiché se la riga è abbastanza stretta si ha che $B_{\nu}$ cambia poco nella riga.
+Sostituendo:
+\[
+    g_2B_{12} = g_1B_{21}
+.\] 
+\[
+\frac{A_{21}}{B_{21}} = 2 \frac{h}{c^2}\nu^3
+.\] 
+Queste relazioni sono generali e dipendono solo dalle proprietà strutturali degli atomi.\\
+Possiamo così calcolare i coefficienti di emissione e di assorbimento in termini di coefficienti di Einstein:
+\[
+    j_\nu  = \frac{h\nu}{4\pi} n_2A_{21}\phi (\nu-\nu_0) 
+.\] 
+Per il coefficiente di emissione totale sulla linea devo integrare quest'ultimo sul profilo di riga:
+\[
+j_{\nu,0} = \int_{0}^{\infty} j_\nu  d\nu  = \frac{h \nu_0}{4\pi} n_2 A_{21} 
+.\] 
+Inoltre abbiamo anche che:
+\[
+    \int h\nu_0 \phi (\nu-\nu_0) d\nu  = h \nu_0
+.\] 
+Possiamo calcolare allora il coefficiente di assorbimento $\alpha_\nu$:
+\[
+    \alpha_\nu  = \frac{h\nu}{4\pi} \left[n_1B_{12}\varphi (\nu-\nu_0)
+    - n_2 B_{21} \chi (\nu-\nu_0) \right]=
+    \frac{h\nu}{4\pi}n_1B_{12}\varphi (\nu-\nu_0) 
+    \left[1-\frac{n_2g_1\chi (\nu-\nu_0) }{n_1g_2\varphi (\nu-\nu_0) }\right]
+.\] 
+Nella quale abbiamo sfruttato la relazione tra i coefficienti di Einstein.\\
+Consideriamo il caso in cui $\chi = \varphi$ :
+\[
+\alpha_{\nu_0} = \int_{0}^{\infty} \alpha_\nu  d\nu  
+=
+\frac{h\nu_0}{4\pi}\left(n_1B_{12}-n_2B_{21}\right)
+.\] 
+Dove si ha che:
+\[
+    \int h\nu_0 \varphi (\nu-\nu_0) d\nu  = h \nu_0
+.\]
+\[
+    \int h\nu_0 \chi (\nu-\nu_0) d\nu  = h \nu_0
+.\]
+In conclusione visto che vale Boltzmann si ha che:
+\[
+    1-\frac{n_2g_1\chi (\nu-\nu_0) }{n_1g_2\varphi (\nu-\nu_0) } 
+    = 1 - e^{-h\nu_0 /kT}
+.\] 
+Che è proprio il termine correttivo.\\
+\subsection{Contributo dovuto alle reazioni nucleari.}%
+\label{sub:Contributo dovuto alle reazioni nucleari.}
+Il contributo dovuto alle reazioni nucleari lo abbiamo nominato come $\mathcal{E}$, lo abbiamo introdotto confrontando i tempi scala. Avevamo affermato che se all'interno della stella non vi fossero reazioni nucleari allora le stelle si evolvono con tempi scala dell'ordine di quello di Kelvin Halmotz ($30 \cdot 10^{6}$ yr) quindi era emersa la necessità di un'altra sorgente per avere tempi di evoluzione più simili a quelli "osservati". Da queste motivazioni è sorta l'intuizione di proporre come sorgente di energia stellare le reazioni nucleari.\\
+

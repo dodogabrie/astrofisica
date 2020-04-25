@@ -1,0 +1,266 @@
+\lez{15}{20-04-2020}{}
+\subsection{Reazioni nucleari di fusione.}%
+\label{sub:Reazioni nucleari di fusione.}
+In generale possiamo dire che quando abbiamo un nucleo atomico si massa $m_x$ che ha $Z$ protoni e $N$ protoni allora sappiamo che l'energia di legame di tale nucleo può essere scritta come 
+\[
+    E=(m_x - Zm_p - Nm_n)c^2
+.\] 
+In realtà è molto più utile l'energia di legame per nucleone:
+\[
+E_b = \frac{E}{A}
+.\] 
+Conosciamo l'andamento della Binding Energy, la curva cresce rapidamente nella prima parte e raggiunge un massimo nel ferro per poi scendere.\\
+Il nucleo più legato di tutti è il Nichel 62 (in generale i nuclei che si trovano in un intorno del ferro sono quelli più legati e vengono chiamati elementi del gruppo del ferro). Questo significa che il comportamento delle reazioni di fusione nucleare è diverso se stiamo a destra o a sinistra del picco.\\
+Facendo fondere due nuclei a sinistra otteniamo un nucleo risultante più legato dei reagenti, ci spostiamo quindi verso il picco della curva. Per questi reagenti la reazione sarà esotermica: il difetto di massa viene convertito in energia.\\
+Viceversa a destra del picco la fusione nucleare produce nuclei sempre meno legati: il processo di fusione sarà endotermico per questi elementi. Per fare processi esotermici con questi ultimi devo fare la fissione nucleare.\\
+Questa caratteristica nucleare influirà sul destino delle stelle. Inoltre abbiamo che le reazioni che possono liberare più energia sono quelle tra elementi con $Z$ più basso possibile (H), andando verso il massimo l'energia liberata è sempre inferiore.\\
+La massima energia che posso liberare è quella che ho convertendo l'idrogeno nel ferro, facendo il calcolo abbiamo che la frazione di energia a riposo che possiamo liberare è al massimo lo 0.9\%.\\
+Prendiamo una reazione del tipo:
+\[
+x+A\to y+B
+.\]   
+In modo equivalente la reazione si scrive $A(x,y)B$, la quantità di energia che viene liberata nella reazione si dice $Q$-valore ed è data da:
+\[
+    Q = \left(m_x+m_A-m_y-m_B\right)c^2
+.\]
+Se la reazione è esotermica si ha $Q>0$ altrimenti $Q<0$. Per poter effettuare le reazioni nucleari è necessario vincere la repulsione coulumbiana tra i nuclei, se prendiamo un atomo con numero di massa $A=Z+N$ allora possiamo dire che $R_\text{nucleo}(A)=1.3\cdot A^{1 /3}$ fm. La barriera di repulsione coulombiana tra due nuclei di numero atomico $Z_1$ e $Z_2$ sarà:
+\[
+E_c =\frac{Z_1Z_2e^2}{R}\sim \frac{Z_1Z_2}{A^{1 /3}} 1.1 \text{MeV}
+.\] 
+Quindi anche nel caso più favorevole di tutti (protoni) otteniamo una barriera coulombiana dell'ordine del MeV. Questa barriere è grande rispetto alla energia termica che le particelle hanno a disposizione nei nuclei delle stelle.
+\[
+E = kT \sim 0.86 \cdot 10^{4}T \text{ MeV} 
+.\] 
+Nella quale la temperatura è espressa in milioni di gradi.\\
+Nel centro del sole ad esempio ($T\sim 15\cdot 10^7$ K) allora nel caso di due protoni otteniamo che $E_T\sim $ keV $\ll E_C = 1.1$ MeV. Se considerassi nuclei più pesanti allora sarebbe ancora più difficile superare la barriera coulombiana per fare la fusione.\\
+Notiamo che le temperature necessarie per vincere la barriera coulombiana dovrebbero essere di 3 ordini maggiori (miliardi di gradi) che non è possibile avere nelle stelle.\\
+Visto che gli interni stellari sono in condizioni di LTE possiamo dire che le particelle (in questo caso i nuclei atomici) sono distribuite con una Maxwell-Boltzmann, potrei pensare che nella coda della distribuzione ci siano particelle con una energia tale da superare tale barriera. 
+Stimiamo allora il numero di particelle con una energia relativa tale da superare la barriera
+\[
+    N = \exp\left(-\frac{E_c}{kT}\right)\approx \exp\left(-10^3\right)
+    \sim 10^{-434}
+.\] 
+Quindi un numero estremamente piccolo di atomi ha l'energia sufficiente (in una stella abbiamo un numero di particelle dell'ordine di $10^{57}$).\\
+Classicamente non è possibile avere particelle in grado di superare la barriera coulumbiana nelle stelle. Per risolvere questo problema è necessario ragionare quantisticamente e tener di conto dell'effetto tunnel.
+Grazie alle proprietà ondulatorie la particella ha una probabilità non nulla di penetrare la barriera e tale probabilità è detta probabilità di Gamov.\\
+\[
+P_G = e^{-2\pi \eta}
+.\] 
+Con 
+\[
+\eta = \frac{Z_1Z_2 e^2}{\hbar  v}
+.\] 
+Parlando della Brehmshtralung inversa abbiamo detto che se siamo in una condizione di equilibrio termodinamico in cui particelle vanno come distrib. di Maxwell allora anche la velocità relativa delle particelle è distribuita come Maxwell. Questa velocità sarà legata alla temperatura del gas in cui avvengono le reazioni. \\
+Possiamo riscrivere $\eta$  come:
+\[
+\eta = \frac{Z_1Z_2e^2}{\hbar \sqrt{E}}\sqrt{\frac{m}{2}} 
+.\] 
+Dove $m$ è la massa ridotta delle due particelle. La probabilità di superare per effetto tunnel la barriera coulumbiana decresce esponenzialmente con la carica, inoltre maggiore è l'energia e più alta è la probabilità di superare la barriera coulumbiana.\\
+Dobbiamo aspettarci che sarà necessario raggiungere un compromesso tra due fenomeni diametralmente opposti: da una parte dobbiamo superare la barriera coulumbiana quindi vorrei avere la maggior velocità possibile, d'altra parte però vale LTE, quindi le particelle sono distribuite con Maxwell quindi aumentando la velocità richiesta saranno sempre meno le particelle aventi tale velocità (la temperatura è fissata: l'energia del picco di Maxwell è fissata). \\
+Ci dobbiamo aspettare che le reazioni nucleari avvengano in una regione di compromesso detta finestra di Gamov.\\
+Possiamo schematizzare una reazione nucleare 
+\[
+x+A\to y+B
+.\] 
+come un processo a due step:
+\begin{itemize}
+    \item La barriera coulumbiana viene superata e si ha: $x+A\to C^*$ con $C^*$ un nucleo composto che in generale si trova in uno stato eccitato.
+    \item $C^* \to y+B$.
+\end{itemize}
+La probabilità che il processo intero avvenga è data dal prodotto della probabilità di questi due processi. Inoltre per il secondo processo possono avvenire svariate cose: 
+\[\begin{aligned}
+    &C^*\to x+A \\
+    &C^*\to x+A^*\\
+    &C^*\to c+\gamma\\
+    &C^*\to y+B
+.\end{aligned}\]
+Quale di queste effettivamente avvenga verrà deciso dal tipo di forza che media a livello nucleare la reazione (può avvenire interazione forte, elettromagnetica o debole). Possiamo dire che le interazioni mediate da una interazione forte avranno una sezione d'urto molto più grande di quella delle reazioni mediate dalla interazione elettromagnetica. A loro volta le reazioni mediate da una reazione elettromagnetica hanno una sezione d'urto molto più grande di quella delle interazioni deboli.\\
+La sezione d'urto del processo che ci interessa sarà una funzione della energia e dipenderà da
+\begin{itemize}
+    \item $P_G(E)$.
+    \item $\pi\chi^2$ che è una sezione d'urto geometrica (valutata a livello quantistico).
+    \item $S$ che è un termine dipendente dalle proprietà nucleari. 
+\end{itemize}
+Per il secondo punto (sezione d'urto geometrica) abbiamo che in MQ le veci di raggio sono fatte dalla lunghezza d'onda di De Broglie:
+\[
+\chi = \frac{\hbar }{p}
+.\] 
+Quindi questo termine da un contributo del tipo:
+\[
+\pi\chi^2 \propto \frac{1}{E}
+.\] 
+Possiamo allora scrivere la sezione d'urto come:
+\[
+    \sigma (E) = \frac{S(E)}{E}e^{-2\pi\eta}
+.\] 
+Il termine $S(E)$ è detto fattore astrofisico: lì viene scaricata tutta la fisica nucleare (tipi di interazione ecc\ldots).\\
+Ricordiamo che la sezione d'urto è misurata tipicamente in Barn: $1$ barn $=10^{-24}$ cm$^2$.\\
+Riprendiamo l'equazione di struttura stellare sull'energia:
+\[
+\frac{\text{d} L}{\text{d} r} = 4\pi r^2\rho\mathcal{E}
+.\] 
+Abbiamo detto che in $\mathcal{E}$ (coefficiente di produzione di energia (per unità di tempo e massa)), in tale coefficiente c'erano più contributi:
+\[
+\mathcal{E} =\mathcal{E}_N+\mathcal{E}_g-\mathcal{E}_\nu
+.\] 
+Vediamo come è fatto $\mathcal{E}_N$, troviamo prima il rate di reazioni nucleari e poi potremmo calcolare tale coefficiente. \\
+Immaginiamo di avere un fascio $j$  di particelle che si muovono con velocità $v$ verso un bersaglio costituito da particelle di tipo $i$. \\
+Una particella $j$ nell'unità di tempo interagisce con $n_i\sigma v$ particelle bersaglio, dove $n_i$ è il numero di particelle per unità di volume. Il numero di reazioni tra particelle $i$ e $j$ si otterrà moltiplicando per $n_j$ l'ultima quantità scritta.
+\[
+n_{ij}=n_in_j\sigma v
+.\] 
+Questo è il numero di reazioni per unità di volume tra le particelle $i$ e le particelle $j$. Se le particelle in questione fossero uguali allora dovrei dividere per 2 per evitare i doppi conteggi. Quindi la forma più generale sarà:
+\[
+n_{ij}=\frac{n_in_j}{1+\delta_{ij}}\sigma v
+.\]
+Nelle stelle le particelle non hanno tutte la stessa velocità, sono distribuite con la Maxwell-Boltzmann, quindi dobbiamo mediare $\sigma v$  con la funzione di Maxwell:
+\[
+    \left<\sigma v\right>\int\sigma (v) v f(v) dv
+.\] 
+Possiamo anche scrivere questo integrale in termini di energia:
+\[
+    \left<\sigma v\right> = \int\sigma (E)vf(E) dE
+.\] 
+La distribuzione di Maxwell in termini dell'energia è:
+\[
+    f(E) dE = \frac{2}{\sqrt{\pi}}\frac{\sqrt{E}}{\left(kT\right)^{3 /2}}e^{- E /kT}dE
+.\] 
+A questo punto possiamo scrivere il rate come:
+\[
+n_{ij}= \frac{n_in_j}{1+\delta_{ij}}\left<\sigma v\right>
+.\] 
+Se siamo in grado di calcolare tale media allora abbiamo quasi raggiunto il nostro obbiettivo (trovare $\mathcal{E}_N$ ). \\
+Per le particelle $i$ e $j$ il coefficiente $\mathcal{E}$ corrispondente sarà:
+\[
+\mathcal{E}_{ij} = \frac{n_{ij}}{\rho}Q_{ij}
+.\] 
+Quindi se conosco il $Q$ valore della reazione posso calcolare tale coefficiente per quella determinata reazione. Se facciamo questa operazione per tutte le reazioni che sono attive allora otteniamo $\mathcal{E }_N$ come somma.
+Riscriviamo il termine $\mathcal{E}_{ij}$ :
+\[
+\mathcal{E}_{ij} = \frac{n_{ij}}{\rho}Q_{ij} = \frac{1}{1+\delta_{ij}}\frac{x_ix_j}{A_iA_j}
+\frac{\rho}{m_H^2}\left<\sigma v\right>
+.\] 
+Dove abbiamo usato anche il fatto che $n_i = \frac{\rho}{A_im_H}X_i$. Risolviamo adesso l'integrale per $\left<\sigma v\right>$, sostituiamo $\sigma$:
+\[
+    \left<\sigma v\right>=\int \frac{S(E)}{E}e^{-2\pi\eta}f(E) dE 
+    = \frac{2^{3 /2}}{\sqrt{\pi m}}\frac{1}{\left(kT\right)^{3 /2}}\int_{0}^{\infty} 
+    S(E) \exp\left[-\frac{E}{kT}-\frac{\beta}{\sqrt{E}}\right]dE
+.\] 
+Dove 
+\[
+\beta  = \pi\sqrt{2m} \frac{Z_iZ_j}{\hbar }e^2
+.\] 
+Se siamo lontani dalle risonanze il fattore astrofisico $S(E)$  è una funzione che dipende "lentamente" dall'energia, possiamo quindi portarlo fuori dall'integrale. 
+\\
+Questo integrale si riduce quindi a:
+\[
+\int_{0}^{\infty} \exp\left[-\frac{E}{kT}-\frac{\beta}{\sqrt{E}}\right]dE 
+.\] 
+Quindi vediamo che la funzione integranda è il prodotto di due esponenziali che hanno contributi opposti su $\left<\sigma v\right>$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/Probabilità-relativa-S.png}
+    \label{fig:figures-Probabilità-relativa-S-png}
+\end{figure}
+Vediamo dalla immagine che siamo nella coda dell'esponenziale della distribuzione di Maxwell. Aumentando la carica delle particelle la curva esponenziale si sposta verso destra, di conseguenza anche il picco di Gamov si sposta a destra. Questo avrà delle importanti ripercussioni.\\
+Da questo grafico possiamo intuire che nelle stelle visto che le reazioni avvengono ad energie che sono piccole rispetto alla interazione coulumbiana abbiamo una forte dipendenza dalla temperatura e dalla carica. Per questo nelle stelle le fasi di combustione principali avvengono in modo separato: prima avvengono le combustioni con gli elementi di carica più bassa (H) e successivamente potremmo avere combustioni di elementi più pesanti. \\
+Vediamo adesso il valore del picco di Gamov trovando il massimo di $\left<\sigma v\right>$, quindi dobbiamo solo trovare il minimo della funzione contenuta nell'esponenziale (all'interno dell'integrale). Si trova banalmente che:
+\[
+    E_0 = \left(\frac{\beta}{2}kT\right)^{\frac{2}{3}}=
+    \left(\pi\sqrt{\frac{m}{2}} \frac{Z_iZ_j}{\hbar }e^2kT\right)^{\frac{2}{3}}
+.\] 
+In cui abbiamo sostituito il coefficiente $\beta$. Scrivendola anche in termini di peso atomico:
+\[
+    E_0=5.665 \text{ keV}\left(Z_i^2Z_j^2 \frac{A_iA_j}{A_i+A_j} \right)^{\frac{1}{3}}T_7^{-\frac{1}{3}}
+.\] 
+Dove $T_7$ indica la temperatura in $10^7$ K. \\
+Facendo il conto nel centro del sole ($T_c = 1.5 \cdot 10^{7}$ K) abbiamo che $E_0 \sim 5.5 $ keV (per il processo p+p ).\\
+Possiamo anche fare il confronto tra l'energia di Gamov e $kT$ per capire quanto siamo lontani dal picco termico.
+\[
+    \frac{E_0}{kT} \sim 6.574 \left(Z_i^2Z_j^2 \frac{A_iA_j }{A_i+A_j}\right)^{\frac{1}{3}}T_7^{-\frac{1}{3}}
+.\] 
+Per il centro del sole il rapporto vale $4.6$. Se facciamo lo stesso calcolo per il carbonio 12 alla stessa temperatura tale rapporto vale 113. \\
+Questo spiega perché nel centro del sole oggi avvengono le combustioni di idrogeno: il picco di Gamov per il carbonio è lontanissimo. \\
+Riprendiamo l'espressione per $\left<\sigma v\right>$  :
+\[
+    \left<\sigma v\right> = \ldots \int_{0}^{\infty} e^{f(E)}dE 
+.\] 
+In cui $f(E) = -\frac{E}{kT}-\frac{\beta}{\sqrt{E}}$. Si è soliti introdurre una quantità $\tau$  tale che:
+\[
+\tau = \frac{3E_0}{kT}= 3\left[\pi\sqrt{\frac{m}{2kT}} \frac{Z_iZ_je^2}{\hbar }\right]^{\frac{2}{3}}
+.\] 
+Sostituendo al posto di $E$ nella espressione per $f$ l'energia di Gamov infatti si ottiene:
+\[
+    f(E_0) = -\tau
+.\] 
+Quindi la funzione integranda in corrispondenza della energia di Gamov ha un massimo e viene indicata come:
+\[
+I_\text{Max} = e^{-\tau}=e^{-\frac{3E_0}{kT}}
+.\] 
+Visto l'andamento del picco di Gamov al variare della temperatura ($T^{\frac{2}{3}}$) la funzione $I_\text{max} $ cresce esponenzialmente con la temperatura.\\
+Abbiamo quindi che la funzione integranda e quindi $\left<\sigma v\right>$  dipenderà molto dalla temperatura.\\
+Inoltre $\tau$ dipende dalla carica delle particelle che interagiscono (direttamente proporzionale) quindi $I_\text{max} $ decresce esponenzialmente con la carica. \\
+Per esempio nel centro del sole abbiamo che 
+\begin{itemize}
+    \item $p+p$: $E_0\approx 5.5$ keV $\implies$ $I_\text{max} = 1.1 \cdot 10^{-6}$.
+    \item $p+{}^{14}N$: $E_0 \approx 26.5$ keV $\implies$ $I_\text{max} = 1.8 \cdot 10^{-27}$  .
+    \item $\alpha +^{12}C$ : $E_0 = 56$ keV $\implies$ $I_\text{max} = 3\cdot 10^{-57}$.
+\end{itemize}
+Quindi oggi nel centro del sole è attiva la prima reazione, la seconda è parzialmente attiva, la terza non è attiva.\\
+Visto che le reazioni nelle stelle avvengono ad energie molto basse rispetto alla barriera di interazione coulumbiana e quindi sono poco efficienti. Questa bassa energia è la principale difficoltà nel riprodurre tali reazioni qua sulla terra.\\
+Sviluppiamo $f(E)$ attorno all'energia di Gamov:
+\[
+    f(E) \approx f(E_0) + f'(E_0) \left(E-E_0\right)+ \frac{1}{2}f''(E_0) \left(E-E_0\right)
+.\] 
+Ovviamente la derivata prima si annulla in $E_0$, sostituendo abbiamo che:
+\[
+    f(E) \approx -\tau - \frac{\tau}{4}\left(\frac{E}{E_0}-1\right)^2
+.\] 
+Sostituiamo questo sviluppo nell'integrando:
+\[
+    J=\int_{0}^{\infty} e^{f(E)}dE \approx \int_{0}^{\infty} 
+    \exp\left(-\tau-\frac{\tau}{4}\left(\frac{E}{E_0}-1\right)^2\right)dE=
+    \frac{2}{3}kT\tau^{\frac{1}{2}}e^{-\tau}\int_{-\sqrt{\tau}/2}^{\infty} e^{-\xi^2}d\xi 
+.\] 
+In cui con un cambio di variabile abbiamo introdotto la :
+\[
+    \xi =\left(\frac{E}{E_0}-1\right) \frac{\sqrt{\tau} }{2} 
+.\] 
+Se potessimo fare l'integrale tra $-\infty$ e $\infty$ allora conosceremo il risultato, se lo estendiamo facciamo un errore del $3\%$ perché la funzione integranda è diversa da zero solo in un intorno stretto della energia di Gamov, estendendo e calcolando tale integrale si ha che:
+\[
+J \approx kT \frac{2}{3}\sqrt{\pi} \tau^{\frac{1}{2}}e^{-\tau}
+.\] 
+Con questo sviluppo possiamo ottenere
+\[
+    \left<\sigma v\right> = \frac{4}{3}\sqrt{\frac{2}{m}} \frac{S(0)}{\sqrt{kT}}\tau^{\frac{1}{2}}e^{-\tau}
+.\] 
+Dalla definizione di $\tau$  si ha che 
+\[
+\frac{1}{\sqrt{kT}}\sim \tau^{\frac{3}{2}}
+.\] 
+Quindi abbiamo che 
+\[
+\left<\sigma v\right>\sim \tau^2e^{-\tau}
+.\] 
+Ipotizziamo di avere un determinato $\left< \sigma v\right>_0$ alla temperatura $T_0$ di riferimento, allora in un intorno di questa temperatura dimostriamo che:
+\[
+    \left<\sigma v\right> = \left<\sigma v\right>_0 \left(\frac{T}{T_0}\right)^{\nu}
+.\] 
+Dimostriamo adesso che tale potenza è data da 
+\[
+\nu=\frac{\partial \ln\left<\sigma v\right>}{\partial \ln T} = \frac{\tau-2}{3}
+.\] 
+Visto che $\tau\sim T^{-\frac{1}{3}}$ e che $\left<\sigma v\right>\sim \tau e^{-\tau}$ possiamo dedurre anche che $\left<\sigma v\right>\sim T^{-\frac{2}{3}}e^{-\tau}$.\\
+Prendiamo a questo punto i logaritmi:
+\[
+    \ln\left(\left<\sigma v\right>\right) = cost -\frac{2}{3}\ln T -\tau
+.\] 
+E quindi:
+\[
+    \frac{\partial \ln\left(\left<\sigma v\right>\right)}{\partial \ln T}  =
+    -\frac{2}{3}-\frac{\partial V}{\partial x} =
+    -\frac{2}{3}-\tau\frac{\partial \ln\tau}{\partial \ln T} 
+.\] 
+Visto l'andamento di $\tau$ otteniamo la relazione cercata. Otteniamo allora il risultato importante: la sezione d'urto in un intorno di un data temperatura cresce come una potenza della temperatura stessa dipendente da $\tau$.
+Per questo ci dobbiamo aspettare che la dipendenza del $\left<\sigma v\right>$  e quindi la dipendenza del reaction rate e dunque la dipendenza del coefficiente di produzione di energia dalla temperatura sia tanto più forte quanto più è maggiore la carica delle particelle in gioco.\\
+Questa caratteristica (insieme al calore specifico negativo) sono quelle che determinano le qualità di termostato stellare di cui abbiamo già parlato.

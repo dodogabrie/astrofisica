@@ -1,30 +1,5 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \contentsline {chapter}{\numberline {1}Introduzione e Trasporto Radiativo}{2}{chapter.2}% 
-\contentsline {section}{\numberline {1.1}Lezione 12}{2}{section.3}% 
-\contentsline {subsection}{\numberline {1.1.1}Moti convettivi nelle stelle.}{2}{subsection.4}% 
-\contentsline {subsection}{\numberline {1.1.2}Gradiente radiativo e gradiente adiabatico.}{4}{subsection.20}% 
-\contentsline {subsection}{\numberline {1.1.3}Gradiente radiativo e luminosità.}{5}{subsection.39}% 
-\contentsline {subsection}{\numberline {1.1.4}Mixing Length (o lunghezza media percorsa dalle bolle convettive.)}{6}{subsection.44}% 
-\contentsline {subsection}{\numberline {1.1.5}Core convettivi e inviluppi convettivi}{7}{subsection.63}% 
-\contentsline {subsubsection}{Inviluppo convettivo}{7}{section*.64}% 
-\contentsline {subsubsection}{Core convettivo}{7}{section*.67}% 
-\contentsline {section}{\numberline {1.2}Lezione 13}{8}{section.69}% 
-\contentsline {subsection}{\numberline {1.2.1}Convezione e equilibrio idrostatico.}{8}{subsection.70}% 
-\contentsline {subsection}{\numberline {1.2.2}Equazioni di struttura stellare.}{8}{subsection.75}% 
-\contentsline {subsection}{\numberline {1.2.3}Equazione di stato}{9}{subsection.78}% 
-\contentsline {subsection}{\numberline {1.2.4}Tre casi di perdita di approssimazione di gas perfetto}{10}{subsection.94}% 
-\contentsline {subsubsection}{Gas quantistico}{10}{section*.98}% 
-\contentsline {paragraph}{Centro del sole}{11}{section*.102}% 
-\contentsline {paragraph}{Gigante rossa}{11}{section*.105}% 
-\contentsline {paragraph}{Nana bianca}{11}{section*.107}% 
-\contentsline {subsubsection}{Gas relativistico}{11}{section*.111}% 
-\contentsline {paragraph}{Caso di gas non degenere}{11}{section*.112}% 
-\contentsline {paragraph}{Caso di gas degenere}{11}{section*.113}% 
-\contentsline {subsubsection}{Esempi numerici}{12}{section*.117}% 
-\contentsline {paragraph}{Gigante rossa}{12}{section*.118}% 
-\contentsline {paragraph}{Nana bianca}{12}{section*.119}% 
-\contentsline {subsubsection}{Gas perfetto (interazioni)}{12}{section*.121}% 
-\contentsline {paragraph}{Sole}{12}{section*.129}% 
-\contentsline {paragraph}{Gigante rossa}{12}{section*.130}% 
-\contentsline {paragraph}{Nana bianca}{12}{section*.131}% 
+\contentsline {section}{\numberline {1.1}Lezione 15}{2}{section.3}% 
+\contentsline {subsection}{\numberline {1.1.1}Reazioni nucleari di fusione.}{2}{subsection.4}% 
