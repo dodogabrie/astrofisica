@@ -1,0 +1,163 @@
+\lez{18}{30-04-2020}{}
+\subsection{Neutrini}%
+\label{sub:Neutrini}
+I neutrini sono un canale di raffreddamento per la stella, il cammino libero medio di queste particelle $l_\nu$ è molto maggiore del raggio della stella stessa $R$  quindi riescono a scappare portando via energia.\\
+Una riprova di questa affermazione la possiamo ottenere calcolando la sezione d'urto dei neutrini prodotti dalla catena $p-p$ ($E_\nu < 0.4$ eV):
+\[
+    \sigma_\nu  \sim 
+    10^{-44}
+    \left(\frac{E_\nu}{m_ec^2}\right)^2 
+    \text{ cm}^2
+.\] 
+Il cammino libero medio sarà quindi:
+\[
+    l_\nu =
+    \frac{1}{n\sigma_\nu} =
+    \frac{\mu m_H}{\rho\sigma_\nu}
+.\] 
+Se utilizziamo i valori medi per il sole:
+\begin{itemize}
+    \item $\overline{\rho }_\odot = 1.4$ g/cm$^3$.
+    \item $\overline{\mu} = 0.6$ (peso molecolare medio).
+\end{itemize}
+Si ottiene un cammino libero medio: $l_\nu  \sim 10^{20}$ cm.\\
+Nel caso di stelle più dense (nane bianche) si ha:
+\begin{itemize}
+    \item $\overline{\rho} \sim 10^6$ g/cm$^3$.
+    \item $\overline{\mu} = 2$ (peso molecolare medio).
+\end{itemize}
+Quindi otteniamo $l_\nu  \sim 10^{14}$ cm, un valore molto inferiore al caso del sole. Tuttavia per una nana bianca si ha anche che $R\sim \frac{1}{100}R_\odot$, quindi il cammino libero medio è comunque $10^5$ volte il raggio della nana bianca.\\
+In conclusione i neutrini riescono sempre ad uscire dalla stella che li ha prodotti, sottraendo energia a quest'ultima.\\
+La produzione di neutrini nella stella può avvenire in vari modi, un esempio è processo ORCA.\\
+Il processo ORCA consiste in un $\beta$ inverso:
+\[
+    \left(Z,A\right)+e^- \to \left(Z-1,A\right)+\nu
+.\] 
+Questa la si ottiene quando gli elettroni degeneri superano l'energia di soglia per fare la reazione. Se il nucleo prodotto da questa è instabile allora il sistema torna indietro con un $\beta$:
+\[
+    \left(Z-1,A\right) +\nu  \to \left(Z,A\right)+e^-
+.\] 
+ed il processo va avanti in questo modo fino a che ci sono le condizioni per poter fare cattura elettronica.\\
+Altri esempi di produzione di neutrini sono:
+\begin{itemize}
+    \item Annichilazione di coppie: $e^+ + e^- \to \nu  + \overline{\nu}$.
+    \item Fotoneutrini: $\gamma + e^- \to e^- + \nu  + \overline{\nu}$.
+    \item Bremstralhung, in sistemi ad alta densità vengono prodotte coppie $\nu - \overline{\nu}$.
+    \item Plasmaneutrini.
+\end{itemize}
+\subsection{Relazioni di scala tra grandezze stellari.}%
+\label{sub:Relazioni di scala tra grandezze stellari.}
+Ricordiamo le equazioni di struttura stellare: abbiamo le due equazioni di equilibrio meccanico
+\[\begin{aligned}
+    & \frac{\partial P}{\partial r} = -G \frac{m\rho}{r^2} \qquad
+    \text{ eq. idrostatico}\\
+    & \frac{\partial m}{\partial r} = 4\pi r^2\rho \qquad
+    \text{ eq. continuità}
+.\end{aligned}\]
+e le due equazioni di equilibrio termico:
+\[\begin{aligned}
+   &\frac{\partial L}{\partial r} = 4\pi r^2\rho\mathcal{E}\\
+   &\frac{\partial T}{\partial r} =
+   \begin{cases}
+       &- \frac{3}{4ac}\frac{\overline{k}\rho}{T^3} \frac{L}{4\pi r^2} 
+       \qquad \text{ eq. trasporto}\\
+       & \left|
+       \frac{\partial T}{\partial r} 
+       \right|_\text{conv} 
+   \end{cases}
+.\end{aligned}\]
+Per risolvere queste equazioni differenziali serve inoltre conoscere le condizioni microscopiche della materia:
+\begin{itemize}
+    \item $P=P(\rho,T,\left\{x_i\right\})$.
+    \item $k_R = k_R(\rho,T, \left\{x_i\right\})$.
+    \item \ldots
+\end{itemize}
+Inoltre tali equazioni non ammettono soluzioni analitiche, sono necessari metodi numerici che vanno al di là delle capacità del corso. \\
+Sono inoltre richieste delle condizioni al contorno per risolvere quest'ultime, le condizioni più gettonate sono:
+\begin{itemize}
+    \item $m(r=0) = 0$, $L(r=0) = 0$.
+    \item $\rho (r=R) =0$, $T(r=R) = 0$.
+\end{itemize}
+Dove $R$ è il raggio della stella. Anche se non possiamo risolvere tali equazioni possiamo ricavare tramite esse delle relazioni di scala che ci permettono di dire qualcosa sulla evoluzione stellare. Partiamo dalla equazione di equilibrio idrostatico:
+\[
+    \frac{\partial P}{\partial r} = - G \frac{m\rho}{r^2}
+    \implies 
+    \frac{0-P}{R-0}= -\frac{GM}{R^2}\frac{M}{R^3}
+    \implies P \propto \frac{M^2}{R^4}
+.\] 
+Se possiamo approssimare il gas come gas perfetto allora 
+\[
+P\propto\rho T\propto \frac{M}{R^3}T
+.\] 
+Da questa ultima si ricava anche che:
+\[
+    \frac{M^2}{R^4}\propto \frac{M}{R^3}T \implies T \propto \frac{M}{R}
+.\] 
+Se invece prendiamo l'equazione del trasporto all'equilibrio radiativo:
+\[
+    \frac{T}{R}\propto \frac{1}{T^3}\frac{M}{R^3}\frac{L}{R^2}
+    \implies L\propto \frac{\left(TR\right)^4}{M} \implies
+    L \propto M^3
+.\] 
+Abbiamo quindi la famosa \textit{Relazione massa-luminosità}: la luminosità di una stella cresce come una potenza della massa.\\
+Visto che per le stelle vale anche che:
+\[
+    L=4\pi R^2\sigma T_\text{eff}^4
+.\] 
+Quindi possiamo aggiungere che:
+\[
+    L\propto R^2T^4_\text{eff} \implies L\propto I_\text{eff}^6
+.\] 
+Abbiamo quindi delle relazioni per le stelle che si trovano nella sequenza principale (combustione di H):
+\begin{figure}[H]
+    \centering
+    \incfig{stelle-sulla-sequenza-principale}
+    \caption{Stelle sulla sequenza principale}
+    \label{fig:stelle-sulla-sequenza-principale}
+\end{figure}
+L'ultima equazione che possiamo ottenere riguarda la durata della fase evolutiva:
+\[
+    \tau  \propto  \frac{M}{L} \implies \tau  \propto  \frac{1}{M^2}	
+.\] 
+La durata della vita della stella decresce al crescere della sua massa.
+\subsection{Cenni all'evoluzione stellare}%
+\label{sub:Cenni all'evoluzione stellare}
+Le stelle nascono da nubi molecolari fuori dall'equilibrio idrostatico, tali nubi contraggono e collassano:
+\[
+    2K< \left|\Omega\right|
+.\] 
+Siamo nel caso in cui l'attrazione gravitazionale prevale sulla agitazione termica.\\
+Consideriamo una nube a simmetria sferica e a densità costante, l'energia potenziale gravitazionale della nube è:
+\[
+    \Omega = - \int   \frac{Gmdm}{r} = 
+    -\frac{3}{5}\frac{GM^2}{R}
+.\] 
+Mentre l'energia cinetica del gas sarà:
+\[
+    K = \frac{3}{2}NkT 
+.\]  
+Quindi dalla disuguaglianza iniziale abbiamo che:
+\[
+    \frac{3M}{\mu m_H}kT < \frac{3}{5} \frac{GM^2}{R}
+.\] 
+Ricordando che siamo a densità della nube $\rho$ costante possiamo scrivere il raggio della nube come:
+\[
+    R = \left(\frac{3M}{4\pi\rho}\right)^{1 /3}
+.\] 
+Otteniamo quindi la massa di Jeans:
+\[
+    M \ge
+    \left(\frac{5K}{\mu m_HG}T\right)^{3 /2}
+    \left(\frac{3}{4\pi\rho}\right)^{1 /2} = M_J
+.\] 
+Analogamente si può definire un raggio di Jeans:
+\[
+    R \ge R_J = \left(\frac{15kT}{4\pi G\mu m_H \rho}\right)^{1/2}
+.\] 
+La nube inizia il collasso quando $R \ge R_J$ oppure $M\ge M_J$.\\
+All'inizio avverranno processi che riscaldano e che raffreddano la nube. 
+Visto che inizialmente tali nubi sono molto rarefatte prevarranno i processi di raffreddamento, il collasso avverrà a temperatura costante (collasso isotermo).\\
+Durante il collasso necessariamente aumenta $\rho$, visto che siamo isotermi deve diminuire anche il limite $M_J$, abbiamo allora una frammentazione della nube che porterà alla formazione di molteplici stelle.\\
+Successivamente il gas diventa abbastanza denso (nel collasso) da diventare otticamente spesso, in questo modo la temperatura smette di essere costante, la radiazione rimane infatti intrappolata nella nube.\\
+Il processo procede fino al punto in cui la pressione esercitata dal gas non è tale da contrastare il collasso, la stella a questo punto si forma ed inizia la fase di equilibrio idrostatico.\\
+Parte del gas che circonda la stella forma il \textit{Disco di accrescimento} (dovuto al fatto che nella realtà invece che avere una simmetria sferica abbiamo dei moti rotatori del gas). Tale disco è responsabile della formazione dei pianeti ed asteroidi di quello che sarà un sistema stellare.

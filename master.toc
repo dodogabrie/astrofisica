@@ -1,4 +1,7 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {chapter}{\numberline {1}Introduzione e Trasporto Radiativo}{2}{chapter.2}% 
-\contentsline {section}{\numberline {1.1}Lezione 17}{2}{section.3}% 
+\contentsline {chapter}{\numberline {1}Introduzione e Trasporto Radiativo}{2}{chapter.2}%
+\contentsline {section}{\numberline {1.1}Lezione 18}{2}{section.3}%
+\contentsline {subsection}{\numberline {1.1.1}Neutrini}{2}{subsection.4}%
+\contentsline {subsection}{\numberline {1.1.2}Relazioni di scala tra grandezze stellari.}{3}{subsection.9}%
+\contentsline {subsection}{\numberline {1.1.3}Cenni all'evoluzione stellare}{4}{subsection.20}%
