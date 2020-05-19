@@ -1,5 +1,78 @@
 \BOOKMARK [0][-]{chapter.2}{Introduzione e Trasporto Radiativo}{}% 1
-\BOOKMARK [1][-]{section.3}{Lezione 18}{chapter.2}% 2
-\BOOKMARK [2][-]{subsection.4}{Neutrini}{section.3}% 3
-\BOOKMARK [2][-]{subsection.9}{Relazioni di scala tra grandezze stellari.}{section.3}% 4
-\BOOKMARK [2][-]{subsection.20}{Cenni all'evoluzione stellare}{section.3}% 5
+\BOOKMARK [1][-]{section.3}{Lezione 1}{chapter.2}% 2
+\BOOKMARK [2][-]{subsection.7}{Osservazione del cielo}{section.3}% 3
+\BOOKMARK [2][-]{subsection.11}{Diffrazione e Seeing}{section.3}% 4
+\BOOKMARK [2][-]{subsection.22}{Massa del sole}{section.3}% 5
+\BOOKMARK [2][-]{subsection.24}{Distanze e metodo della parallasse}{section.3}% 6
+\BOOKMARK [2][-]{subsection.34}{Scale temporali dell'universo}{section.3}% 7
+\BOOKMARK [2][-]{subsection.35}{Luminosit\340 intrinseca, Candele campioni ed introduzione al trasporto radiativo}{section.3}% 8
+\BOOKMARK [1][-]{section.43}{Lezione 2}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.47}{Momenti dell'intensit\340 I}{section.43}% 10
+\BOOKMARK [2][-]{subsection.72}{Propagazione di un fascio nel vuoto.}{section.43}% 11
+\BOOKMARK [2][-]{subsection.92}{Propagazione della radiazione in un mezzo}{section.43}% 12
+\BOOKMARK [2][-]{subsection.100}{Equazione del trasporto: processi di interazione radiazione materia}{section.43}% 13
+\BOOKMARK [1][-]{section.119}{Lezione 3}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.143}{Serie dell'atomo di idrogeno}{section.119}% 15
+\BOOKMARK [2][-]{subsection.153}{Radiazione attraverso una nube interstellare}{section.119}% 16
+\BOOKMARK [2][-]{subsection.161}{Soluzione analitica all'equazione del trasporto stazionaria.}{section.119}% 17
+\BOOKMARK [1][-]{section.190}{Lezione 4}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.191}{Scoperta delle righe \(di assorbimento e di emissione\).}{section.190}% 19
+\BOOKMARK [2][-]{subsection.203}{Radiazione di corpo nero: propriet\340 principali.}{section.190}% 20
+\BOOKMARK [2][-]{subsection.219}{Temperatura di una stella}{section.190}% 21
+\BOOKMARK [2][-]{subsection.241}{Cammino libero medio dei fotoni}{section.190}% 22
+\BOOKMARK [2][-]{subsection.248}{Equilibrio termodinamico locale}{section.190}% 23
+\BOOKMARK [1][-]{section.249}{Lezione 5}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.250}{Atmosfera a piani paralleli.}{section.249}% 25
+\BOOKMARK [2][-]{subsection.289}{Valutazione della anisotropia.}{section.249}% 26
+\BOOKMARK [2][-]{subsection.292}{Atmosfera grigia}{section.249}% 27
+\BOOKMARK [1][-]{section.298}{Lezione 6}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.326}{Limb Darkening}{section.298}% 29
+\BOOKMARK [2][-]{subsection.330}{Righe nello spettro stellare}{section.298}% 30
+\BOOKMARK [1][-]{section.340}{Lezione 7}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.341}{Studio delle righe di assorbimento}{section.340}% 32
+\BOOKMARK [2][-]{subsection.355}{Processi di allargamento delle righe}{section.340}% 33
+\BOOKMARK [2][-]{subsection.373}{Magnitudine}{section.340}% 34
+\BOOKMARK [1][-]{section.405}{Lezione 8}{chapter.2}% 35
+\BOOKMARK [2][-]{subsection.406}{Slide su studio delle righe spettrali.}{section.405}% 36
+\BOOKMARK [1][-]{section.407}{Lezione 9}{chapter.2}% 37
+\BOOKMARK [2][-]{subsection.408}{Trasporto di energia negli interni stellari.}{section.407}% 38
+\BOOKMARK [2][-]{subsection.427}{Cammino libero medio di Rosseland}{section.407}% 39
+\BOOKMARK [2][-]{subsection.430}{Moto dei fotoni all'interno di una stella.}{section.407}% 40
+\BOOKMARK [2][-]{subsection.436}{Equilibrio idrostatico della stella}{section.407}% 41
+\BOOKMARK [1][-]{section.453}{Lezione 10}{chapter.2}% 42
+\BOOKMARK [2][-]{subsection.454}{Tempi scala dell'evoluzione stellare.}{section.453}% 43
+\BOOKMARK [2][-]{subsection.469}{Teorema del viriale per corpi autogravitanti.}{section.453}% 44
+\BOOKMARK [2][-]{subsection.483}{Energia e stabilit\340 della stella}{section.453}% 45
+\BOOKMARK [2][-]{subsection.492}{Capacit\340 termica negativa per una stella.}{section.453}% 46
+\BOOKMARK [2][-]{subsection.495}{Sviluppo di una stella.}{section.453}% 47
+\BOOKMARK [2][-]{subsection.496}{Stella con gas monoatomico all'interno}{section.453}% 48
+\BOOKMARK [1][-]{section.505}{Lezione 11}{chapter.2}% 49
+\BOOKMARK [2][-]{subsection.506}{Energia delle stelle: dal sole a carbone alle reazioni termonucleari}{section.505}% 50
+\BOOKMARK [2][-]{subsection.510}{Tempo scala nucleare.}{section.505}% 51
+\BOOKMARK [2][-]{subsection.518}{Equazioni di struttura stellare.}{section.505}% 52
+\BOOKMARK [2][-]{subsection.535}{Flusso di energia trasportato dalla conduzione.}{section.505}% 53
+\BOOKMARK [1][-]{section.543}{Lezione 12}{chapter.2}% 54
+\BOOKMARK [2][-]{subsection.544}{Moti convettivi nelle stelle.}{section.543}% 55
+\BOOKMARK [2][-]{subsection.560}{Gradiente radiativo e gradiente adiabatico.}{section.543}% 56
+\BOOKMARK [2][-]{subsection.579}{Gradiente radiativo e luminosit\340.}{section.543}% 57
+\BOOKMARK [2][-]{subsection.584}{Mixing Length \(o lunghezza media percorsa dalle bolle convettive.\)}{section.543}% 58
+\BOOKMARK [2][-]{subsection.603}{Core convettivi e inviluppi convettivi}{section.543}% 59
+\BOOKMARK [1][-]{section.609}{Lezione 13}{chapter.2}% 60
+\BOOKMARK [2][-]{subsection.610}{Convezione e equilibrio idrostatico.}{section.609}% 61
+\BOOKMARK [2][-]{subsection.615}{Equazioni di struttura stellare.}{section.609}% 62
+\BOOKMARK [2][-]{subsection.618}{Equazione di stato}{section.609}% 63
+\BOOKMARK [2][-]{subsection.634}{Tre casi di perdita di approssimazione di gas perfetto}{section.609}% 64
+\BOOKMARK [1][-]{section.672}{Lezione 14}{chapter.2}% 65
+\BOOKMARK [2][-]{subsection.673}{Calcolo della opacit\340 radiativa.}{section.672}% 66
+\BOOKMARK [2][-]{subsection.702}{Contributo dovuto alle reazioni nucleari.}{section.672}% 67
+\BOOKMARK [1][-]{section.703}{Lezione 15}{chapter.2}% 68
+\BOOKMARK [2][-]{subsection.704}{Reazioni nucleari di fusione.}{section.703}% 69
+\BOOKMARK [1][-]{section.752}{Lezione 16}{chapter.2}% 70
+\BOOKMARK [2][-]{subsection.769}{Riassunto sui processi di evoluzione stellare}{section.752}% 71
+\BOOKMARK [2][-]{subsection.770}{Catena p-p.}{section.752}% 72
+\BOOKMARK [2][-]{subsection.785}{Ciclo CN-N0}{section.752}% 73
+\BOOKMARK [1][-]{section.804}{Lezione 17}{chapter.2}% 74
+\BOOKMARK [1][-]{section.818}{Lezione 18}{chapter.2}% 75
+\BOOKMARK [2][-]{subsection.819}{Neutrini}{section.818}% 76
+\BOOKMARK [2][-]{subsection.824}{Relazioni di scala tra grandezze stellari.}{section.818}% 77
+\BOOKMARK [2][-]{subsection.835}{Cenni all'evoluzione stellare}{section.818}% 78
